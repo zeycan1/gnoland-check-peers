@@ -129,6 +129,37 @@ def main():
     print(f"  {output['reliable_peers']}/{output['total_peers']} peer 'reliable' esigini geciyor")
     print(f"  yazildi -> {OUTPUT_FILE}")
 
+    git_push()
+
+
+def git_push():
+    """peers.json / history.json degistiyse commit+push yapar."""
+    import subprocess
+
+    def run(cmd):
+        return subprocess.run(
+            cmd, cwd=DATA_DIR, capture_output=True, text=True
+        )
+
+    run(["git", "add", "peers.json", "history.json"])
+
+    diff = run(["git", "diff", "--cached", "--quiet"])
+    if diff.returncode == 0:
+        print("  degisiklik yok, commit atlanildi")
+        return
+
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    commit = run(["git", "commit", "-m", f"peer update: {ts}"])
+    if commit.returncode != 0:
+        print(f"[warn] git commit basarisiz: {commit.stderr.strip()}")
+        return
+
+    push = run(["git", "push"])
+    if push.returncode != 0:
+        print(f"[warn] git push basarisiz: {push.stderr.strip()}")
+    else:
+        print("  git push basarili")
+
 
 if __name__ == "__main__":
     main()
