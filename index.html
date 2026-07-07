@@ -63,6 +63,16 @@
   }
   @media (prefers-reduced-motion: reduce){ .live-dot{animation:none;} }
 
+  .header-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .lang-switch{display:flex;gap:2px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:2px;}
+  .lang-btn{
+    font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.03em;
+    padding:4px 9px;border-radius:6px;background:none;border:none;color:var(--text-faint);cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  .lang-btn:hover{color:var(--text-dim);}
+  .lang-btn.active{background:var(--surface-2);color:var(--text);}
+
   .tabs{display:flex;gap:4px;padding:20px 0 0;border-bottom:1px solid var(--border-soft);}
   .tab-btn{
     font-family:'Inter',sans-serif;font-size:13.5px;font-weight:500;color:var(--text-faint);
@@ -176,9 +186,15 @@
         <div class="brand-sub">Gno.land Test13 · ZeycaNode</div>
       </div>
     </div>
-    <div class="live">
-      <span class="live-dot" aria-hidden="true"></span>
-      <span id="updated-at">yükleniyor…</span>
+    <div class="header-right">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="live">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span id="updated-at">yükleniyor…</span>
+      </div>
     </div>
   </header>
 
@@ -196,8 +212,8 @@
   </div>
 
   <footer>
-    <span>30 dakikada bir otomatik güncellenir · birden fazla bağımsız RPC kaynağından toplanır</span>
-    <a href="https://github.com/zeycan1/gnoland-check-peers" target="_blank" rel="noopener">GitHub'da görüntüle →</a>
+    <span id="footer-note">30 dakikada bir otomatik güncellenir · birden fazla bağımsız RPC kaynağından toplanır</span>
+    <a href="https://github.com/zeycan1/gnoland-check-peers" target="_blank" rel="noopener" id="footer-link">GitHub'da görüntüle →</a>
   </footer>
 
 </div>
@@ -205,6 +221,106 @@
 <script>
 const PEERS_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/peers.json";
 const HISTORY_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/history.json";
+const VALIDATORS_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/validators.json";
+
+const STR = {
+  tr: {
+    loading_peers: "Peer verisi yükleniyor…",
+    loading_validators: "Validator verisi yükleniyor…",
+    tab_peers: "Peer Network",
+    tab_validators: "Validator Uptime",
+    updated_prefix: "güncellendi",
+    just_now: "az önce",
+    mins_ago: (m)=>`${m} dk önce`,
+    hrs_ago: (h)=>`${h} sa önce`,
+    peers_label: "peer, %70 uptime eşiğini geçiyor",
+    independent_sources: "bağımsız RPC kaynağı",
+    network_health: "ağ sağlığı",
+    sources_label: "Kaynaklar:",
+    search_placeholder: "moniker, node id veya ip ara…",
+    only_unreliable: "sadece güvenilmez olanlar",
+    col_moniker: "Moniker",
+    col_ip: "IP:Port",
+    col_pulse: "Nabız (son 10)",
+    col_uptime: "Uptime",
+    col_source: "Kaynak",
+    col_direction: "Yön",
+    reliable: "güvenilir",
+    below_threshold: "eşiğin altında",
+    unnamed: "(isimsiz)",
+    outbound: "outbound",
+    inbound: "inbound",
+    no_match_peers: "Eşleşen peer yok. Filtreyi temizlemeyi dene.",
+    peers_load_error: "Peer verisi yüklenemedi",
+    raw_json: "Ham JSON'u doğrudan görüntüle",
+    footer_note: "30 dakikada bir otomatik güncellenir · birden fazla bağımsız RPC kaynağından toplanır",
+    view_github: "GitHub'da görüntüle →",
+    v_avg_label: (n)=>`ortalama validator uptime'ı (son ${n} validator)`,
+    v_low_label: "%95 altı uptime'lı validator",
+    v_last_block: "son taranan blok",
+    v_note: "Not: validator adresi P2P node ID'den farklıdır, moniker eşleştirmesi henüz yok.",
+    v_only_low: "sadece %95 altı",
+    col_vaddr: "Validator Adresi",
+    col_vpower: "Voting Power",
+    col_vsigned: "İmzaladı",
+    col_vmissed: "Kaçırdı",
+    col_vcur: "Şu An Seri",
+    col_vmax: "En Uzun Seri",
+    no_match_validators: "Eşleşen validator yok.",
+    validators_load_error: "Validator verisi yüklenemedi",
+  },
+  en: {
+    loading_peers: "Loading peer data…",
+    loading_validators: "Loading validator data…",
+    tab_peers: "Peer Network",
+    tab_validators: "Validator Uptime",
+    updated_prefix: "updated",
+    just_now: "just now",
+    mins_ago: (m)=>`${m} min ago`,
+    hrs_ago: (h)=>`${h} hr ago`,
+    peers_label: "peers passing the 70% uptime threshold",
+    independent_sources: "independent RPC sources",
+    network_health: "network health",
+    sources_label: "Sources:",
+    search_placeholder: "search moniker, node id or ip…",
+    only_unreliable: "only unreliable",
+    col_moniker: "Moniker",
+    col_ip: "IP:Port",
+    col_pulse: "Pulse (last 10)",
+    col_uptime: "Uptime",
+    col_source: "Source",
+    col_direction: "Direction",
+    reliable: "reliable",
+    below_threshold: "below threshold",
+    unnamed: "(unnamed)",
+    outbound: "outbound",
+    inbound: "inbound",
+    no_match_peers: "No matching peers. Try clearing the filter.",
+    peers_load_error: "Couldn't load peer data",
+    raw_json: "View raw JSON directly",
+    footer_note: "Updates automatically every 30 minutes · aggregated from multiple independent RPC sources",
+    view_github: "View on GitHub →",
+    v_avg_label: (n)=>`average validator uptime (last ${n} validators)`,
+    v_low_label: "validators below 95% uptime",
+    v_last_block: "last scanned block",
+    v_note: "Note: the validator address differs from the P2P node ID, moniker mapping isn't available yet.",
+    v_only_low: "only below 95%",
+    col_vaddr: "Validator Address",
+    col_vpower: "Voting Power",
+    col_vsigned: "Signed",
+    col_vmissed: "Missed",
+    col_vcur: "Current Streak",
+    col_vmax: "Longest Streak",
+    no_match_validators: "No matching validators.",
+    validators_load_error: "Couldn't load validator data",
+  }
+};
+
+let lang = "tr";
+function t(key, ...args){
+  const v = STR[lang][key];
+  return typeof v === "function" ? v(...args) : v;
+}
 
 let peersData = [];
 let totalSources = 0;
@@ -212,13 +328,34 @@ let sortKey = "uptime_pct";
 let sortDir = -1;
 let onlyUnreliable = false;
 let searchTerm = "";
+let lastPeersJson = null;
+
+let validatorsData = [];
+let validatorsLoaded = false;
+let lastValidatorsJson = null;
+let vSortKey = "uptime_pct";
+let vSortDir = 1;
+let vOnlyLow = false;
 
 function timeAgo(iso){
   const diffMs = Date.now() - new Date(iso).getTime();
   const mins = Math.round(diffMs/60000);
-  if(mins < 1) return "az önce";
-  if(mins < 60) return `${mins} dk önce`;
-  return `${Math.round(mins/60)} sa önce`;
+  if(mins < 1) return t("just_now");
+  if(mins < 60) return t("mins_ago", mins);
+  return t("hrs_ago", Math.round(mins/60));
+}
+
+function updateUpdatedAt(){
+  if(!lastPeersJson) return;
+  document.getElementById("updated-at").textContent = `${t("updated_prefix")}: ${timeAgo(lastPeersJson.generated_at)}`;
+}
+
+function applyStaticTranslations(){
+  document.querySelector('.tab-btn[data-tab="peers"]').textContent = t("tab_peers");
+  document.querySelector('.tab-btn[data-tab="validators"]').textContent = t("tab_validators");
+  document.getElementById("footer-note").textContent = t("footer_note");
+  document.getElementById("footer-link").textContent = t("view_github");
+  updateUpdatedAt();
 }
 
 function statusClass(p){
@@ -233,15 +370,17 @@ function renderPulse(hist){
   return `<span class="pulse">${bars}</span>`;
 }
 
-const COLS = [
-  {key:null, label:""},
-  {key:"moniker", label:"Moniker"},
-  {key:"ip", label:"IP:Port", cls:"ip-col"},
-  {key:null, label:"Nabız (son 10)"},
-  {key:"uptime_pct", label:"Uptime"},
-  {key:"source_diversity", label:"Kaynak"},
-  {key:"is_outbound", label:"Yön"},
-];
+function getPeerCols(){
+  return [
+    {key:null, label:""},
+    {key:"moniker", label:t("col_moniker")},
+    {key:"ip", label:t("col_ip"), cls:"ip-col"},
+    {key:null, label:t("col_pulse")},
+    {key:"uptime_pct", label:t("col_uptime")},
+    {key:"source_diversity", label:t("col_source")},
+    {key:"is_outbound", label:t("col_direction")},
+  ];
+}
 
 function buildTable(target){
   let rows = peersData.filter(p=>{
@@ -262,11 +401,12 @@ function buildTable(target){
   });
 
   if(!rows.length){
-    target.innerHTML = `<div class="empty">Eşleşen peer yok. Filtreyi temizlemeyi dene.</div>`;
+    target.innerHTML = `<div class="empty">${t("no_match_peers")}</div>`;
     return;
   }
 
-  const thead = COLS.map(c=>{
+  const cols = getPeerCols();
+  const thead = cols.map(c=>{
     if(!c.key) return `<th class="${c.cls||''}">${c.label}</th>`;
     const sorted = sortKey === c.key ? "sorted" : "";
     const arrow = sortKey === c.key ? (sortDir===1 ? " ↑" : " ↓") : "";
@@ -277,13 +417,13 @@ function buildTable(target){
     const sc = statusClass(p);
     const pct = Math.round(p.uptime_pct*100);
     return `<tr>
-      <td><span class="status-dot ${sc}" title="${p.reliable ? 'güvenilir' : 'eşiğin altında'}"></span></td>
-      <td class="moniker" title="${p.node_id}">${p.moniker || '(isimsiz)'}</td>
+      <td><span class="status-dot ${sc}" title="${p.reliable ? t('reliable') : t('below_threshold')}"></span></td>
+      <td class="moniker" title="${p.node_id}">${p.moniker || t('unnamed')}</td>
       <td class="mono ip-col">${p.ip}:${p.port}</td>
       <td>${renderPulse(p.history)}</td>
       <td class="uptime-pct ${sc}">%${pct}</td>
       <td><span class="pill">${p.source_diversity}/${totalSources}</span></td>
-      <td class="mono">${p.is_outbound ? 'outbound' : 'inbound'}</td>
+      <td class="mono">${p.is_outbound ? t('outbound') : t('inbound')}</td>
     </tr>`;
   }).join("");
 
@@ -305,13 +445,51 @@ function buildTable(target){
   });
 }
 
+function renderPeersUI(peersJson){
+  document.getElementById("content-peers").innerHTML = `
+    <div class="hero">
+      <div class="stat-main">
+        <div class="num">${peersJson.reliable_peers}<small>/ ${peersJson.total_peers}</small></div>
+        <div class="label">${t("peers_label")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${totalSources}</div>
+        <div class="lbl">${t("independent_sources")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${Math.round((peersJson.reliable_peers/peersJson.total_peers)*100)}%</div>
+        <div class="lbl">${t("network_health")}</div>
+      </div>
+    </div>
+    <div class="source-list"><b>${t("sources_label")}</b> ${(peersJson.rpc_sources||[]).join(" · ")}</div>
+    <div class="controls">
+      <input class="search" id="search" type="text" placeholder="${t('search_placeholder')}">
+      <label class="toggle"><input type="checkbox" id="only-unreliable"> ${t("only_unreliable")}</label>
+    </div>
+    <div id="table-holder"></div>
+  `;
+
+  const tableHolder = document.getElementById("table-holder");
+  document.getElementById("search").value = searchTerm;
+  document.getElementById("only-unreliable").checked = onlyUnreliable;
+
+  document.getElementById("search").addEventListener("input", e=>{
+    searchTerm = e.target.value; buildTable(tableHolder);
+  });
+  document.getElementById("only-unreliable").addEventListener("change", e=>{
+    onlyUnreliable = e.target.checked; buildTable(tableHolder);
+  });
+
+  buildTable(tableHolder);
+}
+
 async function load(){
   try{
     const [peersRes, histRes] = await Promise.all([
       fetch(PEERS_URL, {cache:"no-store"}),
       fetch(HISTORY_URL, {cache:"no-store"}),
     ]);
-    if(!peersRes.ok) throw new Error("peers.json alınamadı");
+    if(!peersRes.ok) throw new Error("peers.json");
     const peersJson = await peersRes.json();
     const historyJson = histRes.ok ? await histRes.json() : {};
 
@@ -321,48 +499,15 @@ async function load(){
       node_id, ...p, history: historyJson[node_id] || []
     }));
 
-    document.getElementById("updated-at").textContent =
-      `güncellendi: ${timeAgo(peersJson.generated_at)}`;
-
-    document.getElementById("content-peers").innerHTML = `
-      <div class="hero">
-        <div class="stat-main">
-          <div class="num">${peersJson.reliable_peers}<small>/ ${peersJson.total_peers}</small></div>
-          <div class="label">peer, %70 uptime eşiğini geçiyor</div>
-        </div>
-        <div class="stat-side">
-          <div class="val">${totalSources}</div>
-          <div class="lbl">bağımsız RPC kaynağı</div>
-        </div>
-        <div class="stat-side">
-          <div class="val">${Math.round((peersJson.reliable_peers/peersJson.total_peers)*100)}%</div>
-          <div class="lbl">ağ sağlığı</div>
-        </div>
-      </div>
-      <div class="source-list"><b>Kaynaklar:</b> ${(peersJson.rpc_sources||[]).join(" · ")}</div>
-      <div class="controls">
-        <input class="search" id="search" type="text" placeholder="moniker, node id veya ip ara…">
-        <label class="toggle"><input type="checkbox" id="only-unreliable"> sadece güvenilmez olanlar</label>
-      </div>
-      <div id="table-holder"></div>
-    `;
-
-    const tableHolder = document.getElementById("table-holder");
-
-    document.getElementById("search").addEventListener("input", e=>{
-      searchTerm = e.target.value; buildTable(tableHolder);
-    });
-    document.getElementById("only-unreliable").addEventListener("change", e=>{
-      onlyUnreliable = e.target.checked; buildTable(tableHolder);
-    });
-
-    buildTable(tableHolder);
+    lastPeersJson = peersJson;
+    updateUpdatedAt();
+    renderPeersUI(peersJson);
 
   }catch(err){
     document.getElementById("content-peers").innerHTML = `
       <div class="error">
-        Peer verisi yüklenemedi (${err.message}).<br>
-        <a href="${PEERS_URL}" target="_blank" rel="noopener">Ham JSON'u doğrudan görüntüle</a>
+        ${t("peers_load_error")} (${err.message}).<br>
+        <a href="${PEERS_URL}" target="_blank" rel="noopener">${t("raw_json")}</a>
       </div>`;
   }
 }
@@ -382,16 +527,22 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
 });
 
 // ---------------------------------------------------------------------------
+// Dil gecisi
+// ---------------------------------------------------------------------------
+document.querySelectorAll(".lang-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    if(btn.dataset.lang === lang) return;
+    lang = btn.dataset.lang;
+    document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active", b.dataset.lang === lang));
+    applyStaticTranslations();
+    if(lastPeersJson){ renderPeersUI(lastPeersJson); }
+    if(lastValidatorsJson){ renderValidatorsUI(lastValidatorsJson); }
+  });
+});
+
+// ---------------------------------------------------------------------------
 // Validator Uptime sekmesi
 // ---------------------------------------------------------------------------
-const VALIDATORS_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/validators.json";
-
-let validatorsData = [];
-let validatorsLoaded = false;
-let vSortKey = "uptime_pct";
-let vSortDir = 1;
-let vOnlyLow = false;
-
 function vStatusClass(uptimePct){
   if(uptimePct >= 0.95) return "good";
   if(uptimePct >= 0.8) return "warn";
@@ -402,16 +553,18 @@ function shortAddr(addr){
   return addr.slice(0,10) + "…" + addr.slice(-6);
 }
 
-const V_COLS = [
-  {key:null, label:""},
-  {key:"address", label:"Validator Adresi"},
-  {key:"voting_power", label:"Voting Power"},
-  {key:"signed", label:"İmzaladı"},
-  {key:"missed", label:"Kaçırdı"},
-  {key:"uptime_pct", label:"Uptime"},
-  {key:"current_missed_streak", label:"Şu An Seri"},
-  {key:"max_missed_streak", label:"En Uzun Seri"},
-];
+function getValidatorCols(){
+  return [
+    {key:null, label:""},
+    {key:"address", label:t("col_vaddr")},
+    {key:"voting_power", label:t("col_vpower")},
+    {key:"signed", label:t("col_vsigned")},
+    {key:"missed", label:t("col_vmissed")},
+    {key:"uptime_pct", label:t("col_uptime")},
+    {key:"current_missed_streak", label:t("col_vcur")},
+    {key:"max_missed_streak", label:t("col_vmax")},
+  ];
+}
 
 function buildValidatorTable(target){
   let rows = validatorsData.filter(v=>{
@@ -428,11 +581,12 @@ function buildValidatorTable(target){
   });
 
   if(!rows.length){
-    target.innerHTML = `<div class="empty">Eşleşen validator yok.</div>`;
+    target.innerHTML = `<div class="empty">${t("no_match_validators")}</div>`;
     return;
   }
 
-  const thead = V_COLS.map(c=>{
+  const cols = getValidatorCols();
+  const thead = cols.map(c=>{
     if(!c.key) return `<th></th>`;
     const sorted = vSortKey === c.key ? "sorted" : "";
     const arrow = vSortKey === c.key ? (vSortDir===1 ? " ↑" : " ↓") : "";
@@ -472,59 +626,68 @@ function buildValidatorTable(target){
   });
 }
 
+function renderValidatorsUI(json){
+  const container = document.getElementById("content-validators");
+  const avgUptime = validatorsData.length
+    ? validatorsData.reduce((s,v)=>s+v.uptime_pct,0) / validatorsData.length
+    : 0;
+  const lowCount = validatorsData.filter(v=>v.uptime_pct < 0.95).length;
+
+  container.innerHTML = `
+    <div class="hero">
+      <div class="stat-main">
+        <div class="num">${Math.round(avgUptime*100)}<small>%</small></div>
+        <div class="label">${t("v_avg_label", json.total_validators)}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${lowCount}</div>
+        <div class="lbl">${t("v_low_label")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${json.last_scanned_height}</div>
+        <div class="lbl">${t("v_last_block")}</div>
+      </div>
+    </div>
+    <div class="source-list"><b>${t("v_note")}</b></div>
+    <div class="controls">
+      <label class="toggle"><input type="checkbox" id="only-low-uptime"> ${t("v_only_low")}</label>
+    </div>
+    <div id="validator-table-holder"></div>
+  `;
+
+  const holder = document.getElementById("validator-table-holder");
+  document.getElementById("only-low-uptime").checked = vOnlyLow;
+  document.getElementById("only-low-uptime").addEventListener("change", e=>{
+    vOnlyLow = e.target.checked; buildValidatorTable(holder);
+  });
+  buildValidatorTable(holder);
+}
+
 async function loadValidators(){
   const container = document.getElementById("content-validators");
   try{
     const res = await fetch(VALIDATORS_URL, {cache:"no-store"});
-    if(!res.ok) throw new Error("validators.json alınamadı");
+    if(!res.ok) throw new Error("validators.json");
     const json = await res.json();
 
     validatorsData = Object.entries(json.results || {}).map(([address, r])=>({address, ...r}));
     validatorsLoaded = true;
+    lastValidatorsJson = json;
 
-    const avgUptime = validatorsData.length
-      ? validatorsData.reduce((s,v)=>s+v.uptime_pct,0) / validatorsData.length
-      : 0;
-    const lowCount = validatorsData.filter(v=>v.uptime_pct < 0.95).length;
-
-    container.innerHTML = `
-      <div class="hero">
-        <div class="stat-main">
-          <div class="num">${Math.round(avgUptime*100)}<small>%</small></div>
-          <div class="label">ortalama validator uptime'ı (son ${json.total_validators} validator)</div>
-        </div>
-        <div class="stat-side">
-          <div class="val">${lowCount}</div>
-          <div class="lbl">%95 altı uptime'lı validator</div>
-        </div>
-        <div class="stat-side">
-          <div class="val">${json.last_scanned_height}</div>
-          <div class="lbl">son taranan blok</div>
-        </div>
-      </div>
-      <div class="source-list"><b>Not:</b> validator adresi P2P node ID'den farklıdır, moniker eşleştirmesi henüz yok.</div>
-      <div class="controls">
-        <label class="toggle"><input type="checkbox" id="only-low-uptime"> sadece %95 altı</label>
-      </div>
-      <div id="validator-table-holder"></div>
-    `;
-
-    const holder = document.getElementById("validator-table-holder");
-    document.getElementById("only-low-uptime").addEventListener("change", e=>{
-      vOnlyLow = e.target.checked; buildValidatorTable(holder);
-    });
-    buildValidatorTable(holder);
+    renderValidatorsUI(json);
 
   }catch(err){
     container.innerHTML = `
       <div class="error">
-        Validator verisi yüklenemedi (${err.message}).<br>
-        <a href="${VALIDATORS_URL}" target="_blank" rel="noopener">Ham JSON'u doğrudan görüntüle</a>
+        ${t("validators_load_error")} (${err.message}).<br>
+        <a href="${VALIDATORS_URL}" target="_blank" rel="noopener">${t("raw_json")}</a>
       </div>`;
   }
 }
 
+applyStaticTranslations();
 load();
+
 </script>
 </body>
 </html>
