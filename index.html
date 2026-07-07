@@ -63,6 +63,15 @@
   }
   @media (prefers-reduced-motion: reduce){ .live-dot{animation:none;} }
 
+  .tabs{display:flex;gap:4px;padding:20px 0 0;border-bottom:1px solid var(--border-soft);}
+  .tab-btn{
+    font-family:'Inter',sans-serif;font-size:13.5px;font-weight:500;color:var(--text-faint);
+    background:none;border:none;padding:10px 4px 12px;margin-right:20px;cursor:pointer;
+    border-bottom:2px solid transparent;transition:color .15s ease, border-color .15s ease;
+  }
+  .tab-btn:hover{color:var(--text-dim);}
+  .tab-btn.active{color:var(--text);border-bottom-color:var(--brand);}
+
   .hero{display:flex;gap:14px;flex-wrap:wrap;padding:28px 0 8px;}
   .stat-main{
     background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
@@ -173,8 +182,17 @@
     </div>
   </header>
 
-  <div id="content">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="peers">Peer Network</button>
+    <button class="tab-btn" data-tab="validators">Validator Uptime</button>
+  </div>
+
+  <div id="content-peers" class="tab-panel">
     <div class="empty">Peer verisi yükleniyor…</div>
+  </div>
+
+  <div id="content-validators" class="tab-panel" style="display:none;">
+    <div class="empty">Validator verisi yükleniyor…</div>
   </div>
 
   <footer>
@@ -306,7 +324,7 @@ async function load(){
     document.getElementById("updated-at").textContent =
       `güncellendi: ${timeAgo(peersJson.generated_at)}`;
 
-    document.getElementById("content").innerHTML = `
+    document.getElementById("content-peers").innerHTML = `
       <div class="hero">
         <div class="stat-main">
           <div class="num">${peersJson.reliable_peers}<small>/ ${peersJson.total_peers}</small></div>
@@ -341,10 +359,167 @@ async function load(){
     buildTable(tableHolder);
 
   }catch(err){
-    document.getElementById("content").innerHTML = `
+    document.getElementById("content-peers").innerHTML = `
       <div class="error">
         Peer verisi yüklenemedi (${err.message}).<br>
         <a href="${PEERS_URL}" target="_blank" rel="noopener">Ham JSON'u doğrudan görüntüle</a>
+      </div>`;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Sekme gecisi
+// ---------------------------------------------------------------------------
+document.querySelectorAll(".tab-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    const tab = btn.dataset.tab;
+    document.getElementById("content-peers").style.display = tab === "peers" ? "" : "none";
+    document.getElementById("content-validators").style.display = tab === "validators" ? "" : "none";
+    if(tab === "validators" && !validatorsLoaded){ loadValidators(); }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Validator Uptime sekmesi
+// ---------------------------------------------------------------------------
+const VALIDATORS_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/validators.json";
+
+let validatorsData = [];
+let validatorsLoaded = false;
+let vSortKey = "uptime_pct";
+let vSortDir = 1;
+let vOnlyLow = false;
+
+function vStatusClass(uptimePct){
+  if(uptimePct >= 0.95) return "good";
+  if(uptimePct >= 0.8) return "warn";
+  return "bad";
+}
+
+function shortAddr(addr){
+  return addr.slice(0,10) + "…" + addr.slice(-6);
+}
+
+const V_COLS = [
+  {key:null, label:""},
+  {key:"address", label:"Validator Adresi"},
+  {key:"voting_power", label:"Voting Power"},
+  {key:"signed", label:"İmzaladı"},
+  {key:"missed", label:"Kaçırdı"},
+  {key:"uptime_pct", label:"Uptime"},
+  {key:"current_missed_streak", label:"Şu An Seri"},
+  {key:"max_missed_streak", label:"En Uzun Seri"},
+];
+
+function buildValidatorTable(target){
+  let rows = validatorsData.filter(v=>{
+    if(vOnlyLow && v.uptime_pct >= 0.95) return false;
+    return true;
+  });
+
+  rows.sort((a,b)=>{
+    let av = a[vSortKey], bv = b[vSortKey];
+    if(typeof av === "string"){ av = av.toLowerCase(); bv = (bv||"").toLowerCase(); }
+    if(av < bv) return -1*vSortDir;
+    if(av > bv) return 1*vSortDir;
+    return 0;
+  });
+
+  if(!rows.length){
+    target.innerHTML = `<div class="empty">Eşleşen validator yok.</div>`;
+    return;
+  }
+
+  const thead = V_COLS.map(c=>{
+    if(!c.key) return `<th></th>`;
+    const sorted = vSortKey === c.key ? "sorted" : "";
+    const arrow = vSortKey === c.key ? (vSortDir===1 ? " ↑" : " ↓") : "";
+    return `<th class="${sorted}" data-vkey="${c.key}">${c.label}${arrow}</th>`;
+  }).join("");
+
+  const tbody = rows.map(v=>{
+    const sc = vStatusClass(v.uptime_pct);
+    const pct = Math.round(v.uptime_pct*100);
+    return `<tr>
+      <td><span class="status-dot ${sc}"></span></td>
+      <td class="mono" title="${v.address}">${shortAddr(v.address)}</td>
+      <td class="mono">${v.voting_power}</td>
+      <td class="mono">${v.signed}</td>
+      <td class="mono">${v.missed}</td>
+      <td class="uptime-pct ${sc}">%${pct}</td>
+      <td class="mono">${v.current_missed_streak}</td>
+      <td class="mono">${v.max_missed_streak}</td>
+    </tr>`;
+  }).join("");
+
+  target.innerHTML = `
+    <div class="table-wrap">
+      <table>
+        <thead><tr>${thead}</tr></thead>
+        <tbody>${tbody}</tbody>
+      </table>
+    </div>
+  `;
+
+  target.querySelectorAll("th[data-vkey]").forEach(th=>{
+    th.addEventListener("click", ()=>{
+      const key = th.dataset.vkey;
+      if(vSortKey === key){ vSortDir *= -1; } else { vSortKey = key; vSortDir = key === "uptime_pct" ? 1 : -1; }
+      buildValidatorTable(target);
+    });
+  });
+}
+
+async function loadValidators(){
+  const container = document.getElementById("content-validators");
+  try{
+    const res = await fetch(VALIDATORS_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error("validators.json alınamadı");
+    const json = await res.json();
+
+    validatorsData = Object.entries(json.results || {}).map(([address, r])=>({address, ...r}));
+    validatorsLoaded = true;
+
+    const avgUptime = validatorsData.length
+      ? validatorsData.reduce((s,v)=>s+v.uptime_pct,0) / validatorsData.length
+      : 0;
+    const lowCount = validatorsData.filter(v=>v.uptime_pct < 0.95).length;
+
+    container.innerHTML = `
+      <div class="hero">
+        <div class="stat-main">
+          <div class="num">${Math.round(avgUptime*100)}<small>%</small></div>
+          <div class="label">ortalama validator uptime'ı (son ${json.total_validators} validator)</div>
+        </div>
+        <div class="stat-side">
+          <div class="val">${lowCount}</div>
+          <div class="lbl">%95 altı uptime'lı validator</div>
+        </div>
+        <div class="stat-side">
+          <div class="val">${json.last_scanned_height}</div>
+          <div class="lbl">son taranan blok</div>
+        </div>
+      </div>
+      <div class="source-list"><b>Not:</b> validator adresi P2P node ID'den farklıdır, moniker eşleştirmesi henüz yok.</div>
+      <div class="controls">
+        <label class="toggle"><input type="checkbox" id="only-low-uptime"> sadece %95 altı</label>
+      </div>
+      <div id="validator-table-holder"></div>
+    `;
+
+    const holder = document.getElementById("validator-table-holder");
+    document.getElementById("only-low-uptime").addEventListener("change", e=>{
+      vOnlyLow = e.target.checked; buildValidatorTable(holder);
+    });
+    buildValidatorTable(holder);
+
+  }catch(err){
+    container.innerHTML = `
+      <div class="error">
+        Validator verisi yüklenemedi (${err.message}).<br>
+        <a href="${VALIDATORS_URL}" target="_blank" rel="noopener">Ham JSON'u doğrudan görüntüle</a>
       </div>`;
   }
 }
