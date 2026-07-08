@@ -284,6 +284,7 @@ const STR = {
     v_last_block: "son taranan blok",
     v_note: "Not: validator adresi P2P node ID'den farklıdır, moniker eşleştirmesi henüz yok.",
     v_only_low: "sadece %95 altı",
+    col_vmoniker: "Moniker",
     col_vaddr: "Validator Adresi",
     col_vpower: "Voting Power",
     col_vsigned: "İmzaladı",
@@ -329,6 +330,7 @@ const STR = {
     v_last_block: "last scanned block",
     v_note: "Note: the validator address differs from the P2P node ID, moniker mapping isn't available yet.",
     v_only_low: "only below 95%",
+    col_vmoniker: "Moniker",
     col_vaddr: "Validator Address",
     col_vpower: "Voting Power",
     col_vsigned: "Signed",
@@ -580,6 +582,7 @@ function shortAddr(addr){
 function getValidatorCols(){
   return [
     {key:null, label:""},
+    {key:"moniker", label:t("col_vmoniker")},
     {key:"address", label:t("col_vaddr")},
     {key:"voting_power", label:t("col_vpower")},
     {key:"signed", label:t("col_vsigned")},
@@ -622,6 +625,7 @@ function buildValidatorTable(target){
     const pct = Math.round(v.uptime_pct*100);
     return `<tr>
       <td><span class="status-dot ${sc}"></span></td>
+      <td class="moniker">${v.moniker || '—'}</td>
       <td class="mono" title="${v.address}">${shortAddr(v.address)}</td>
       <td class="mono">${v.voting_power}</td>
       <td class="mono">${v.signed}</td>
