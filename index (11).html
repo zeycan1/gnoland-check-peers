@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZeycaNode · Gno.land Testnet13 Explorer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --bg: #12151c;
+    --surface: #181c25;
+    --surface-2: #1f2430;
+    --border: #2a2f3c;
+    --border-soft: #232833;
+    --text: #e9ebef;
+    --text-dim: #8991a0;
+    --text-faint: #5a6272;
+    --good: #4fd1c5;
+    --good-dim: #234845;
+    --warn: #e8a33d;
+    --warn-dim: #4a3a1c;
+    --bad: #e2617a;
+    --bad-dim: #4a2530;
+    --brand: #6c8cff;
+    --radius: 10px;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(circle at 15% 0%, rgba(108,140,255,0.06), transparent 40%),
+      radial-gradient(circle at 85% 10%, rgba(79,209,197,0.05), transparent 45%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    padding:0 20px 60px;
+  }
+
+  .wrap{max-width:960px;margin:0 auto;}
+
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:28px 0 20px;flex-wrap:wrap;gap:14px;
+    border-bottom:1px solid var(--border-soft);
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{width:34px;height:34px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+  .brand-mark svg{width:34px;height:34px;border-radius:8px;}
+  .brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:21px;letter-spacing:0.01em;}
+  .brand-sub{font-family:'Inter',sans-serif;font-weight:500;font-size:14px;color:var(--text-dim);margin-top:2px;}
+
+  .live{display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-dim);}
+  .live-dot{width:7px;height:7px;border-radius:50%;background:var(--good);box-shadow:0 0 0 0 rgba(79,209,197,0.6);
+    animation:pulse 2.2s infinite;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(79,209,197,0.45);}
+    70%{box-shadow:0 0 0 6px rgba(79,209,197,0);}
+    100%{box-shadow:0 0 0 0 rgba(79,209,197,0);}
+  }
+  @media (prefers-reduced-motion: reduce){ .live-dot{animation:none;} }
+
+  .header-right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .lang-switch{display:flex;gap:2px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:2px;}
+  .lang-btn{
+    font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.03em;
+    padding:4px 9px;border-radius:6px;background:none;border:none;color:var(--text-faint);cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  .lang-btn:hover{color:var(--text-dim);}
+  .lang-btn.active{background:var(--surface-2);color:var(--text);}
+
+  .tabs{display:flex;gap:4px;padding:20px 0 0;border-bottom:1px solid var(--border-soft);}
+  .tab-btn{
+    font-family:'Inter',sans-serif;font-size:13.5px;font-weight:500;color:var(--text-faint);
+    background:none;border:none;padding:10px 4px 12px;margin-right:20px;cursor:pointer;
+    border-bottom:2px solid transparent;transition:color .15s ease, border-color .15s ease;
+  }
+  .tab-btn:hover{color:var(--text-dim);}
+  .tab-btn.active{color:var(--text);border-bottom-color:var(--brand);}
+
+  .hero{display:flex;gap:14px;flex-wrap:wrap;padding:28px 0 8px;}  .stat-main{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:22px 26px;flex:1 1 260px;min-width:220px;
+  }
+  .stat-main .num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1;
+    display:flex;align-items:baseline;gap:8px;}
+  .stat-main .num small{font-size:20px;font-weight:600;color:var(--text-dim);}
+  .stat-main .label{font-size:13px;color:var(--text-dim);margin-top:8px;}
+
+  .stat-side{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:18px 20px;flex:1 1 150px;min-width:140px;display:flex;flex-direction:column;justify-content:center;gap:4px;
+  }
+  .stat-side .val{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:22px;}
+  .stat-side .lbl{font-size:12px;color:var(--text-dim);}
+
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:24px 0 14px;}
+  .search{
+    flex:1 1 220px;background:var(--surface);border:1px solid var(--border);border-radius:8px;
+    padding:9px 13px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;
+  }
+  .search::placeholder{color:var(--text-faint);}
+  .search:focus{outline:2px solid var(--brand);outline-offset:1px;}
+  .toggle{
+    display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-dim);
+    background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:9px 13px;cursor:pointer;
+    user-select:none;
+  }
+  .toggle input{accent-color:var(--brand);}
+  .source-list{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-faint);padding:0 0 10px;}
+  .source-list b{color:var(--text-dim);font-weight:500;}
+
+  .table-wrap{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    overflow-x:auto;
+  }
+  table{width:100%;border-collapse:collapse;min-width:640px;}
+  thead th{
+    text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-faint);
+    font-weight:600;padding:12px 14px;border-bottom:1px solid var(--border);cursor:pointer;white-space:nowrap;
+    position:sticky;top:0;background:var(--surface);
+  }
+  thead th:hover{color:var(--text-dim);}
+  thead th.sorted{color:var(--brand);}
+  tbody tr{border-bottom:1px solid var(--border-soft);}
+  tbody tr:last-child{border-bottom:none;}
+  tbody tr:hover{background:var(--surface-2);}
+  td{padding:11px 14px;font-size:13px;vertical-align:middle;white-space:nowrap;}
+  td.moniker{font-weight:500;}
+  td.mono{font-family:'JetBrains Mono',monospace;color:var(--text-dim);font-size:12px;}
+
+  .status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+  .status-dot.good{background:var(--good);}
+  .status-dot.warn{background:var(--warn);}
+  .status-dot.bad{background:var(--bad);}
+
+  .pulse{display:flex;gap:2px;align-items:flex-end;height:16px;}
+  .pulse i{width:4px;border-radius:1px;background:var(--border);display:inline-block;}
+  .pulse i.up{background:var(--good);height:16px;}
+  .pulse i.down{background:var(--bad-dim);height:6px;}
+
+  .uptime-pct{font-family:'JetBrains Mono',monospace;font-weight:600;}
+  .uptime-pct.good{color:var(--good);}
+  .uptime-pct.warn{color:var(--warn);}
+  .uptime-pct.bad{color:var(--bad);}
+
+  .pill{
+    font-family:'JetBrains Mono',monospace;font-size:11px;padding:2px 7px;border-radius:20px;
+    background:var(--surface-2);color:var(--text-dim);border:1px solid var(--border);
+  }
+
+  .empty, .error{padding:50px 20px;text-align:center;color:var(--text-dim);font-size:14px;}
+  .error a{color:var(--brand);}
+
+  .bar-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin-bottom:14px;}
+  .bar-section h3{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;margin:0 0 14px;color:var(--text);}
+  .bar-row{display:flex;align-items:center;gap:12px;padding:6px 0;}
+  .bar-label{width:150px;flex-shrink:0;font-size:12.5px;color:var(--text-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bar-track{flex:1;height:8px;background:var(--surface-2);border-radius:4px;overflow:hidden;}
+  .bar-fill{height:100%;background:var(--brand);border-radius:4px;}
+  .bar-pct{width:52px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-dim);flex-shrink:0;}
+  .hhi-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:4px 10px;border-radius:20px;margin-top:6px;}
+  .hhi-badge.good{background:var(--good-dim);color:var(--good);}
+  .hhi-badge.warn{background:var(--warn-dim);color:var(--warn);}
+  .hhi-badge.bad{background:var(--bad-dim);color:var(--bad);}
+
+  footer{
+    padding:26px 4px 0;font-size:12px;color:var(--text-faint);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+  }
+  footer a{color:var(--text-dim);text-decoration:none;border-bottom:1px solid var(--border);}
+  footer a:hover{color:var(--brand);border-color:var(--brand);}
+
+  @media (max-width:640px){
+    .stat-main .num{font-size:34px;}
+    td.ip-col{display:none;}
+    thead th.ip-col{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 190 188" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+<g><path style="opacity:1" fill="#000000" d="M 8.5,-0.5 C 68.8333,-0.5 129.167,-0.5 189.5,-0.5C 189.5,62.1667 189.5,124.833 189.5,187.5C 129.167,187.5 68.8333,187.5 8.5,187.5C 5.3449,184.838 3.17823,181.505 2,177.5C 1.33333,121.167 1.33333,64.8333 2,8.5C 3.6107,5.06241 5.77737,2.06241 8.5,-0.5 Z"/></g>
+<g><path style="opacity:1" fill="#7a7a7a" d="M 36.5,33.5 C 77.6633,32.5014 118.997,32.168 160.5,32.5C 160.829,47.0097 160.496,61.3431 159.5,75.5C 159.5,61.5 159.5,47.5 159.5,33.5C 118.5,33.5 77.5,33.5 36.5,33.5 Z"/></g>
+<g><path style="opacity:1" fill="#f5f5f5" d="M 36.5,33.5 C 77.5,33.5 118.5,33.5 159.5,33.5C 159.5,47.5 159.5,61.5 159.5,75.5C 157.167,77.1667 155.167,79.1667 153.5,81.5C 149.5,84.8333 145.833,88.5 142.5,92.5C 135.167,99.1667 128.167,106.167 121.5,113.5C 111.985,113.827 102.652,113.494 93.5,112.5C 93.5,111.833 93.8333,111.5 94.5,111.5C 96.2624,110.738 97.2624,109.404 97.5,107.5C 101.833,102.5 106.5,97.8333 111.5,93.5C 113.167,92.5 114.5,91.1667 115.5,89.5C 118.573,87.4309 120.906,84.7642 122.5,81.5C 126.5,76.8333 130.833,72.5 135.5,68.5C 136.833,67.8333 137.833,66.8333 138.5,65.5C 139.483,61.7016 139.817,57.7016 139.5,53.5C 111.5,53.5 83.5,53.5 55.5,53.5C 55.5,60.8333 55.5,68.1667 55.5,75.5C 49.1667,81.1667 43.1667,87.1667 37.5,93.5C 36.5029,73.6736 36.1695,53.6736 36.5,33.5 Z"/></g>
+<g><path style="opacity:1" fill="#757575" d="M 36.5,33.5 C 36.1695,53.6736 36.5029,73.6736 37.5,93.5C 37.44,94.0431 37.1067,94.3764 36.5,94.5C 35.172,74.0039 35.172,53.6706 36.5,33.5 Z"/></g>
+<g><path style="opacity:1" fill="#363636" d="M 138.5,65.5 C 138.167,65.5 137.833,65.5 137.5,65.5C 137.5,61.8333 137.5,58.1667 137.5,54.5C 110.5,54.5 83.5,54.5 56.5,54.5C 56.8245,61.6866 56.4912,68.6866 55.5,75.5C 55.5,68.1667 55.5,60.8333 55.5,53.5C 83.5,53.5 111.5,53.5 139.5,53.5C 139.817,57.7016 139.483,61.7016 138.5,65.5 Z"/></g>
+<g><path style="opacity:1" fill="#888888" d="M 137.5,65.5 C 137.833,65.5 138.167,65.5 138.5,65.5C 137.833,66.8333 136.833,67.8333 135.5,68.5C 135.427,66.9731 136.094,65.9731 137.5,65.5 Z"/></g>
+<g><path style="opacity:1" fill="#6e6e6e" d="M 96.5,75.5 C 88.6775,74.3439 80.6775,74.1772 72.5,75C 71.9558,75.7172 71.2891,76.2172 70.5,76.5C 70.4142,75.5041 70.7476,74.6708 71.5,74C 80.1858,73.1681 88.8525,73.3348 97.5,74.5C 97.3764,75.1067 97.0431,75.44 96.5,75.5 Z"/></g>
+<g><path style="opacity:1" fill="#f7f7f7" d="M 96.5,75.5 C 94.5,77.8333 92.5,80.1667 90.5,82.5C 88.7376,83.2623 87.7376,84.5956 87.5,86.5C 85.5,86.5 84.5,87.5 84.5,89.5C 81.1195,91.8797 78.4528,94.8797 76.5,98.5C 74.1837,99.422 72.517,101.089 71.5,103.5C 67.4564,106.543 64.1231,110.209 61.5,114.5C 60.1667,115.167 59.1667,116.167 58.5,117.5C 57.8826,117.611 57.3826,117.944 57,118.5C 56.5005,124.491 56.3338,130.491 56.5,136.5C 83.6636,137.664 110.997,137.83 138.5,137C 139.056,136.617 139.389,136.117 139.5,135.5C 139.222,126.447 139.556,117.447 140.5,108.5C 141.167,108.167 141.833,107.833 142.5,107.5C 147.774,103.895 152.441,99.562 156.5,94.5C 156.833,93.5 157.5,92.8333 158.5,92.5C 159.497,113.327 159.831,134.327 159.5,155.5C 118.5,155.5 77.5,155.5 36.5,155.5C 36.5,140.833 36.5,126.167 36.5,111.5C 38.8333,108.5 41.5,105.833 44.5,103.5C 49.562,99.4407 53.8953,94.774 57.5,89.5C 61.5,84.8333 65.8333,80.5 70.5,76.5C 71.2891,76.2172 71.9558,75.7172 72.5,75C 80.6775,74.1772 88.6775,74.3439 96.5,75.5 Z"/></g>
+<g><path style="opacity:1" fill="#494949" d="M 90.5,82.5 C 90.2624,84.4044 89.2624,85.7377 87.5,86.5C 87.7376,84.5956 88.7376,83.2623 90.5,82.5 Z"/></g>
+<g><path style="opacity:1" fill="#9d9d9d" d="M 122.5,81.5 C 120.906,84.7642 118.573,87.4309 115.5,89.5C 117.094,86.2358 119.427,83.5691 122.5,81.5 Z"/></g>
+<g><path style="opacity:1" fill="#2e2e2e" d="M 153.5,81.5 C 150.833,86.1667 147.167,89.8333 142.5,92.5C 145.833,88.5 149.5,84.8333 153.5,81.5 Z"/></g>
+<g><path style="opacity:1" fill="#616161" d="M 87.5,86.5 C 86.8333,87.8333 85.8333,88.8333 84.5,89.5C 84.5,87.5 85.5,86.5 87.5,86.5 Z"/></g>
+<g><path style="opacity:1" fill="#888888" d="M 115.5,89.5 C 114.5,91.1667 113.167,92.5 111.5,93.5C 111.833,91.1667 113.167,89.8333 115.5,89.5 Z"/></g>
+<g><path style="opacity:1" fill="#9d9d9d" d="M 57.5,89.5 C 53.8953,94.774 49.562,99.4407 44.5,103.5C 48.1047,98.226 52.438,93.5593 57.5,89.5 Z"/></g>
+<g><path style="opacity:1" fill="#414141" d="M 76.5,98.5 C 75.483,100.911 73.8163,102.578 71.5,103.5C 72.517,101.089 74.1837,99.422 76.5,98.5 Z"/></g>
+<g><path style="opacity:1" fill="#aeaeae" d="M 156.5,94.5 C 152.441,99.562 147.774,103.895 142.5,107.5C 146.559,102.438 151.226,98.1047 156.5,94.5 Z"/></g>
+<g><path style="opacity:1" fill="#424242" d="M 142.5,92.5 C 136.224,100.445 129.224,107.778 121.5,114.5C 121.5,114.167 121.5,113.833 121.5,113.5C 128.167,106.167 135.167,99.1667 142.5,92.5 Z"/></g>
+<g><path style="opacity:1" fill="#484848" d="M 71.5,103.5 C 69.2411,106.938 66.7411,110.271 64,113.5C 63.3292,114.252 62.4959,114.586 61.5,114.5C 64.1231,110.209 67.4564,106.543 71.5,103.5 Z"/></g>
+<g><path style="opacity:1" fill="#9d9d9d" d="M 97.5,107.5 C 97.2624,109.404 96.2624,110.738 94.5,111.5C 94.7376,109.596 95.7376,108.262 97.5,107.5 Z"/></g>
+<g><path style="opacity:1" fill="#a5a5a5" d="M 140.5,108.5 C 139.556,117.447 139.222,126.447 139.5,135.5C 139.167,135.5 138.833,135.5 138.5,135.5C 138.5,127.167 138.5,118.833 138.5,110.5C 138.833,109.5 139.5,108.833 140.5,108.5 Z"/></g>
+<g><path style="opacity:1" fill="#363636" d="M 138.5,110.5 C 138.5,118.833 138.5,127.167 138.5,135.5C 138.167,135.5 137.833,135.5 137.5,135.5C 110.661,135.831 83.9948,135.498 57.5,134.5C 84.1667,134.5 110.833,134.5 137.5,134.5C 137.174,126.316 137.508,118.316 138.5,110.5 Z"/></g>
+<g><path style="opacity:1" fill="#808181" d="M 158.5,92.5 C 158.56,91.9569 158.893,91.6236 159.5,91.5C 160.5,113.156 160.833,134.823 160.5,156.5C 118.833,156.5 77.1667,156.5 35.5,156.5C 35.1706,141.324 35.5039,126.324 36.5,111.5C 36.5,126.167 36.5,140.833 36.5,155.5C 77.5,155.5 118.5,155.5 159.5,155.5C 159.831,134.327 159.497,113.327 158.5,92.5 Z"/></g>
+<g><path style="opacity:1" fill="#e0e0e0" d="M 137.5,135.5 C 137.833,135.5 138.167,135.5 138.5,135.5C 138.833,135.5 139.167,135.5 139.5,135.5C 139.389,136.117 139.056,136.617 138.5,137C 110.997,137.83 83.6636,137.664 56.5,136.5C 83.6718,136.831 110.672,136.498 137.5,135.5 Z"/></g>
+<g><path style="opacity:1" fill="#6e6e6e" d="M 58.5,117.5 C 57.5931,123.106 57.2598,128.773 57.5,134.5C 83.9948,135.498 110.661,135.831 137.5,135.5C 110.672,136.498 83.6718,136.831 56.5,136.5C 56.3338,130.491 56.5005,124.491 57,118.5C 57.3826,117.944 57.8826,117.611 58.5,117.5 Z"/></g>
+<g><path style="opacity:1" fill="#1e1e1e" d="M 91.5,113.5 C 100.775,115.473 110.442,116.14 120.5,115.5C 110.681,116.494 100.681,116.827 90.5,116.5C 90.2627,115.209 90.596,114.209 91.5,113.5 Z"/></g>
+<g><path style="opacity:1" fill="#747474" d="M 92.5,112.5 C 101.44,114.472 110.773,115.139 120.5,114.5C 120.5,114.833 120.5,115.167 120.5,115.5C 110.442,116.14 100.775,115.473 91.5,113.5C 91.5,112.833 91.8333,112.5 92.5,112.5 Z"/></g>
+<g><path style="opacity:1" fill="#c9c9c9" d="M 92.5,112.5 C 92.8333,112.5 93.1667,112.5 93.5,112.5C 102.652,113.494 111.985,113.827 121.5,113.5C 121.5,113.833 121.5,114.167 121.5,114.5C 121.167,114.5 120.833,114.5 120.5,114.5C 110.773,115.139 101.44,114.472 92.5,112.5 Z"/></g>
+</svg>
+      </div>
+      <div>
+        <div class="brand-name">ZeycaNode</div>
+        <div class="brand-sub">Gno.land Testnet13 Explorer</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="live">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span id="updated-at">yükleniyor…</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="peers">Peer Network</button>
+    <button class="tab-btn" data-tab="validators">Validator Uptime</button>
+    <button class="tab-btn" data-tab="pending">Pending Validators</button>
+    <button class="tab-btn" data-tab="infra">Infra Diversity</button>
+  </div>
+
+  <div id="content-peers" class="tab-panel">
+    <div class="empty">Peer verisi yükleniyor…</div>
+  </div>
+
+  <div id="content-validators" class="tab-panel" style="display:none;">
+    <div class="empty">Validator verisi yükleniyor…</div>
+  </div>
+
+  <div id="content-pending" class="tab-panel" style="display:none;">
+    <div class="empty">Bekleyen validator verisi yükleniyor…</div>
+  </div>
+
+  <div id="content-infra" class="tab-panel" style="display:none;">
+    <div class="empty">Altyapı verisi yükleniyor…</div>
+  </div>
+
+  <footer>
+    <span id="footer-note">30 dakikada bir otomatik güncellenir · birden fazla bağımsız RPC kaynağından toplanır</span>
+    <a href="https://github.com/zeycan1/gnoland-check-peers" target="_blank" rel="noopener" id="footer-link">GitHub'da görüntüle →</a>
+  </footer>
+
+</div>
+
+<script>
+const PEERS_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/peers.json";
+const HISTORY_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/history.json";
+const VALIDATORS_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/validators.json";
+const PENDING_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/pending_validators.json";
+const INFRA_URL = "https://raw.githubusercontent.com/zeycan1/gnoland-check-peers/main/infra_diversity.json";
+
+const STR = {
+  tr: {
+    loading_peers: "Peer verisi yükleniyor…",
+    loading_validators: "Validator verisi yükleniyor…",
+    tab_peers: "Peer Network",
+    tab_validators: "Validator Uptime",
+    updated_prefix: "güncellendi",
+    just_now: "az önce",
+    mins_ago: (m)=>`${m} dk önce`,
+    hrs_ago: (h)=>`${h} sa önce`,
+    peers_label: "peer, %70 uptime eşiğini geçiyor",
+    independent_sources: "bağımsız RPC kaynağı",
+    network_health: "ağ sağlığı",
+    sources_label: "Kaynaklar:",
+    search_placeholder: "moniker, node id veya ip ara…",
+    only_unreliable: "sadece güvenilmez olanlar",
+    col_moniker: "Moniker",
+    col_ip: "IP:Port",
+    col_pulse: "Nabız (son 10)",
+    col_uptime: "Uptime",
+    col_source: "Kaynak",
+    col_direction: "Yön",
+    reliable: "güvenilir",
+    below_threshold: "eşiğin altında",
+    unnamed: "(isimsiz)",
+    outbound: "outbound",
+    inbound: "inbound",
+    no_match_peers: "Eşleşen peer yok. Filtreyi temizlemeyi dene.",
+    peers_load_error: "Peer verisi yüklenemedi",
+    raw_json: "Ham JSON'u doğrudan görüntüle",
+    footer_note: "30 dakikada bir otomatik güncellenir · birden fazla bağımsız RPC kaynağından toplanır",
+    view_github: "GitHub'da görüntüle →",
+    v_avg_label: (n)=>`ortalama validator uptime'ı (son ${n} validator)`,
+    v_low_label: "%95 altı uptime'lı validator",
+    v_last_block: "son taranan blok",
+    v_note: "Not: validator adresi P2P node ID'den farklıdır, moniker eşleştirmesi henüz yok.",
+    v_only_low: "sadece %95 altı",
+    col_vmoniker: "Moniker",
+    col_vaddr: "Validator Adresi",
+    col_vpower: "Voting Power",
+    col_vsigned: "İmzaladı",
+    col_vmissed: "Kaçırdı",
+    col_vcur: "Şu An Seri",
+    col_vmax: "En Uzun Seri",
+    no_match_validators: "Eşleşen validator yok.",
+    validators_load_error: "Validator verisi yüklenemedi",
+    tab_pending: "Bekleyen Adaylar",
+    loading_pending: "Bekleyen validator verisi yükleniyor…",
+    p_registered_label: (n)=>`kayıtlı validator profili (${n} toplam)`,
+    p_active_label: "aktif validator",
+    p_pending_label: "onay bekliyor",
+    p_note: "GovDAO onayı bekleyen, valopers registry'ye kayıtlı ama henüz valset'e eklenmemiş adaylar.",
+    col_pmoniker: "Moniker",
+    col_poperator: "Operatör Adresi",
+    col_pservertype: "Sunucu Tipi",
+    no_pending: "Bekleyen aday yok.",
+    pending_load_error: "Bekleyen validator verisi yüklenemedi",
+    tab_infra: "Altyapı Çeşitliliği",
+    loading_infra: "Altyapı verisi yükleniyor…",
+    i_hhi_label: "HHI skoru (merkezileşme)",
+    i_top_provider_label: (pct)=>`en büyük sağlayıcı: %${pct}`,
+    i_analyzed_label: "IP analiz edildi",
+    i_hhi_good: "Sağlıklı çeşitlilik",
+    i_hhi_warn: "Orta düzey merkezileşme",
+    i_hhi_bad: "Yüksek merkezileşme",
+    i_by_provider: "Sağlayıcıya göre dağılım",
+    i_by_country: "Ülkeye göre dağılım",
+    infra_load_error: "Altyapı verisi yüklenemedi",
+  },
+  en: {
+    loading_peers: "Loading peer data…",
+    loading_validators: "Loading validator data…",
+    tab_peers: "Peer Network",
+    tab_validators: "Validator Uptime",
+    updated_prefix: "updated",
+    just_now: "just now",
+    mins_ago: (m)=>`${m} min ago`,
+    hrs_ago: (h)=>`${h} hr ago`,
+    peers_label: "peers passing the 70% uptime threshold",
+    independent_sources: "independent RPC sources",
+    network_health: "network health",
+    sources_label: "Sources:",
+    search_placeholder: "search moniker, node id or ip…",
+    only_unreliable: "only unreliable",
+    col_moniker: "Moniker",
+    col_ip: "IP:Port",
+    col_pulse: "Pulse (last 10)",
+    col_uptime: "Uptime",
+    col_source: "Source",
+    col_direction: "Direction",
+    reliable: "reliable",
+    below_threshold: "below threshold",
+    unnamed: "(unnamed)",
+    outbound: "outbound",
+    inbound: "inbound",
+    no_match_peers: "No matching peers. Try clearing the filter.",
+    peers_load_error: "Couldn't load peer data",
+    raw_json: "View raw JSON directly",
+    footer_note: "Updates automatically every 30 minutes · aggregated from multiple independent RPC sources",
+    view_github: "View on GitHub →",
+    v_avg_label: (n)=>`average validator uptime (last ${n} validators)`,
+    v_low_label: "validators below 95% uptime",
+    v_last_block: "last scanned block",
+    v_note: "Note: the validator address differs from the P2P node ID, moniker mapping isn't available yet.",
+    v_only_low: "only below 95%",
+    col_vmoniker: "Moniker",
+    col_vaddr: "Validator Address",
+    col_vpower: "Voting Power",
+    col_vsigned: "Signed",
+    col_vmissed: "Missed",
+    col_vcur: "Current Streak",
+    col_vmax: "Longest Streak",
+    no_match_validators: "No matching validators.",
+    validators_load_error: "Couldn't load validator data",
+    tab_pending: "Pending Validators",
+    loading_pending: "Loading pending validator data…",
+    p_registered_label: (n)=>`registered validator profiles (${n} total)`,
+    p_active_label: "active validators",
+    p_pending_label: "awaiting approval",
+    p_note: "Registered in the valopers registry, awaiting GovDAO approval to join the active set.",
+    col_pmoniker: "Moniker",
+    col_poperator: "Operator Address",
+    col_pservertype: "Server Type",
+    no_pending: "No pending candidates.",
+    pending_load_error: "Couldn't load pending validator data",
+    tab_infra: "Infra Diversity",
+    loading_infra: "Loading infrastructure data…",
+    i_hhi_label: "HHI score (concentration)",
+    i_top_provider_label: (pct)=>`largest provider: ${pct}%`,
+    i_analyzed_label: "IPs analyzed",
+    i_hhi_good: "Healthy diversity",
+    i_hhi_warn: "Moderate concentration",
+    i_hhi_bad: "High concentration",
+    i_by_provider: "Distribution by provider",
+    i_by_country: "Distribution by country",
+    infra_load_error: "Couldn't load infrastructure data",
+  }
+};
+
+let lang = "tr";
+function t(key, ...args){
+  const v = STR[lang][key];
+  return typeof v === "function" ? v(...args) : v;
+}
+
+let peersData = [];
+let totalSources = 0;
+let sortKey = "uptime_pct";
+let sortDir = -1;
+let onlyUnreliable = false;
+let searchTerm = "";
+let lastPeersJson = null;
+
+let validatorsData = [];
+let validatorsLoaded = false;
+let lastValidatorsJson = null;
+let vSortKey = "uptime_pct";
+let vSortDir = 1;
+let vOnlyLow = false;
+
+let pendingData = [];
+let pendingLoaded = false;
+let lastPendingJson = null;
+let pSortKey = "moniker";
+let pSortDir = 1;
+
+let infraLoaded = false;
+let lastInfraJson = null;
+
+function timeAgo(iso){
+  const diffMs = Date.now() - new Date(iso).getTime();
+  const mins = Math.round(diffMs/60000);
+  if(mins < 1) return t("just_now");
+  if(mins < 60) return t("mins_ago", mins);
+  return t("hrs_ago", Math.round(mins/60));
+}
+
+function updateUpdatedAt(){
+  if(!lastPeersJson) return;
+  document.getElementById("updated-at").textContent = `${t("updated_prefix")}: ${timeAgo(lastPeersJson.generated_at)}`;
+}
+
+function applyStaticTranslations(){
+  document.querySelector('.tab-btn[data-tab="peers"]').textContent = t("tab_peers");
+  document.querySelector('.tab-btn[data-tab="validators"]').textContent = t("tab_validators");
+  document.querySelector('.tab-btn[data-tab="pending"]').textContent = t("tab_pending");
+  document.querySelector('.tab-btn[data-tab="infra"]').textContent = t("tab_infra");
+  document.getElementById("footer-note").textContent = t("footer_note");
+  document.getElementById("footer-link").textContent = t("view_github");
+  updateUpdatedAt();
+}
+
+function statusClass(p){
+  if(p.uptime_pct >= 0.9) return "good";
+  if(p.uptime_pct >= 0.7) return "warn";
+  return "bad";
+}
+
+function renderPulse(hist){
+  if(!hist || !hist.length) return '<span class="pulse"></span>';
+  const bars = hist.slice(-10).map(v => `<i class="${v ? 'up' : 'down'}"></i>`).join("");
+  return `<span class="pulse">${bars}</span>`;
+}
+
+function getPeerCols(){
+  return [
+    {key:null, label:""},
+    {key:"moniker", label:t("col_moniker")},
+    {key:"ip", label:t("col_ip"), cls:"ip-col"},
+    {key:null, label:t("col_pulse")},
+    {key:"uptime_pct", label:t("col_uptime")},
+    {key:"source_diversity", label:t("col_source")},
+    {key:"is_outbound", label:t("col_direction")},
+  ];
+}
+
+function buildTable(target){
+  let rows = peersData.filter(p=>{
+    if(onlyUnreliable && p.reliable) return false;
+    if(searchTerm){
+      const s = searchTerm.toLowerCase();
+      return (p.moniker||"").toLowerCase().includes(s) || p.node_id.toLowerCase().includes(s) || p.ip.includes(s);
+    }
+    return true;
+  });
+
+  rows.sort((a,b)=>{
+    let av = a[sortKey], bv = b[sortKey];
+    if(typeof av === "string"){ av = av.toLowerCase(); bv = (bv||"").toLowerCase(); }
+    if(av < bv) return -1*sortDir;
+    if(av > bv) return 1*sortDir;
+    return 0;
+  });
+
+  if(!rows.length){
+    target.innerHTML = `<div class="empty">${t("no_match_peers")}</div>`;
+    return;
+  }
+
+  const cols = getPeerCols();
+  const thead = cols.map(c=>{
+    if(!c.key) return `<th class="${c.cls||''}">${c.label}</th>`;
+    const sorted = sortKey === c.key ? "sorted" : "";
+    const arrow = sortKey === c.key ? (sortDir===1 ? " ↑" : " ↓") : "";
+    return `<th class="${sorted} ${c.cls||''}" data-key="${c.key}">${c.label}${arrow}</th>`;
+  }).join("");
+
+  const tbody = rows.map(p=>{
+    const sc = statusClass(p);
+    const pct = Math.round(p.uptime_pct*100);
+    return `<tr>
+      <td><span class="status-dot ${sc}" title="${p.reliable ? t('reliable') : t('below_threshold')}"></span></td>
+      <td class="moniker" title="${p.node_id}">${p.moniker || t('unnamed')}</td>
+      <td class="mono ip-col">${p.ip}:${p.port}</td>
+      <td>${renderPulse(p.history)}</td>
+      <td class="uptime-pct ${sc}">%${pct}</td>
+      <td><span class="pill">${p.source_diversity}/${totalSources}</span></td>
+      <td class="mono">${p.is_outbound ? t('outbound') : t('inbound')}</td>
+    </tr>`;
+  }).join("");
+
+  target.innerHTML = `
+    <div class="table-wrap">
+      <table>
+        <thead><tr>${thead}</tr></thead>
+        <tbody>${tbody}</tbody>
+      </table>
+    </div>
+  `;
+
+  target.querySelectorAll("th[data-key]").forEach(th=>{
+    th.addEventListener("click", ()=>{
+      const key = th.dataset.key;
+      if(sortKey === key){ sortDir *= -1; } else { sortKey = key; sortDir = -1; }
+      buildTable(target);
+    });
+  });
+}
+
+function renderPeersUI(peersJson){
+  document.getElementById("content-peers").innerHTML = `
+    <div class="hero">
+      <div class="stat-main">
+        <div class="num">${peersJson.reliable_peers}<small>/ ${peersJson.total_peers}</small></div>
+        <div class="label">${t("peers_label")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${totalSources}</div>
+        <div class="lbl">${t("independent_sources")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${Math.round((peersJson.reliable_peers/peersJson.total_peers)*100)}%</div>
+        <div class="lbl">${t("network_health")}</div>
+      </div>
+    </div>
+    <div class="source-list"><b>${t("sources_label")}</b> ${(peersJson.rpc_sources||[]).join(" · ")}</div>
+    <div class="controls">
+      <input class="search" id="search" type="text" placeholder="${t('search_placeholder')}">
+      <label class="toggle"><input type="checkbox" id="only-unreliable"> ${t("only_unreliable")}</label>
+    </div>
+    <div id="table-holder"></div>
+  `;
+
+  const tableHolder = document.getElementById("table-holder");
+  document.getElementById("search").value = searchTerm;
+  document.getElementById("only-unreliable").checked = onlyUnreliable;
+
+  document.getElementById("search").addEventListener("input", e=>{
+    searchTerm = e.target.value; buildTable(tableHolder);
+  });
+  document.getElementById("only-unreliable").addEventListener("change", e=>{
+    onlyUnreliable = e.target.checked; buildTable(tableHolder);
+  });
+
+  buildTable(tableHolder);
+}
+
+async function load(){
+  try{
+    const [peersRes, histRes] = await Promise.all([
+      fetch(PEERS_URL, {cache:"no-store"}),
+      fetch(HISTORY_URL, {cache:"no-store"}),
+    ]);
+    if(!peersRes.ok) throw new Error("peers.json");
+    const peersJson = await peersRes.json();
+    const historyJson = histRes.ok ? await histRes.json() : {};
+
+    totalSources = (peersJson.rpc_sources || []).length;
+
+    peersData = Object.entries(peersJson.peers || {}).map(([node_id, p])=>({
+      node_id, ...p, history: historyJson[node_id] || []
+    }));
+
+    lastPeersJson = peersJson;
+    updateUpdatedAt();
+    renderPeersUI(peersJson);
+
+  }catch(err){
+    document.getElementById("content-peers").innerHTML = `
+      <div class="error">
+        ${t("peers_load_error")} (${err.message}).<br>
+        <a href="${PEERS_URL}" target="_blank" rel="noopener">${t("raw_json")}</a>
+      </div>`;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Sekme gecisi
+// ---------------------------------------------------------------------------
+document.querySelectorAll(".tab-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    const tab = btn.dataset.tab;
+    document.getElementById("content-peers").style.display = tab === "peers" ? "" : "none";
+    document.getElementById("content-validators").style.display = tab === "validators" ? "" : "none";
+    document.getElementById("content-pending").style.display = tab === "pending" ? "" : "none";
+    document.getElementById("content-infra").style.display = tab === "infra" ? "" : "none";
+    if(tab === "validators" && !validatorsLoaded){ loadValidators(); }
+    if(tab === "pending" && !pendingLoaded){ loadPending(); }
+    if(tab === "infra" && !infraLoaded){ loadInfra(); }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Dil gecisi
+// ---------------------------------------------------------------------------
+document.querySelectorAll(".lang-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    if(btn.dataset.lang === lang) return;
+    lang = btn.dataset.lang;
+    document.querySelectorAll(".lang-btn").forEach(b=>b.classList.toggle("active", b.dataset.lang === lang));
+    applyStaticTranslations();
+    if(lastPeersJson){ renderPeersUI(lastPeersJson); }
+    if(lastValidatorsJson){ renderValidatorsUI(lastValidatorsJson); }
+    if(lastPendingJson){ renderPendingUI(lastPendingJson); }
+    if(lastInfraJson){ renderInfraUI(lastInfraJson); }
+  });
+});
+
+// ---------------------------------------------------------------------------
+// Validator Uptime sekmesi
+// ---------------------------------------------------------------------------
+function vStatusClass(uptimePct){
+  if(uptimePct >= 0.95) return "good";
+  if(uptimePct >= 0.8) return "warn";
+  return "bad";
+}
+
+function shortAddr(addr){
+  return addr.slice(0,10) + "…" + addr.slice(-6);
+}
+
+function getValidatorCols(){
+  return [
+    {key:null, label:""},
+    {key:"moniker", label:t("col_vmoniker")},
+    {key:"address", label:t("col_vaddr")},
+    {key:"voting_power", label:t("col_vpower")},
+    {key:"signed", label:t("col_vsigned")},
+    {key:"missed", label:t("col_vmissed")},
+    {key:"uptime_pct", label:t("col_uptime")},
+    {key:"current_missed_streak", label:t("col_vcur")},
+    {key:"max_missed_streak", label:t("col_vmax")},
+  ];
+}
+
+function buildValidatorTable(target){
+  let rows = validatorsData.filter(v=>{
+    if(vOnlyLow && v.uptime_pct >= 0.95) return false;
+    return true;
+  });
+
+  rows.sort((a,b)=>{
+    let av = a[vSortKey], bv = b[vSortKey];
+    if(typeof av === "string"){ av = av.toLowerCase(); bv = (bv||"").toLowerCase(); }
+    if(av < bv) return -1*vSortDir;
+    if(av > bv) return 1*vSortDir;
+    return 0;
+  });
+
+  if(!rows.length){
+    target.innerHTML = `<div class="empty">${t("no_match_validators")}</div>`;
+    return;
+  }
+
+  const cols = getValidatorCols();
+  const thead = cols.map(c=>{
+    if(!c.key) return `<th></th>`;
+    const sorted = vSortKey === c.key ? "sorted" : "";
+    const arrow = vSortKey === c.key ? (vSortDir===1 ? " ↑" : " ↓") : "";
+    return `<th class="${sorted}" data-vkey="${c.key}">${c.label}${arrow}</th>`;
+  }).join("");
+
+  const tbody = rows.map(v=>{
+    const sc = vStatusClass(v.uptime_pct);
+    const pct = Math.round(v.uptime_pct*100);
+    return `<tr>
+      <td><span class="status-dot ${sc}"></span></td>
+      <td class="moniker">${v.moniker || '—'}</td>
+      <td class="mono" title="${v.address}">${shortAddr(v.address)}</td>
+      <td class="mono">${v.voting_power}</td>
+      <td class="mono">${v.signed}</td>
+      <td class="mono">${v.missed}</td>
+      <td class="uptime-pct ${sc}">%${pct}</td>
+      <td class="mono">${v.current_missed_streak}</td>
+      <td class="mono">${v.max_missed_streak}</td>
+    </tr>`;
+  }).join("");
+
+  target.innerHTML = `
+    <div class="table-wrap">
+      <table>
+        <thead><tr>${thead}</tr></thead>
+        <tbody>${tbody}</tbody>
+      </table>
+    </div>
+  `;
+
+  target.querySelectorAll("th[data-vkey]").forEach(th=>{
+    th.addEventListener("click", ()=>{
+      const key = th.dataset.vkey;
+      if(vSortKey === key){ vSortDir *= -1; } else { vSortKey = key; vSortDir = key === "uptime_pct" ? 1 : -1; }
+      buildValidatorTable(target);
+    });
+  });
+}
+
+function renderValidatorsUI(json){
+  const container = document.getElementById("content-validators");
+  const avgUptime = validatorsData.length
+    ? validatorsData.reduce((s,v)=>s+v.uptime_pct,0) / validatorsData.length
+    : 0;
+  const lowCount = validatorsData.filter(v=>v.uptime_pct < 0.95).length;
+
+  container.innerHTML = `
+    <div class="hero">
+      <div class="stat-main">
+        <div class="num">${Math.round(avgUptime*100)}<small>%</small></div>
+        <div class="label">${t("v_avg_label", json.total_validators)}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${lowCount}</div>
+        <div class="lbl">${t("v_low_label")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${json.last_scanned_height}</div>
+        <div class="lbl">${t("v_last_block")}</div>
+      </div>
+    </div>
+    <div class="source-list"><b>${t("v_note")}</b></div>
+    <div class="controls">
+      <label class="toggle"><input type="checkbox" id="only-low-uptime"> ${t("v_only_low")}</label>
+    </div>
+    <div id="validator-table-holder"></div>
+  `;
+
+  const holder = document.getElementById("validator-table-holder");
+  document.getElementById("only-low-uptime").checked = vOnlyLow;
+  document.getElementById("only-low-uptime").addEventListener("change", e=>{
+    vOnlyLow = e.target.checked; buildValidatorTable(holder);
+  });
+  buildValidatorTable(holder);
+}
+
+async function loadValidators(){
+  const container = document.getElementById("content-validators");
+  try{
+    const res = await fetch(VALIDATORS_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error("validators.json");
+    const json = await res.json();
+
+    validatorsData = Object.entries(json.results || {}).map(([address, r])=>({address, ...r}));
+    validatorsLoaded = true;
+    lastValidatorsJson = json;
+
+    renderValidatorsUI(json);
+
+  }catch(err){
+    container.innerHTML = `
+      <div class="error">
+        ${t("validators_load_error")} (${err.message}).<br>
+        <a href="${VALIDATORS_URL}" target="_blank" rel="noopener">${t("raw_json")}</a>
+      </div>`;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Pending Validators sekmesi
+// ---------------------------------------------------------------------------
+function getPendingCols(){
+  return [
+    {key:"moniker", label:t("col_pmoniker")},
+    {key:"operator_address", label:t("col_poperator")},
+    {key:"server_type", label:t("col_pservertype")},
+  ];
+}
+
+function buildPendingTable(target){
+  let rows = pendingData.slice();
+
+  rows.sort((a,b)=>{
+    let av = a[pSortKey] || "", bv = b[pSortKey] || "";
+    av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
+    if(av < bv) return -1*pSortDir;
+    if(av > bv) return 1*pSortDir;
+    return 0;
+  });
+
+  if(!rows.length){
+    target.innerHTML = `<div class="empty">${t("no_pending")}</div>`;
+    return;
+  }
+
+  const cols = getPendingCols();
+  const thead = cols.map(c=>{
+    const sorted = pSortKey === c.key ? "sorted" : "";
+    const arrow = pSortKey === c.key ? (pSortDir===1 ? " ↑" : " ↓") : "";
+    return `<th class="${sorted}" data-pkey="${c.key}">${c.label}${arrow}</th>`;
+  }).join("");
+
+  const tbody = rows.map(p=>{
+    return `<tr>
+      <td class="moniker">${p.moniker || t('unnamed')}</td>
+      <td class="mono">${shortAddr(p.operator_address)}</td>
+      <td class="mono">${p.server_type || '—'}</td>
+    </tr>`;
+  }).join("");
+
+  target.innerHTML = `
+    <div class="table-wrap">
+      <table>
+        <thead><tr>${thead}</tr></thead>
+        <tbody>${tbody}</tbody>
+      </table>
+    </div>
+  `;
+
+  target.querySelectorAll("th[data-pkey]").forEach(th=>{
+    th.addEventListener("click", ()=>{
+      const key = th.dataset.pkey;
+      if(pSortKey === key){ pSortDir *= -1; } else { pSortKey = key; pSortDir = 1; }
+      buildPendingTable(target);
+    });
+  });
+}
+
+function renderPendingUI(json){
+  const container = document.getElementById("content-pending");
+
+  container.innerHTML = `
+    <div class="hero">
+      <div class="stat-main">
+        <div class="num">${json.total_pending}</div>
+        <div class="label">${t("p_pending_label")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${json.total_active}</div>
+        <div class="lbl">${t("p_active_label")}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${json.total_registered}</div>
+        <div class="lbl">${t("p_registered_label", json.total_registered)}</div>
+      </div>
+    </div>
+    <div class="source-list"><b>${t("p_note")}</b></div>
+    <div id="pending-table-holder"></div>
+  `;
+
+  buildPendingTable(document.getElementById("pending-table-holder"));
+}
+
+async function loadPending(){
+  const container = document.getElementById("content-pending");
+  try{
+    const res = await fetch(PENDING_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error("pending_validators.json");
+    const json = await res.json();
+
+    pendingData = json.pending || [];
+    pendingLoaded = true;
+    lastPendingJson = json;
+
+    renderPendingUI(json);
+
+  }catch(err){
+    container.innerHTML = `
+      <div class="error">
+        ${t("pending_load_error")} (${err.message}).<br>
+        <a href="${PENDING_URL}" target="_blank" rel="noopener">${t("raw_json")}</a>
+      </div>`;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Infra Diversity sekmesi
+// ---------------------------------------------------------------------------
+function hhiClass(hhi){
+  if(hhi < 0.15) return "good";
+  if(hhi < 0.25) return "warn";
+  return "bad";
+}
+
+function hhiLabel(hhi){
+  if(hhi < 0.15) return t("i_hhi_good");
+  if(hhi < 0.25) return t("i_hhi_warn");
+  return t("i_hhi_bad");
+}
+
+function renderBarList(items, labelKey, max){
+  return items.slice(0, max).map(item=>{
+    const pct = Math.round(item.pct*1000)/10;
+    return `<div class="bar-row">
+      <div class="bar-label" title="${item[labelKey]}">${item[labelKey]}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.max(pct,1)}%"></div></div>
+      <div class="bar-pct">${pct}%</div>
+    </div>`;
+  }).join("");
+}
+
+function renderInfraUI(json){
+  const container = document.getElementById("content-infra");
+  const hc = hhiClass(json.hhi_score);
+  const topPct = Math.round(json.top_provider_pct*1000)/10;
+
+  container.innerHTML = `
+    <div class="hero">
+      <div class="stat-main">
+        <div class="num">${json.hhi_score.toFixed(3)}</div>
+        <div class="label">${t("i_hhi_label")}</div>
+        <span class="hhi-badge ${hc}">${hhiLabel(json.hhi_score)}</span>
+      </div>
+      <div class="stat-side">
+        <div class="val">%${topPct}</div>
+        <div class="lbl">${t("i_top_provider_label", topPct)}</div>
+      </div>
+      <div class="stat-side">
+        <div class="val">${json.total_analyzed}</div>
+        <div class="lbl">${t("i_analyzed_label")}</div>
+      </div>
+    </div>
+    <div class="bar-section">
+      <h3>${t("i_by_provider")}</h3>
+      ${renderBarList(json.by_provider || [], "provider", 12)}
+    </div>
+    <div class="bar-section">
+      <h3>${t("i_by_country")}</h3>
+      ${renderBarList(json.by_country || [], "country", 12)}
+    </div>
+  `;
+}
+
+async function loadInfra(){
+  const container = document.getElementById("content-infra");
+  try{
+    const res = await fetch(INFRA_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error("infra_diversity.json");
+    const json = await res.json();
+
+    infraLoaded = true;
+    lastInfraJson = json;
+
+    renderInfraUI(json);
+
+  }catch(err){
+    container.innerHTML = `
+      <div class="error">
+        ${t("infra_load_error")} (${err.message}).<br>
+        <a href="${INFRA_URL}" target="_blank" rel="noopener">${t("raw_json")}</a>
+      </div>`;
+  }
+}
+
+applyStaticTranslations();
+load();
+
+</script>
+</body>
+</html>
