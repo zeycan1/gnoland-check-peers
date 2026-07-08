@@ -631,7 +631,6 @@ document.querySelectorAll(".tab-btn").forEach(btn=>{
     document.getElementById("content-infra").style.display = tab === "infra" ? "" : "none";
     if(tab === "validators" && !validatorsLoaded){ loadValidators(); }
     if(tab === "pending" && !pendingLoaded){ loadPending(); }
-    if(tab === "infra" && !infraLoaded){ loadInfra(); }
   });
 });
 
