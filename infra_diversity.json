@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08T16:40:01.859232+00:00",
+  "generated_at": "2026-07-08T17:10:01.402235+00:00",
   "total_analyzed": 55,
-  "unique_providers": 22,
-  "unique_countries": 13,
-  "hhi_score": 0.2099,
-  "top_provider_pct": 0.4364,
+  "unique_providers": 20,
+  "unique_countries": 12,
+  "hhi_score": 0.2423,
+  "top_provider_pct": 0.4727,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 24,
-      "pct": 0.4364
+      "count": 26,
+      "pct": 0.4727
     },
     {
       "provider": "netcup GmbH",
@@ -57,11 +57,6 @@
       "pct": 0.0182
     },
     {
-      "provider": "VNPT",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
       "provider": "Contabo GmbH",
       "count": 1,
       "pct": 0.0182
@@ -102,11 +97,6 @@
       "pct": 0.0182
     },
     {
-      "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
       "provider": "SiteGround",
       "count": 1,
       "pct": 0.0182
@@ -120,23 +110,18 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 15,
-      "pct": 0.2727
+      "count": 16,
+      "pct": 0.2909
     },
     {
       "country": "Germany",
-      "count": 14,
-      "pct": 0.2545
+      "count": 15,
+      "pct": 0.2727
     },
     {
       "country": "United States",
       "count": 5,
       "pct": 0.0909
-    },
-    {
-      "country": "Vietnam",
-      "count": 4,
-      "pct": 0.0727
     },
     {
       "country": "Poland",
@@ -147,6 +132,11 @@
       "country": "France",
       "count": 4,
       "pct": 0.0727
+    },
+    {
+      "country": "Vietnam",
+      "count": 3,
+      "pct": 0.0545
     },
     {
       "country": "Canada",
@@ -170,11 +160,6 @@
     },
     {
       "country": "Spain",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
-      "country": "Hong Kong",
       "count": 1,
       "pct": 0.0182
     },
