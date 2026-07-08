@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08T18:40:01.506695+00:00",
+  "generated_at": "2026-07-08T19:10:01.107512+00:00",
   "total_analyzed": 54,
   "unique_providers": 20,
   "unique_countries": 12,
-  "hhi_score": 0.2339,
-  "top_provider_pct": 0.463,
+  "hhi_score": 0.2503,
+  "top_provider_pct": 0.4815,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.463
+      "count": 26,
+      "pct": 0.4815
     },
     {
       "provider": "netcup GmbH",
@@ -20,11 +20,6 @@
       "provider": "Scaleway SAS",
       "count": 3,
       "pct": 0.0556
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.037
     },
     {
       "provider": "OVH SAS",
@@ -45,11 +40,6 @@
       "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.037
-    },
-    {
-      "provider": "VIETTEL",
-      "count": 1,
-      "pct": 0.0185
     },
     {
       "provider": "Vietnam Posts and Telecommunications Group",
@@ -97,6 +87,11 @@
       "pct": 0.0185
     },
     {
+      "provider": "Adept AB",
+      "count": 1,
+      "pct": 0.0185
+    },
+    {
       "provider": "SiteGround",
       "count": 1,
       "pct": 0.0185
@@ -105,13 +100,18 @@
       "provider": "Mobifone Corporation",
       "count": 1,
       "pct": 0.0185
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 1,
+      "pct": 0.0185
     }
   ],
   "by_country": [
     {
       "country": "Finland",
-      "count": 15,
-      "pct": 0.2778
+      "count": 16,
+      "pct": 0.2963
     },
     {
       "country": "Germany",
@@ -120,8 +120,13 @@
     },
     {
       "country": "United States",
-      "count": 6,
-      "pct": 0.1111
+      "count": 5,
+      "pct": 0.0926
+    },
+    {
+      "country": "France",
+      "count": 5,
+      "pct": 0.0926
     },
     {
       "country": "Poland",
@@ -129,14 +134,9 @@
       "pct": 0.0741
     },
     {
-      "country": "France",
-      "count": 4,
-      "pct": 0.0741
-    },
-    {
       "country": "Vietnam",
-      "count": 3,
-      "pct": 0.0556
+      "count": 2,
+      "pct": 0.037
     },
     {
       "country": "Canada",
