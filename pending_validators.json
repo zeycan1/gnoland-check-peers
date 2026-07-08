@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-08T05:50:17.532831+00:00",
-  "total_registered": 104,
+  "generated_at": "2026-07-08T06:05:01.515816+00:00",
+  "total_registered": 105,
   "total_active": 60,
-  "total_pending": 44,
+  "total_pending": 45,
   "pending": [
     {
       "moniker": "Santala-Research",
@@ -128,6 +128,11 @@
       "moniker": "Encapsulate",
       "operator_address": "g1mjwylxv2xfrru3v74jzrammdn23tcjghyfagff",
       "server_type": "data-center"
+    },
+    {
+      "moniker": "Validatus",
+      "operator_address": "g1n09e2rvl3x7g98g2q0v3xfdt3zevgdv5nugru2",
+      "server_type": "on-prem"
     },
     {
       "moniker": "kazzimkoc",
