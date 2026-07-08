@@ -1,0 +1,228 @@
+{
+  "generated_at": "2026-07-08T05:50:17.532831+00:00",
+  "total_registered": 104,
+  "total_active": 60,
+  "total_pending": 44,
+  "pending": [
+    {
+      "moniker": "Santala-Research",
+      "operator_address": "g1078xslm886lv9ad4w5zxxfg8nt07gprk5kwcak",
+      "server_type": "on-prem"
+    },
+    {
+      "moniker": "n1stake",
+      "operator_address": "g128jzzkpyryjg6h8yjpn774mnmskuehjgw9rp9z",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "HusoNode",
+      "operator_address": "g12q9wd2vqsy40qh2nvsz6km6r8ac94y0j6r4ca9",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "BonyNode",
+      "operator_address": "g13nwzm5dfd26ue74jr6sc39gyn3qze0rj5cvpcw",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "CentNode",
+      "operator_address": "g1483dtt54t0mfttyekegayg4fnzqqqheujkzhpk",
+      "server_type": "on-prem"
+    },
+    {
+      "moniker": "BZE Community",
+      "operator_address": "g14ymnmcklzc8zlr7q5hzc370jv433ltx0aq90np",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "airSintez",
+      "operator_address": "g16d2r8lxkxkzn98rmxmg9tsdu072nzcut5k5r7q",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "CrypTech",
+      "operator_address": "g1703mrzj3yvwsa0xfwkhf425qafjtyxv6f007rd",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "ChainTools",
+      "operator_address": "g18u6htlfee0hyhlqs7dv9y3mdrtz4sn3hmj3n07",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "ESERCKR",
+      "operator_address": "g19kz7kupu9l9lrkrw3nptqzz9tn3v3vv7crp796",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "VALIDARIOS",
+      "operator_address": "g19r7z72ap3kjkfwrqw587twjvllq6gjc94nxyqu",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "meth_gno",
+      "operator_address": "g19rf7y2f9mkjprtfm8ckldlz8854eg5g6el577v",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "Grand Valley",
+      "operator_address": "g19sqhfxveuzdmf244xsslmwd638l9mjcdq76hym",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "NODERS",
+      "operator_address": "g1arw7msrsupe436spp4knv3pnp0n3gn4vjeksmt",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Noddex",
+      "operator_address": "g1drvu39ev0x32dkw5ysjxglkpwc8txexgxqmzh5",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "ZeycaNode",
+      "operator_address": "g1eep2z6k5u0t5964a5fa6qtqplkt9pnk926kh34",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "PrimeStake",
+      "operator_address": "g1f9wgcjrmta850sdudfnc498c5fu04fyyhg480v",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "NakoTurk",
+      "operator_address": "g1fqcddarc4s9qap788t7lksgag4mq7g2gevc8ht",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "EmberStake",
+      "operator_address": "g1fzjcyrhv7rtrpwhsd0mhl9n7ahxm0v34p9w5kn",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "POSTHUMAN",
+      "operator_address": "g1geep7yqmgcvexukkfxe982pvyu98mtcj0wrhp4",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Provalidator",
+      "operator_address": "g1hh0j4qlrp5la05vx4jj48lwjt6cv72suxn32zl",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "Quankun",
+      "operator_address": "g1huct47zd2xrl63c87wfkm57zm448pyf884g56c",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "dongqn",
+      "operator_address": "g1jq52x8vjvydg65pxa2r4ttjsjh8tgug8dtk430",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Nodeist",
+      "operator_address": "g1k4kum5pp4r297yx9v868j9578t6de5mm2atd2h",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Encapsulate",
+      "operator_address": "g1mjwylxv2xfrru3v74jzrammdn23tcjghyfagff",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "kazzimkoc",
+      "operator_address": "g1n70hju0sew704tmzfxkhy64uer6prjsm2xwlxs",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "johnwiard",
+      "operator_address": "g1nezsk4p4s0vs6ljqay0kpgg4yz9pzndarv765p",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "web34ever",
+      "operator_address": "g1nkm4txye47dgx5gzfkcevkvscedyw4cgryt074",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "validatorsg",
+      "operator_address": "g1nqvsxzcgagsps3qe4ffs0stxxzxxaj2nmuem07",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Inter Blockchain Services",
+      "operator_address": "g1p2av3saw8h3s37w4d0cplcemmeqmmnxhpezx2g",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "CoreNode",
+      "operator_address": "g1pd2jqrgc0hwsx3evqk8lakvz7y89zkx4nc78g0",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "HaruNode",
+      "operator_address": "g1pjlefcnqulegeycg53xuk87qu49qg5rdnw9g6f",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Nodedog",
+      "operator_address": "g1pq5qde5fmxm9luds9qhknvfcruz2dz0z59edkn",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "Sychonix",
+      "operator_address": "g1px2y5wuj8y0tfq59unwy90qrw7j5evsa9zs3vk",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "InnoS",
+      "operator_address": "g1q6zqnx03a3jtlat6gztn3tp5qzje67ed8rdlp4",
+      "server_type": "on-prem"
+    },
+    {
+      "moniker": "Stella",
+      "operator_address": "g1qcqez4fp3xw5rm5fx2prjsx5klyjkt5q0z3exm",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "0xyzBlock",
+      "operator_address": "g1qmdlhuttfsmd7fmks2tgd35lva65jv5de3t3ux",
+      "server_type": "on-prem"
+    },
+    {
+      "moniker": "berty-val1",
+      "operator_address": "g1qynsu9dwj9lq0m5fkje7jh6qy3md80ztqnshhm",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "CroutonDigital",
+      "operator_address": "g1sdcuehd3shlxr0q4xu9s6tcg0m0kf9q4uxzvdc",
+      "server_type": "cloud"
+    },
+    {
+      "moniker": "Chicharito",
+      "operator_address": "g1vlvfudwxh8h569p8jruf2euemzqt3hqk3e3mx9",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "ProMEX Hub_Gnoland",
+      "operator_address": "g1xvzthkmtldpp7f8ywdg6udfw26ac2qq0rpgvt3",
+      "server_type": "on-prem"
+    },
+    {
+      "moniker": "cunum",
+      "operator_address": "g1y5sclwdy8j6l5m8a5hzsx374k6rvege399zvy9",
+      "server_type": "data-center"
+    },
+    {
+      "moniker": "TeoViTeoVi",
+      "operator_address": "g1zjlfya9rhegcwq7wt77hsw47eycxzwpvgng2mg",
+      "server_type": "on-prem"
+    },
+    {
+      "moniker": "Provalidator",
+      "operator_address": "g1zy3uye7s4sfcdyw5ltl4e9rvtkgrw0ylfwvdjt",
+      "server_type": "cloud"
+    }
+  ]
+}
