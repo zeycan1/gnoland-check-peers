@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-07-09T11:40:01.627638+00:00",
+  "generated_at": "2026-07-09T12:10:01.867888+00:00",
   "total_analyzed": 58,
-  "unique_providers": 22,
-  "unique_countries": 12,
-  "hhi_score": 0.1926,
-  "top_provider_pct": 0.4138,
+  "unique_providers": 23,
+  "unique_countries": 13,
+  "hhi_score": 0.2051,
+  "top_provider_pct": 0.431,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 24,
-      "pct": 0.4138
+      "count": 25,
+      "pct": 0.431
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.069
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 3,
-      "pct": 0.0517
     },
     {
       "provider": "Cogent Communications",
@@ -42,12 +37,12 @@
       "pct": 0.0345
     },
     {
-      "provider": "Contabo GmbH",
+      "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.0345
     },
     {
-      "provider": "Amazon Technologies Inc.",
+      "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0345
     },
@@ -67,7 +62,12 @@
       "pct": 0.0172
     },
     {
-      "provider": "VNPT",
+      "provider": "Contabo GmbH",
+      "count": 1,
+      "pct": 0.0172
+    },
+    {
+      "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
       "pct": 0.0172
     },
@@ -102,6 +102,11 @@
       "pct": 0.0172
     },
     {
+      "provider": "Adept AB",
+      "count": 1,
+      "pct": 0.0172
+    },
+    {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
       "pct": 0.0172
@@ -119,19 +124,19 @@
   ],
   "by_country": [
     {
+      "country": "Germany",
+      "count": 15,
+      "pct": 0.2586
+    },
+    {
       "country": "Finland",
       "count": 15,
       "pct": 0.2586
     },
     {
-      "country": "Germany",
-      "count": 14,
-      "pct": 0.2414
-    },
-    {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1207
+      "count": 6,
+      "pct": 0.1034
     },
     {
       "country": "Poland",
@@ -145,8 +150,8 @@
     },
     {
       "country": "Vietnam",
-      "count": 4,
-      "pct": 0.069
+      "count": 3,
+      "pct": 0.0517
     },
     {
       "country": "Canada",
@@ -157,6 +162,11 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0345
+    },
+    {
+      "country": "Belarus",
+      "count": 1,
+      "pct": 0.0172
     },
     {
       "country": "Ukraine",
