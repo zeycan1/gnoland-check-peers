@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-07-09T10:40:01.937740+00:00",
+  "generated_at": "2026-07-09T11:10:01.233953+00:00",
   "total_analyzed": 56,
   "unique_providers": 22,
-  "unique_countries": 12,
-  "hhi_score": 0.1907,
-  "top_provider_pct": 0.4107,
+  "unique_countries": 13,
+  "hhi_score": 0.2041,
+  "top_provider_pct": 0.4286,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 23,
-      "pct": 0.4107
+      "count": 24,
+      "pct": 0.4286
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0714
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 3,
-      "pct": 0.0536
     },
     {
       "provider": "Cogent Communications",
@@ -47,6 +42,11 @@
       "pct": 0.0357
     },
     {
+      "provider": "Amazon.com, Inc.",
+      "count": 2,
+      "pct": 0.0357
+    },
+    {
       "provider": "FPT Telecom Company",
       "count": 1,
       "pct": 0.0179
@@ -63,6 +63,11 @@
     },
     {
       "provider": "Contabo GmbH",
+      "count": 1,
+      "pct": 0.0179
+    },
+    {
+      "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
       "pct": 0.0179
     },
@@ -107,11 +112,6 @@
       "pct": 0.0179
     },
     {
-      "provider": "SiteGround",
-      "count": 1,
-      "pct": 0.0179
-    },
-    {
       "provider": "Amazon.com",
       "count": 1,
       "pct": 0.0179
@@ -120,8 +120,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 14,
-      "pct": 0.25
+      "count": 15,
+      "pct": 0.2679
     },
     {
       "country": "Germany",
@@ -130,8 +130,8 @@
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.125
+      "count": 6,
+      "pct": 0.1071
     },
     {
       "country": "Poland",
@@ -140,8 +140,8 @@
     },
     {
       "country": "France",
-      "count": 5,
-      "pct": 0.0893
+      "count": 4,
+      "pct": 0.0714
     },
     {
       "country": "Vietnam",
@@ -157,6 +157,11 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0357
+    },
+    {
+      "country": "Belarus",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "country": "Ukraine",
