@@ -1,20 +1,25 @@
 {
-  "generated_at": "2026-07-09T10:10:01.848481+00:00",
+  "generated_at": "2026-07-09T10:40:01.937740+00:00",
   "total_analyzed": 56,
-  "unique_providers": 21,
+  "unique_providers": 22,
   "unique_countries": 12,
-  "hhi_score": 0.2194,
-  "top_provider_pct": 0.4464,
+  "hhi_score": 0.1907,
+  "top_provider_pct": 0.4107,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4464
+      "count": 23,
+      "pct": 0.4107
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0714
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0536
     },
     {
       "provider": "Cogent Communications",
@@ -42,11 +47,6 @@
       "pct": 0.0357
     },
     {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0357
-    },
-    {
       "provider": "FPT Telecom Company",
       "count": 1,
       "pct": 0.0179
@@ -57,7 +57,7 @@
       "pct": 0.0179
     },
     {
-      "provider": "VNPT",
+      "provider": "Vietnam Posts and Telecommunications Group",
       "count": 1,
       "pct": 0.0179
     },
@@ -97,6 +97,11 @@
       "pct": 0.0179
     },
     {
+      "provider": "Adept AB",
+      "count": 1,
+      "pct": 0.0179
+    },
+    {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
       "pct": 0.0179
@@ -114,19 +119,19 @@
   ],
   "by_country": [
     {
-      "country": "Germany",
-      "count": 16,
-      "pct": 0.2857
-    },
-    {
       "country": "Finland",
       "count": 14,
       "pct": 0.25
     },
     {
+      "country": "Germany",
+      "count": 14,
+      "pct": 0.25
+    },
+    {
       "country": "United States",
-      "count": 6,
-      "pct": 0.1071
+      "count": 7,
+      "pct": 0.125
     },
     {
       "country": "Poland",
@@ -135,8 +140,8 @@
     },
     {
       "country": "France",
-      "count": 4,
-      "pct": 0.0714
+      "count": 5,
+      "pct": 0.0893
     },
     {
       "country": "Vietnam",
