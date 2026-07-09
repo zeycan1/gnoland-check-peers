@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-09T19:40:01.544534+00:00",
+  "generated_at": "2026-07-09T20:10:01.734765+00:00",
   "total_analyzed": 54,
-  "unique_providers": 19,
-  "unique_countries": 12,
-  "hhi_score": 0.2195,
-  "top_provider_pct": 0.4444,
+  "unique_providers": 21,
+  "unique_countries": 13,
+  "hhi_score": 0.1886,
+  "top_provider_pct": 0.4074,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 24,
-      "pct": 0.4444
+      "count": 22,
+      "pct": 0.4074
     },
     {
       "provider": "netcup GmbH",
@@ -53,6 +53,16 @@
     },
     {
       "provider": "FPT Telecom Company",
+      "count": 1,
+      "pct": 0.0185
+    },
+    {
+      "provider": "VNPT",
+      "count": 1,
+      "pct": 0.0185
+    },
+    {
+      "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
       "pct": 0.0185
     },
@@ -104,14 +114,14 @@
   ],
   "by_country": [
     {
-      "country": "Germany",
-      "count": 15,
-      "pct": 0.2778
-    },
-    {
       "country": "Finland",
       "count": 14,
       "pct": 0.2593
+    },
+    {
+      "country": "Germany",
+      "count": 13,
+      "pct": 0.2407
     },
     {
       "country": "United States",
@@ -129,6 +139,11 @@
       "pct": 0.0926
     },
     {
+      "country": "Vietnam",
+      "count": 2,
+      "pct": 0.037
+    },
+    {
       "country": "Canada",
       "count": 2,
       "pct": 0.037
@@ -139,7 +154,7 @@
       "pct": 0.037
     },
     {
-      "country": "Vietnam",
+      "country": "Belarus",
       "count": 1,
       "pct": 0.0185
     },
