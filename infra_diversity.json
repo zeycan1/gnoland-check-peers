@@ -1,30 +1,20 @@
 {
-  "generated_at": "2026-07-09T02:40:01.277618+00:00",
+  "generated_at": "2026-07-09T03:10:01.286883+00:00",
   "total_analyzed": 57,
-  "unique_providers": 21,
+  "unique_providers": 23,
   "unique_countries": 13,
-  "hhi_score": 0.1856,
-  "top_provider_pct": 0.4035,
+  "hhi_score": 0.1967,
+  "top_provider_pct": 0.4211,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 23,
-      "pct": 0.4035
+      "count": 24,
+      "pct": 0.4211
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0702
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 3,
-      "pct": 0.0526
-    },
-    {
-      "provider": "Cogent Communications",
-      "count": 3,
-      "pct": 0.0526
     },
     {
       "provider": "Scaleway SAS",
@@ -47,7 +37,7 @@
       "pct": 0.0351
     },
     {
-      "provider": "Contabo GmbH",
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0351
     },
@@ -55,6 +45,26 @@
       "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.0351
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 2,
+      "pct": 0.0351
+    },
+    {
+      "provider": "VIETTEL",
+      "count": 1,
+      "pct": 0.0175
+    },
+    {
+      "provider": "Vietnam Posts and Telecommunications Group",
+      "count": 1,
+      "pct": 0.0175
+    },
+    {
+      "provider": "VNPT",
+      "count": 1,
+      "pct": 0.0175
     },
     {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
@@ -125,11 +135,6 @@
     },
     {
       "country": "United States",
-      "count": 8,
-      "pct": 0.1404
-    },
-    {
-      "country": "France",
       "count": 6,
       "pct": 0.1053
     },
@@ -137,6 +142,16 @@
       "country": "Poland",
       "count": 5,
       "pct": 0.0877
+    },
+    {
+      "country": "France",
+      "count": 5,
+      "pct": 0.0877
+    },
+    {
+      "country": "Vietnam",
+      "count": 4,
+      "pct": 0.0702
     },
     {
       "country": "Canada",
@@ -165,11 +180,6 @@
     },
     {
       "country": "Hong Kong",
-      "count": 1,
-      "pct": 0.0175
-    },
-    {
-      "country": "Vietnam",
       "count": 1,
       "pct": 0.0175
     },
