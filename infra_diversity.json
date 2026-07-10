@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T08:10:01.880672+00:00",
+  "generated_at": "2026-07-10T08:40:01.947500+00:00",
   "total_analyzed": 55,
   "unique_providers": 20,
   "unique_countries": 12,
-  "hhi_score": 0.2119,
+  "hhi_score": 0.2112,
   "top_provider_pct": 0.4364,
   "by_provider": [
     {
@@ -15,11 +15,6 @@
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0727
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 3,
-      "pct": 0.0545
     },
     {
       "provider": "Scaleway SAS",
@@ -47,9 +42,24 @@
       "pct": 0.0364
     },
     {
+      "provider": "Rica Web Services",
+      "count": 2,
+      "pct": 0.0364
+    },
+    {
       "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.0364
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 2,
+      "pct": 0.0364
+    },
+    {
+      "provider": "VIETTEL",
+      "count": 1,
+      "pct": 0.0182
     },
     {
       "provider": "Vietnam Posts and Telecommunications Group",
@@ -77,17 +87,7 @@
       "pct": 0.0182
     },
     {
-      "provider": "Rica Web Services",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
       "provider": "Interserver, Inc",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
-      "provider": "Adept AB",
       "count": 1,
       "pct": 0.0182
     },
@@ -120,8 +120,8 @@
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1273
+      "count": 6,
+      "pct": 0.1091
     },
     {
       "country": "Poland",
@@ -130,18 +130,18 @@
     },
     {
       "country": "France",
-      "count": 5,
-      "pct": 0.0909
+      "count": 4,
+      "pct": 0.0727
     },
     {
       "country": "Vietnam",
-      "count": 2,
-      "pct": 0.0364
+      "count": 3,
+      "pct": 0.0545
     },
     {
       "country": "Canada",
-      "count": 2,
-      "pct": 0.0364
+      "count": 3,
+      "pct": 0.0545
     },
     {
       "country": "South Korea",
