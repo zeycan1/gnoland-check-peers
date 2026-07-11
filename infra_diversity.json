@@ -1,20 +1,30 @@
 {
-  "generated_at": "2026-07-11T22:40:01.636132+00:00",
+  "generated_at": "2026-07-11T23:10:01.664198+00:00",
   "total_analyzed": 55,
-  "unique_providers": 19,
-  "unique_countries": 13,
-  "hhi_score": 0.2595,
-  "top_provider_pct": 0.4909,
+  "unique_providers": 17,
+  "unique_countries": 12,
+  "hhi_score": 0.2456,
+  "top_provider_pct": 0.4727,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 27,
-      "pct": 0.4909
+      "count": 26,
+      "pct": 0.4727
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0727
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0545
+    },
+    {
+      "provider": "Cogent Communications",
+      "count": 3,
+      "pct": 0.0545
     },
     {
       "provider": "Scaleway SAS",
@@ -27,12 +37,12 @@
       "pct": 0.0364
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Rica Web Services",
       "count": 2,
       "pct": 0.0364
     },
     {
-      "provider": "Rica Web Services",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0364
     },
@@ -42,32 +52,12 @@
       "pct": 0.0364
     },
     {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0364
-    },
-    {
-      "provider": "Vietnam Posts and Telecommunications Group",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
-      "provider": "velia.net",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
       "pct": 0.0182
     },
     {
       "provider": "Ultra-Pak LLC",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
       "count": 1,
       "pct": 0.0182
     },
@@ -105,8 +95,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 18,
-      "pct": 0.3273
+      "count": 17,
+      "pct": 0.3091
     },
     {
       "country": "Germany",
@@ -115,13 +105,13 @@
     },
     {
       "country": "United States",
-      "count": 5,
-      "pct": 0.0909
+      "count": 6,
+      "pct": 0.1091
     },
     {
       "country": "Poland",
-      "count": 4,
-      "pct": 0.0727
+      "count": 5,
+      "pct": 0.0909
     },
     {
       "country": "France",
@@ -137,11 +127,6 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0364
-    },
-    {
-      "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0182
     },
     {
       "country": "Belarus",
