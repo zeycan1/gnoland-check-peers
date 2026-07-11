@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-11T18:40:01.335533+00:00",
+  "generated_at": "2026-07-11T19:10:01.138050+00:00",
   "total_analyzed": 55,
-  "unique_providers": 20,
-  "unique_countries": 13,
-  "hhi_score": 0.2271,
-  "top_provider_pct": 0.4545,
+  "unique_providers": 19,
+  "unique_countries": 12,
+  "hhi_score": 0.2436,
+  "top_provider_pct": 0.4727,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4545
+      "count": 26,
+      "pct": 0.4727
     },
     {
       "provider": "netcup GmbH",
@@ -45,11 +45,6 @@
       "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0364
-    },
-    {
-      "provider": "VIETTEL",
-      "count": 1,
-      "pct": 0.0182
     },
     {
       "provider": "velia.net",
@@ -110,8 +105,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 16,
-      "pct": 0.2909
+      "count": 17,
+      "pct": 0.3091
     },
     {
       "country": "Germany",
@@ -142,11 +137,6 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0364
-    },
-    {
-      "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0182
     },
     {
       "country": "Belarus",
