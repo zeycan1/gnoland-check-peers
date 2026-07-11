@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-11T15:10:01.779380+00:00",
+  "generated_at": "2026-07-11T15:40:01.379729+00:00",
   "total_analyzed": 54,
   "unique_providers": 19,
   "unique_countries": 13,
-  "hhi_score": 0.2188,
+  "hhi_score": 0.2195,
   "top_provider_pct": 0.4444,
   "by_provider": [
     {
@@ -17,6 +17,11 @@
       "pct": 0.0741
     },
     {
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0556
+    },
+    {
       "provider": "Scaleway SAS",
       "count": 3,
       "pct": 0.0556
@@ -28,11 +33,6 @@
     },
     {
       "provider": "MEVSPACE sp. z o.o.",
-      "count": 2,
-      "pct": 0.037
-    },
-    {
-      "provider": "velia.net",
       "count": 2,
       "pct": 0.037
     },
@@ -52,12 +52,12 @@
       "pct": 0.037
     },
     {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.037
+      "provider": "VIETTEL",
+      "count": 1,
+      "pct": 0.0185
     },
     {
-      "provider": "VIETTEL",
+      "provider": "velia.net",
       "count": 1,
       "pct": 0.0185
     },
