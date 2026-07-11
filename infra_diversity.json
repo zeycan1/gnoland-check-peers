@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-07-11T07:40:01.734719+00:00",
+  "generated_at": "2026-07-11T08:10:01.204982+00:00",
   "total_analyzed": 57,
-  "unique_providers": 19,
+  "unique_providers": 20,
   "unique_countries": 13,
-  "hhi_score": 0.2287,
-  "top_provider_pct": 0.4561,
+  "hhi_score": 0.2428,
+  "top_provider_pct": 0.4737,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 26,
-      "pct": 0.4561
+      "count": 27,
+      "pct": 0.4737
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0702
-    },
-    {
-      "provider": "Cogent Communications",
-      "count": 3,
-      "pct": 0.0526
     },
     {
       "provider": "Scaleway SAS",
@@ -42,7 +37,7 @@
       "pct": 0.0351
     },
     {
-      "provider": "Rica Web Services",
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0351
     },
@@ -87,7 +82,17 @@
       "pct": 0.0175
     },
     {
+      "provider": "Rica Web Services",
+      "count": 1,
+      "pct": 0.0175
+    },
+    {
       "provider": "Interserver, Inc",
+      "count": 1,
+      "pct": 0.0175
+    },
+    {
+      "provider": "Adept AB",
       "count": 1,
       "pct": 0.0175
     },
@@ -105,8 +110,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 17,
-      "pct": 0.2982
+      "count": 18,
+      "pct": 0.3158
     },
     {
       "country": "Germany",
@@ -115,8 +120,8 @@
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1228
+      "count": 6,
+      "pct": 0.1053
     },
     {
       "country": "Poland",
@@ -124,17 +129,17 @@
       "pct": 0.0877
     },
     {
-      "country": "Canada",
-      "count": 3,
-      "pct": 0.0526
-    },
-    {
       "country": "France",
-      "count": 3,
-      "pct": 0.0526
+      "count": 4,
+      "pct": 0.0702
     },
     {
       "country": "Vietnam",
+      "count": 2,
+      "pct": 0.0351
+    },
+    {
+      "country": "Canada",
       "count": 2,
       "pct": 0.0351
     },
