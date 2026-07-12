@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-12T00:40:01.295419+00:00",
+  "generated_at": "2026-07-12T01:10:01.282704+00:00",
   "total_analyzed": 56,
-  "unique_providers": 20,
+  "unique_providers": 19,
   "unique_countries": 13,
-  "hhi_score": 0.2353,
-  "top_provider_pct": 0.4643,
+  "hhi_score": 0.2519,
+  "top_provider_pct": 0.4821,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 26,
-      "pct": 0.4643
+      "count": 27,
+      "pct": 0.4821
     },
     {
       "provider": "netcup GmbH",
@@ -32,7 +32,7 @@
       "pct": 0.0357
     },
     {
-      "provider": "Rica Web Services",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0357
     },
@@ -52,11 +52,6 @@
       "pct": 0.0179
     },
     {
-      "provider": "Vietnam Posts and Telecommunications Group",
-      "count": 1,
-      "pct": 0.0179
-    },
-    {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
       "pct": 0.0179
@@ -67,17 +62,17 @@
       "pct": 0.0179
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 1,
-      "pct": 0.0179
-    },
-    {
       "provider": "Maxihost LTDA",
       "count": 1,
       "pct": 0.0179
     },
     {
       "provider": "The Constant Company",
+      "count": 1,
+      "pct": 0.0179
+    },
+    {
+      "provider": "Rica Web Services",
       "count": 1,
       "pct": 0.0179
     },
@@ -110,8 +105,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 17,
-      "pct": 0.3036
+      "count": 18,
+      "pct": 0.3214
     },
     {
       "country": "Germany",
@@ -125,8 +120,8 @@
     },
     {
       "country": "Poland",
-      "count": 4,
-      "pct": 0.0714
+      "count": 5,
+      "pct": 0.0893
     },
     {
       "country": "France",
@@ -135,11 +130,6 @@
     },
     {
       "country": "Canada",
-      "count": 3,
-      "pct": 0.0536
-    },
-    {
-      "country": "Vietnam",
       "count": 2,
       "pct": 0.0357
     },
@@ -147,6 +137,11 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0357
+    },
+    {
+      "country": "Vietnam",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "country": "Belarus",
