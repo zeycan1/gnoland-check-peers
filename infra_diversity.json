@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-12T06:10:01.535500+00:00",
+  "generated_at": "2026-07-12T06:40:01.178192+00:00",
   "total_analyzed": 53,
-  "unique_providers": 20,
+  "unique_providers": 19,
   "unique_countries": 13,
-  "hhi_score": 0.2261,
-  "top_provider_pct": 0.4528,
+  "hhi_score": 0.2431,
+  "top_provider_pct": 0.4717,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 24,
-      "pct": 0.4528
+      "count": 25,
+      "pct": 0.4717
     },
     {
       "provider": "netcup GmbH",
@@ -67,11 +67,6 @@
       "pct": 0.0189
     },
     {
-      "provider": "velia.net",
-      "count": 1,
-      "pct": 0.0189
-    },
-    {
       "provider": "The Constant Company",
       "count": 1,
       "pct": 0.0189
@@ -110,8 +105,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 16,
-      "pct": 0.3019
+      "count": 17,
+      "pct": 0.3208
     },
     {
       "country": "Germany",
@@ -120,8 +115,8 @@
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1321
+      "count": 6,
+      "pct": 0.1132
     },
     {
       "country": "Poland",
