@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-12T03:40:01.116110+00:00",
+  "generated_at": "2026-07-12T04:10:01.226476+00:00",
   "total_analyzed": 53,
   "unique_providers": 19,
   "unique_countries": 13,
-  "hhi_score": 0.2275,
+  "hhi_score": 0.2268,
   "top_provider_pct": 0.4528,
   "by_provider": [
     {
@@ -15,11 +15,6 @@
       "provider": "netcup GmbH",
       "count": 4,
       "pct": 0.0755
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 3,
-      "pct": 0.0566
     },
     {
       "provider": "Cogent Communications",
@@ -37,7 +32,17 @@
       "pct": 0.0377
     },
     {
+      "provider": "MEVSPACE sp. z o.o.",
+      "count": 2,
+      "pct": 0.0377
+    },
+    {
       "provider": "Amazon Technologies Inc.",
+      "count": 2,
+      "pct": 0.0377
+    },
+    {
+      "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0377
     },
@@ -53,11 +58,6 @@
     },
     {
       "provider": "Ultra-Pak LLC",
-      "count": 1,
-      "pct": 0.0189
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
       "count": 1,
       "pct": 0.0189
     },
@@ -115,13 +115,13 @@
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1321
+      "count": 6,
+      "pct": 0.1132
     },
     {
       "country": "Poland",
-      "count": 4,
-      "pct": 0.0755
+      "count": 5,
+      "pct": 0.0943
     },
     {
       "country": "France",
