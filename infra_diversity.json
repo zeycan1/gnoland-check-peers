@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-13T02:40:01.199047+00:00",
+  "generated_at": "2026-07-13T03:10:01.102996+00:00",
   "total_analyzed": 53,
-  "unique_providers": 19,
+  "unique_providers": 18,
   "unique_countries": 12,
-  "hhi_score": 0.2431,
-  "top_provider_pct": 0.4717,
+  "hhi_score": 0.2275,
+  "top_provider_pct": 0.4528,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4717
+      "count": 24,
+      "pct": 0.4528
     },
     {
       "provider": "netcup GmbH",
@@ -27,6 +27,11 @@
       "pct": 0.0566
     },
     {
+      "provider": "Amazon.com, Inc.",
+      "count": 2,
+      "pct": 0.0377
+    },
+    {
       "provider": "OVH SAS",
       "count": 2,
       "pct": 0.0377
@@ -37,7 +42,12 @@
       "pct": 0.0377
     },
     {
-      "provider": "Amazon.com, Inc.",
+      "provider": "Rica Web Services",
+      "count": 2,
+      "pct": 0.0377
+    },
+    {
+      "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.0377
     },
@@ -67,11 +77,6 @@
       "pct": 0.0189
     },
     {
-      "provider": "Rica Web Services",
-      "count": 1,
-      "pct": 0.0189
-    },
-    {
       "provider": "Interserver, Inc",
       "count": 1,
       "pct": 0.0189
@@ -87,17 +92,7 @@
       "pct": 0.0189
     },
     {
-      "provider": "Snaju Development",
-      "count": 1,
-      "pct": 0.0189
-    },
-    {
       "provider": "Amazon.com",
-      "count": 1,
-      "pct": 0.0189
-    },
-    {
-      "provider": "Amazon Technologies Inc.",
       "count": 1,
       "pct": 0.0189
     }
@@ -110,8 +105,8 @@
     },
     {
       "country": "Germany",
-      "count": 13,
-      "pct": 0.2453
+      "count": 12,
+      "pct": 0.2264
     },
     {
       "country": "United States",
@@ -130,8 +125,8 @@
     },
     {
       "country": "Canada",
-      "count": 2,
-      "pct": 0.0377
+      "count": 3,
+      "pct": 0.0566
     },
     {
       "country": "Belarus",
