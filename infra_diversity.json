@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-07-13T16:10:01.685649+00:00",
+  "generated_at": "2026-07-13T16:40:01.334788+00:00",
   "total_analyzed": 47,
   "unique_providers": 15,
   "unique_countries": 11,
-  "hhi_score": 0.2666,
-  "top_provider_pct": 0.4894,
+  "hhi_score": 0.2856,
+  "top_provider_pct": 0.5106,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 23,
-      "pct": 0.4894
+      "count": 24,
+      "pct": 0.5106
     },
     {
       "provider": "netcup GmbH",
       "count": 5,
       "pct": 0.1064
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 3,
-      "pct": 0.0638
     },
     {
       "provider": "Cogent Communications",
@@ -28,6 +23,11 @@
     },
     {
       "provider": "OVH SAS",
+      "count": 2,
+      "pct": 0.0426
+    },
+    {
+      "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0426
     },
@@ -90,13 +90,13 @@
     },
     {
       "country": "Germany",
-      "count": 13,
-      "pct": 0.2766
+      "count": 14,
+      "pct": 0.2979
     },
     {
       "country": "United States",
-      "count": 6,
-      "pct": 0.1277
+      "count": 5,
+      "pct": 0.1064
     },
     {
       "country": "Poland",
