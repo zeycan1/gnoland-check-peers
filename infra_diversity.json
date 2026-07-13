@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-13T23:10:01.336456+00:00",
+  "generated_at": "2026-07-13T23:40:02.011923+00:00",
   "total_analyzed": 55,
-  "unique_providers": 19,
-  "unique_countries": 12,
-  "hhi_score": 0.2324,
+  "unique_providers": 18,
+  "unique_countries": 11,
+  "hhi_score": 0.2331,
   "top_provider_pct": 0.4545,
   "by_provider": [
     {
@@ -37,6 +37,11 @@
       "pct": 0.0364
     },
     {
+      "provider": "velia.net",
+      "count": 2,
+      "pct": 0.0364
+    },
+    {
       "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0364
@@ -47,22 +52,12 @@
       "pct": 0.0182
     },
     {
-      "provider": "velia.net",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
       "pct": 0.0182
     },
     {
       "provider": "Massivegrid LTD",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
-      "provider": "Ultra-Pak LLC",
       "count": 1,
       "pct": 0.0182
     },
@@ -105,18 +100,18 @@
   "by_country": [
     {
       "country": "Germany",
-      "count": 17,
-      "pct": 0.3091
+      "count": 16,
+      "pct": 0.2909
     },
     {
       "country": "Finland",
-      "count": 14,
-      "pct": 0.2545
+      "count": 15,
+      "pct": 0.2727
     },
     {
       "country": "United States",
-      "count": 8,
-      "pct": 0.1455
+      "count": 9,
+      "pct": 0.1636
     },
     {
       "country": "Poland",
@@ -135,11 +130,6 @@
     },
     {
       "country": "Belarus",
-      "count": 1,
-      "pct": 0.0182
-    },
-    {
-      "country": "Ukraine",
       "count": 1,
       "pct": 0.0182
     },
