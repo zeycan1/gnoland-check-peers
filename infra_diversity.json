@@ -1,147 +1,147 @@
 {
-  "generated_at": "2026-07-13T19:10:01.212144+00:00",
-  "total_analyzed": 51,
+  "generated_at": "2026-07-13T19:40:01.782093+00:00",
+  "total_analyzed": 54,
   "unique_providers": 16,
   "unique_countries": 11,
-  "hhi_score": 0.268,
-  "top_provider_pct": 0.4902,
+  "hhi_score": 0.2764,
+  "top_provider_pct": 0.5,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4902
+      "count": 27,
+      "pct": 0.5
     },
     {
       "provider": "netcup GmbH",
       "count": 6,
-      "pct": 0.1176
+      "pct": 0.1111
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0556
     },
     {
       "provider": "Cogent Communications",
       "count": 3,
-      "pct": 0.0588
+      "pct": 0.0556
     },
     {
       "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.0588
+      "pct": 0.0556
     },
     {
       "provider": "OVH SAS",
       "count": 2,
-      "pct": 0.0392
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0392
+      "pct": 0.037
     },
     {
       "provider": "Contabo GmbH",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "MEVSPACE sp. z o.o.",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Maxihost LTDA",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "The Constant Company",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Rica Web Services",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Interserver, Inc",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Amazon.com",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "provider": "Amazon Technologies Inc.",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     }
   ],
   "by_country": [
     {
       "country": "Germany",
-      "count": 17,
+      "count": 18,
       "pct": 0.3333
     },
     {
       "country": "Finland",
-      "count": 14,
-      "pct": 0.2745
+      "count": 15,
+      "pct": 0.2778
     },
     {
       "country": "United States",
-      "count": 5,
-      "pct": 0.098
+      "count": 6,
+      "pct": 0.1111
     },
     {
       "country": "France",
       "count": 4,
-      "pct": 0.0784
+      "pct": 0.0741
     },
     {
       "country": "Poland",
       "count": 4,
-      "pct": 0.0784
+      "pct": 0.0741
     },
     {
       "country": "Canada",
       "count": 2,
-      "pct": 0.0392
+      "pct": 0.037
     },
     {
       "country": "Belarus",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "country": "Spain",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "country": "Hong Kong",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "country": "South Korea",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     },
     {
       "country": "Ireland",
       "count": 1,
-      "pct": 0.0196
+      "pct": 0.0185
     }
   ]
 }
