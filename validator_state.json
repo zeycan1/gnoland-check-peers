@@ -1,380 +1,380 @@
 {
-  "last_scanned_height": 832693,
+  "last_scanned_height": 833093,
   "validators": {
     "g1zql5jwmtj0cn3xrkedacm4q79v7a7v2eux930l": {
-      "signed": 138036,
+      "signed": 138436,
       "missed": 2522,
       "cur_streak": 0,
       "max_streak": 524
     },
     "g1zhmw2fzprflze5qfqs8hxm9vdawvmvrejk3z25": {
-      "signed": 140280,
-      "missed": 278,
+      "signed": 140679,
+      "missed": 279,
       "cur_streak": 0,
       "max_streak": 6
     },
     "g1rps4s0cx72fkzgr5xt0n0rjdj2rxhxfz0geeg4": {
-      "signed": 140498,
+      "signed": 140898,
       "missed": 60,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1rz44hdy0z4ncy78srwrhq3pe2uklxa7kc98f0f": {
-      "signed": 140556,
+      "signed": 140956,
       "missed": 2,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1r3hst33nz5txj5rp3scvf4uzvcd2kylhyq8lxq": {
-      "signed": 126427,
-      "missed": 14131,
+      "signed": 126762,
+      "missed": 14196,
       "cur_streak": 0,
       "max_streak": 579
     },
     "g1re5g2h0mzwg8keladjvqu75l7ee8c0a6qc985v": {
-      "signed": 140429,
+      "signed": 140829,
       "missed": 129,
       "cur_streak": 0,
       "max_streak": 19
     },
     "g1yd75tc52xfm8zyllngzvul9cdum6med2par6h4": {
-      "signed": 139745,
+      "signed": 140145,
       "missed": 813,
       "cur_streak": 0,
       "max_streak": 779
     },
     "g1xjdm65mqe02yr2jexmvhfjgaw65tjdgdal7xvv": {
-      "signed": 137976,
+      "signed": 138376,
       "missed": 2582,
       "cur_streak": 0,
       "max_streak": 2564
     },
     "g1gchk7esstrh46j8yqhfeh3lu6clf693vh6qc9w": {
-      "signed": 140394,
-      "missed": 164,
+      "signed": 140793,
+      "missed": 165,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1ffdn2xnaz2uwx8evrnse9mudjpqdg32mf2sew6": {
-      "signed": 140436,
+      "signed": 140836,
       "missed": 122,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1fnycs89p0k3y4z5a5cm6a2l8ps80kc8fv79xyy": {
-      "signed": 139545,
-      "missed": 1013,
+      "signed": 139943,
+      "missed": 1015,
       "cur_streak": 0,
       "max_streak": 2
     },
     "g1fhagr73s775myxnmm8lv8zsdzs8yxp3lrzuy7x": {
-      "signed": 140554,
+      "signed": 140954,
       "missed": 4,
       "cur_streak": 0,
       "max_streak": 2
     },
     "g1204u3mmt72fkqkmvw3uc5e26zqp370jy204gvs": {
-      "signed": 140558,
+      "signed": 140958,
       "missed": 0,
       "cur_streak": 0,
       "max_streak": 0
     },
     "g1vcsg3ek69yxvq6f65avw7zl572982r2z9z2r33": {
-      "signed": 139983,
-      "missed": 575,
+      "signed": 140382,
+      "missed": 576,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1vepmlczxgau2c6kmns6nj5ntyhudgzm8zycxcr": {
-      "signed": 140534,
+      "signed": 140934,
       "missed": 24,
       "cur_streak": 0,
       "max_streak": 13
     },
     "g1d8zrfvtfh60r4gpsp0qqksught5p3nuhssdx6e": {
-      "signed": 140555,
+      "signed": 140955,
       "missed": 3,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1wjxd3msf6yaznffs2w7ludljj8hgry2ay6el8d": {
-      "signed": 140528,
+      "signed": 140928,
       "missed": 30,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1sgu52u6hfffg9tyck7v3zgd27hhv2paf9rgamr": {
-      "signed": 140556,
+      "signed": 140956,
       "missed": 2,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1svwt7l54jmg0dq0wkzr8u09mn5pp9yyx3kgsj9": {
-      "signed": 140119,
+      "signed": 140519,
       "missed": 439,
       "cur_streak": 0,
       "max_streak": 25
     },
     "g1sesaalahr7xyaqg2vaea79rv8lkcasgzvp7679": {
-      "signed": 140515,
+      "signed": 140915,
       "missed": 43,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g13vyada6wwm4fk252sh0n9fjgcuxp0t9vvr8kex": {
-      "signed": 140501,
+      "signed": 140901,
       "missed": 57,
       "cur_streak": 0,
       "max_streak": 3
     },
     "g13mh0jptfqu0cqqrp020hh67q8m3smg3h0jtar7": {
-      "signed": 140558,
+      "signed": 140958,
       "missed": 0,
       "cur_streak": 0,
       "max_streak": 0
     },
     "g1j246592ysshyufyqfvqv33cjer0m4r569d6wk5": {
-      "signed": 140556,
+      "signed": 140956,
       "missed": 2,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1jhfry28lt7z508y5sw4gch7najjzg3rsur2fan": {
-      "signed": 140004,
-      "missed": 554,
+      "signed": 140403,
+      "missed": 555,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1jeknfkq5el4k33lkx8nednq8kgsgeuqj6p9d4q": {
-      "signed": 129164,
-      "missed": 11394,
+      "signed": 129563,
+      "missed": 11395,
       "cur_streak": 0,
       "max_streak": 287
     },
     "g1nwh6jdq3ztszh6ka3sxvvjcpsxprlxl7l6kvrq": {
-      "signed": 140552,
+      "signed": 140952,
       "missed": 6,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g15vs6ghwtz80wa044te8lyqr4scjsxvpfyll8p2": {
-      "signed": 140554,
+      "signed": 140954,
       "missed": 4,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g15sysd4jcpsw7t0n4ffe2hn8ndfup2ae2vwpves": {
-      "signed": 135913,
-      "missed": 4645,
+      "signed": 136292,
+      "missed": 4666,
       "cur_streak": 0,
       "max_streak": 31
     },
     "g14g83lmjkmcfar20jqlaea6m5yvzh37v20q329m": {
-      "signed": 140413,
+      "signed": 140813,
       "missed": 145,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g144sr6tdyc664l6qxzfwe9pvlj9ejghxg0ukcl6": {
-      "signed": 140450,
+      "signed": 140850,
       "missed": 108,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1kxrqt5yrhtccs5zpghpc85t6fyxvpu3mlnk76e": {
-      "signed": 140541,
+      "signed": 140941,
       "missed": 17,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1k7asng8uzf74xs0tsrfwytldl76hs4l3asglym": {
-      "signed": 139540,
-      "missed": 1018,
+      "signed": 139939,
+      "missed": 1019,
       "cur_streak": 0,
       "max_streak": 2
     },
     "g1h95dhaddy55jzeryljet52jww99grcf7sjnsvt": {
-      "signed": 139560,
+      "signed": 139960,
       "missed": 998,
       "cur_streak": 0,
       "max_streak": 209
     },
     "g1h86g3ajd4q0jyqz76ycq4swcptlu4gz2qemn8h": {
-      "signed": 140548,
-      "missed": 10,
+      "signed": 140947,
+      "missed": 11,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1cgl35t2cdt70jnctwy3x3gzfm2h4klceyju5c0": {
-      "signed": 139750,
+      "signed": 140150,
       "missed": 808,
       "cur_streak": 0,
       "max_streak": 697
     },
     "g1cw6k8qjswnaymz4p3e7r5zmlhshygmxzadxav3": {
-      "signed": 140498,
+      "signed": 140898,
       "missed": 60,
       "cur_streak": 0,
       "max_streak": 4
     },
     "g16fayrgzg39y4m8q6l5umnp7m9gpxzj9zutgfv6": {
-      "signed": 140551,
+      "signed": 140951,
       "missed": 7,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1m9cmmzfqcjmzt65d7dauzldwy08trkz3nwqfk4": {
-      "signed": 101922,
+      "signed": 102322,
       "missed": 38636,
       "cur_streak": 0,
       "max_streak": 38624
     },
     "g1u3mc7f8fpjhfaezqsutklu7n7vesn266vsxwrq": {
-      "signed": 140556,
+      "signed": 140956,
       "missed": 2,
       "cur_streak": 0,
       "max_streak": 2
     },
     "g1aps0x6mex5t7unajq9wefstxupz3r830m69g68": {
-      "signed": 140448,
-      "missed": 110,
+      "signed": 140847,
+      "missed": 111,
       "cur_streak": 0,
       "max_streak": 2
     },
     "g1a5nsknqz603w8tq6us6pdhqq0yjs0k59hs9e0j": {
-      "signed": 140556,
+      "signed": 140956,
       "missed": 2,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1a5kq4rfppugw224s33y85l9gzy7ag2ttusphhp": {
-      "signed": 140557,
+      "signed": 140957,
       "missed": 1,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1ahsucf2e2g95n7xufes8mqtuucw5829t044s22": {
-      "signed": 138958,
-      "missed": 1600,
+      "signed": 139352,
+      "missed": 1606,
       "cur_streak": 0,
       "max_streak": 11
     },
     "g17rl2d83mfysakeccsg8egwcqdpdc7mnnwvk23q": {
-      "signed": 140546,
+      "signed": 140946,
       "missed": 12,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1792c9j95rqgt6eg7wa9sxky0n9v6tfhhsqv9kf": {
-      "signed": 125203,
+      "signed": 125603,
       "missed": 15355,
       "cur_streak": 0,
       "max_streak": 3440
     },
     "g176hnyevxafgs0vk6zjukeyt9x6tvjjuss73qgm": {
-      "signed": 140550,
+      "signed": 140950,
       "missed": 8,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g17mte58ns4fah9agcd3euyhhq8cm789durkjedm": {
-      "signed": 140552,
+      "signed": 140952,
       "missed": 6,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g17awwm2k3s3q9ru0t2hy3f4wqzzuhpu73qgr5d8": {
-      "signed": 140557,
+      "signed": 140957,
       "missed": 1,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1l7y7vzj5frmg3er4wzuf4x9wn2uyq980eat0zv": {
-      "signed": 140351,
+      "signed": 140751,
       "missed": 207,
       "cur_streak": 0,
       "max_streak": 1
     },
     "g1p6jh0ngwf39j34rsq823x8v6gj9nsy4s2ec9ce": {
-      "signed": 136270,
-      "missed": 1056,
+      "signed": 136669,
+      "missed": 1057,
       "cur_streak": 0,
       "max_streak": 137
     },
     "g1zyk4gkw68lzx9yfgcda2ur36yy6dfdtyzglvsc": {
-      "signed": 133643,
-      "missed": 3683,
+      "signed": 134042,
+      "missed": 3684,
       "cur_streak": 0,
       "max_streak": 1812
     },
     "g1x6lxs086qn56g2mav200hqs407zzthj6varjxd": {
-      "signed": 136175,
+      "signed": 136575,
       "missed": 1151,
       "cur_streak": 0,
       "max_streak": 1013
     },
     "g1dqqsa7kps5kctwpylpmv7lfjsuvp2zayj5js5m": {
-      "signed": 137119,
+      "signed": 137519,
       "missed": 207,
       "cur_streak": 0,
       "max_streak": 137
     },
     "g10g3j0ss6c9cxuxfp4xkmqckk6c3yqek07dpqqr": {
-      "signed": 133981,
+      "signed": 134381,
       "missed": 3345,
       "cur_streak": 0,
       "max_streak": 3026
     },
     "g1ntrk95xqttc39xmcnn0f0jasdqq538ksjtec3h": {
-      "signed": 136267,
-      "missed": 1059,
+      "signed": 136666,
+      "missed": 1060,
       "cur_streak": 0,
       "max_streak": 137
     },
     "g17269vzp45g393067ulat4knr22wdkx6fukpd9w": {
-      "signed": 136829,
+      "signed": 137229,
       "missed": 497,
       "cur_streak": 0,
       "max_streak": 137
     },
     "g1q59usnfum36s7zumykcw4tt4spszevyzmqn23p": {
-      "signed": 135991,
+      "signed": 136391,
       "missed": 122,
       "cur_streak": 0,
       "max_streak": 121
     },
     "g1pvys4xwv2whkd8flwngr6v3csyrwtj9csvnr6p": {
-      "signed": 135860,
+      "signed": 136260,
       "missed": 253,
       "cur_streak": 0,
       "max_streak": 121
     },
     "g1dentszcqwhtngq2kza96rhs4mpdatxds34v0s6": {
-      "signed": 135868,
+      "signed": 136268,
       "missed": 245,
       "cur_streak": 0,
       "max_streak": 207
     },
     "g1awwuqg349h3rauz5zn4l278vcw6tc9qckkasxt": {
-      "signed": 135905,
+      "signed": 136305,
       "missed": 208,
       "cur_streak": 0,
       "max_streak": 207
     },
     "g1rcqwh2efe026h0wpp4x4p6348vpjc7dsuyrvpv": {
-      "signed": 115376,
+      "signed": 115776,
       "missed": 36,
       "cur_streak": 0,
       "max_streak": 33
     },
     "g1yk7anap32ah9jdyl7c9cjd0fmxw363le4yzpcc": {
-      "signed": 115119,
+      "signed": 115519,
       "missed": 293,
       "cur_streak": 0,
       "max_streak": 213
     },
     "g18dkkz96aeu4mwu2g40d2tey6qztt4gfnlwfyzh": {
-      "signed": 115353,
+      "signed": 115753,
       "missed": 59,
       "cur_streak": 0,
       "max_streak": 33
@@ -386,7 +386,7 @@
       "max_streak": 3507
     },
     "g18mry9teermryplhf6k3m2flxvyyjnxanqp87v2": {
-      "signed": 115361,
+      "signed": 115761,
       "missed": 51,
       "cur_streak": 0,
       "max_streak": 33
@@ -398,19 +398,19 @@
       "max_streak": 2328
     },
     "g1dkgphup0w65da9yt6rrf2eyk75tkqkdz8grmfm": {
-      "signed": 115361,
+      "signed": 115761,
       "missed": 51,
       "cur_streak": 0,
       "max_streak": 33
     },
     "g10lq4503ulc9megm8ztxex76hr5qnt0qkz2sa3e": {
-      "signed": 115108,
-      "missed": 304,
+      "signed": 115506,
+      "missed": 306,
       "cur_streak": 0,
       "max_streak": 33
     },
     "g1syf89uzvtwccak6uqn0xg6nz2mm87mv8zk7epr": {
-      "signed": 115289,
+      "signed": 115689,
       "missed": 123,
       "cur_streak": 0,
       "max_streak": 33
@@ -422,50 +422,50 @@
       "max_streak": 2715
     },
     "g1hyw03jvtlh5mh7tvvjm4hs5pfjh4hhmwd2fp3t": {
-      "signed": 114517,
-      "missed": 895,
+      "signed": 114915,
+      "missed": 897,
       "cur_streak": 0,
       "max_streak": 33
     },
     "g1csv2wa7clcfymtn36dwqdchal05w38akh8zh73": {
-      "signed": 115376,
+      "signed": 115776,
       "missed": 36,
       "cur_streak": 0,
       "max_streak": 33
     },
     "g1lyejcpqgnpe3hzjxn20smlkecxaqnul6tq8jqx": {
-      "signed": 90351,
+      "signed": 90751,
       "missed": 25061,
       "cur_streak": 0,
       "max_streak": 25013
     },
     "g1r9e239zxfdxwywyru8twpyh8dze5z0xh8kyt7s": {
-      "signed": 112715,
+      "signed": 113115,
       "missed": 369,
       "cur_streak": 0,
       "max_streak": 330
     },
     "g1rfu5paz2dt3pz77de6wgpg9wtuhdtlhnv42fem": {
-      "signed": 112596,
+      "signed": 112996,
       "missed": 101,
       "cur_streak": 0,
       "max_streak": 98
     },
     "g1k86n3hwdnfpffsam6hwsdxpk99x6lzn37n9ra5": {
-      "signed": 106301,
-      "missed": 5604,
+      "signed": 106698,
+      "missed": 5607,
       "cur_streak": 0,
       "max_streak": 4585
     },
     "g1qy0lphjp5czwh8cjed8vm2yeftwmuqmlz0tnm4": {
-      "signed": 79028,
+      "signed": 79428,
       "missed": 253,
       "cur_streak": 0,
       "max_streak": 248
     },
     "g1veqx5xm2ssx9dfvw6s89fg8nwaprxgx5l2wwkr": {
-      "signed": 78901,
-      "missed": 380,
+      "signed": 79300,
+      "missed": 381,
       "cur_streak": 0,
       "max_streak": 248
     },
@@ -476,43 +476,43 @@
       "max_streak": 60578
     },
     "g16lz8e9n74d84vzv8z6vwcjtwkl3ntxrh7xj3en": {
-      "signed": 78974,
+      "signed": 79374,
       "missed": 307,
       "cur_streak": 0,
       "max_streak": 248
     },
     "g1a2c4jdr7rk08vr5hv7w282m4q62u7wz5fuv27s": {
-      "signed": 79033,
+      "signed": 79433,
       "missed": 248,
       "cur_streak": 0,
       "max_streak": 248
     },
     "g1yxkhzstt05j88ckslxfgkd8nc67r5dj8chz4d3": {
-      "signed": 73301,
+      "signed": 73701,
       "missed": 5566,
       "cur_streak": 0,
       "max_streak": 5555
     },
     "g13qsl8x9wtmzqhqj9zc2e7dh3d0cxjep4l6muut": {
-      "signed": 78568,
+      "signed": 78968,
       "missed": 299,
       "cur_streak": 0,
       "max_streak": 298
     },
     "g1khdhzh58un5qnp7kj249ljt3f0d2vv9ax8vfwa": {
-      "signed": 78359,
-      "missed": 508,
+      "signed": 78756,
+      "missed": 511,
       "cur_streak": 0,
       "max_streak": 298
     },
     "g1udmcn8z3w3jfsa92ff6ceqmvxtvkeg0vt0xfk2": {
-      "signed": 78524,
+      "signed": 78924,
       "missed": 343,
       "cur_streak": 0,
       "max_streak": 298
     },
     "g1k4hrxljx9qa0km3trjy2m50cppvnc7tkccqjew": {
-      "signed": 18035,
+      "signed": 18435,
       "missed": 668,
       "cur_streak": 0,
       "max_streak": 664
