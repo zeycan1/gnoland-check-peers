@@ -1,162 +1,162 @@
 {
-  "generated_at": "2026-07-14T14:10:01.580709+00:00",
-  "total_analyzed": 55,
+  "generated_at": "2026-07-14T14:40:01.492489+00:00",
+  "total_analyzed": 56,
   "unique_providers": 18,
   "unique_countries": 12,
-  "hhi_score": 0.2331,
-  "top_provider_pct": 0.4545,
+  "hhi_score": 0.257,
+  "top_provider_pct": 0.4821,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4545
+      "count": 27,
+      "pct": 0.4821
     },
     {
       "provider": "netcup GmbH",
       "count": 6,
-      "pct": 0.1091
+      "pct": 0.1071
     },
     {
-      "provider": "Amazon.com, Inc.",
+      "provider": "Cogent Communications",
       "count": 3,
-      "pct": 0.0545
+      "pct": 0.0536
     },
     {
       "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.0545
+      "pct": 0.0536
     },
     {
       "provider": "OVH SAS",
       "count": 2,
-      "pct": 0.0364
+      "pct": 0.0357
     },
     {
       "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
-      "pct": 0.0364
+      "pct": 0.0357
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Amazon.com, Inc.",
       "count": 2,
-      "pct": 0.0364
-    },
-    {
-      "provider": "Amazon Technologies Inc.",
-      "count": 2,
-      "pct": 0.0364
+      "pct": 0.0357
     },
     {
       "provider": "Contabo GmbH",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Vietnam Posts and Telecommunications Group",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "velia.net",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Massivegrid LTD",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Maxihost LTDA",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "The Constant Company",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Interserver, Inc",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "provider": "Amazon.com",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
+    },
+    {
+      "provider": "Amazon Technologies Inc.",
+      "count": 1,
+      "pct": 0.0179
     }
   ],
   "by_country": [
     {
       "country": "Germany",
       "count": 17,
-      "pct": 0.3091
+      "pct": 0.3036
     },
     {
       "country": "Finland",
-      "count": 14,
-      "pct": 0.2545
+      "count": 16,
+      "pct": 0.2857
     },
     {
       "country": "United States",
       "count": 7,
-      "pct": 0.1273
+      "pct": 0.125
     },
     {
       "country": "Poland",
       "count": 5,
-      "pct": 0.0909
+      "pct": 0.0893
     },
     {
       "country": "France",
       "count": 4,
-      "pct": 0.0727
-    },
-    {
-      "country": "South Korea",
-      "count": 2,
-      "pct": 0.0364
+      "pct": 0.0714
     },
     {
       "country": "Vietnam",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "country": "Canada",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "country": "Belarus",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "country": "Spain",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     },
     {
       "country": "Hong Kong",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
+    },
+    {
+      "country": "South Korea",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "country": "Ireland",
       "count": 1,
-      "pct": 0.0182
+      "pct": 0.0179
     }
   ]
 }
