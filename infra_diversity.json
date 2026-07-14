@@ -1,152 +1,147 @@
 {
-  "generated_at": "2026-07-14T00:10:01.495510+00:00",
-  "total_analyzed": 54,
-  "unique_providers": 17,
+  "generated_at": "2026-07-14T00:40:01.529104+00:00",
+  "total_analyzed": 52,
+  "unique_providers": 16,
   "unique_countries": 11,
-  "hhi_score": 0.2579,
-  "top_provider_pct": 0.4815,
+  "hhi_score": 0.2589,
+  "top_provider_pct": 0.4808,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 26,
-      "pct": 0.4815
+      "count": 25,
+      "pct": 0.4808
     },
     {
       "provider": "netcup GmbH",
       "count": 6,
-      "pct": 0.1111
+      "pct": 0.1154
     },
     {
       "provider": "Cogent Communications",
       "count": 3,
-      "pct": 0.0556
+      "pct": 0.0577
     },
     {
       "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.0556
+      "pct": 0.0577
     },
     {
       "provider": "OVH SAS",
       "count": 2,
-      "pct": 0.037
+      "pct": 0.0385
     },
     {
       "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
-      "pct": 0.037
+      "pct": 0.0385
     },
     {
       "provider": "Amazon.com, Inc.",
       "count": 2,
-      "pct": 0.037
+      "pct": 0.0385
     },
     {
       "provider": "Contabo GmbH",
       "count": 1,
-      "pct": 0.0185
-    },
-    {
-      "provider": "Rica Web Services",
-      "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Massivegrid LTD",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Maxihost LTDA",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "The Constant Company",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Interserver, Inc",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Amazon.com",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "provider": "Amazon Technologies Inc.",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     }
   ],
   "by_country": [
     {
       "country": "Germany",
-      "count": 17,
-      "pct": 0.3148
+      "count": 16,
+      "pct": 0.3077
     },
     {
       "country": "Finland",
       "count": 15,
-      "pct": 0.2778
+      "pct": 0.2885
     },
     {
       "country": "United States",
       "count": 6,
-      "pct": 0.1111
+      "pct": 0.1154
     },
     {
       "country": "Poland",
       "count": 5,
-      "pct": 0.0926
+      "pct": 0.0962
     },
     {
       "country": "France",
       "count": 4,
-      "pct": 0.0741
+      "pct": 0.0769
     },
     {
       "country": "Canada",
-      "count": 2,
-      "pct": 0.037
+      "count": 1,
+      "pct": 0.0192
     },
     {
       "country": "Belarus",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "country": "Spain",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "country": "Hong Kong",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "country": "South Korea",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     },
     {
       "country": "Ireland",
       "count": 1,
-      "pct": 0.0185
+      "pct": 0.0192
     }
   ]
 }
