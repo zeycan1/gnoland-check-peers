@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-15T10:10:01.424882+00:00",
+  "generated_at": "2026-07-15T10:40:01.836235+00:00",
   "total_analyzed": 61,
-  "unique_providers": 21,
-  "unique_countries": 12,
-  "hhi_score": 0.2529,
-  "top_provider_pct": 0.4754,
+  "unique_providers": 20,
+  "unique_countries": 11,
+  "hhi_score": 0.2653,
+  "top_provider_pct": 0.4918,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 29,
-      "pct": 0.4754
+      "count": 30,
+      "pct": 0.4918
     },
     {
       "provider": "netcup GmbH",
-      "count": 8,
-      "pct": 0.1311
+      "count": 7,
+      "pct": 0.1148
     },
     {
       "provider": "Scaleway SAS",
@@ -32,14 +32,14 @@
       "pct": 0.0328
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0328
     },
     {
-      "provider": "Vietnam Posts and Telecommunications Group",
-      "count": 1,
-      "pct": 0.0164
+      "provider": "Cogent Communications",
+      "count": 2,
+      "pct": 0.0328
     },
     {
       "provider": "velia.net",
@@ -63,11 +63,6 @@
     },
     {
       "provider": "Ultra-Pak LLC",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
       "count": 1,
       "pct": 0.0164
     },
@@ -120,8 +115,8 @@
     },
     {
       "country": "Finland",
-      "count": 17,
-      "pct": 0.2787
+      "count": 18,
+      "pct": 0.2951
     },
     {
       "country": "United States",
@@ -135,23 +130,13 @@
     },
     {
       "country": "Poland",
-      "count": 4,
-      "pct": 0.0656
+      "count": 5,
+      "pct": 0.082
     },
     {
       "country": "Canada",
       "count": 2,
       "pct": 0.0328
-    },
-    {
-      "country": "Austria",
-      "count": 2,
-      "pct": 0.0328
-    },
-    {
-      "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0164
     },
     {
       "country": "Belarus",
@@ -165,6 +150,11 @@
     },
     {
       "country": "Spain",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "country": "Austria",
       "count": 1,
       "pct": 0.0164
     },
