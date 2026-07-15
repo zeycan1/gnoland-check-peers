@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-15T18:10:01.499326+00:00",
+  "generated_at": "2026-07-15T18:40:01.173917+00:00",
   "total_analyzed": 60,
-  "unique_providers": 22,
-  "unique_countries": 13,
-  "hhi_score": 0.225,
-  "top_provider_pct": 0.45,
+  "unique_providers": 20,
+  "unique_countries": 14,
+  "hhi_score": 0.215,
+  "top_provider_pct": 0.4333,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 27,
-      "pct": 0.45
+      "count": 26,
+      "pct": 0.4333
     },
     {
       "provider": "netcup GmbH",
-      "count": 6,
-      "pct": 0.1
+      "count": 7,
+      "pct": 0.1167
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Amazon.com, Inc.",
       "count": 3,
       "pct": 0.05
     },
@@ -27,12 +27,22 @@
       "pct": 0.05
     },
     {
-      "provider": "Amazon.com, Inc.",
+      "provider": "Contabo GmbH",
       "count": 2,
       "pct": 0.0333
     },
     {
       "provider": "OVH SAS",
+      "count": 2,
+      "pct": 0.0333
+    },
+    {
+      "provider": "velia.net",
+      "count": 2,
+      "pct": 0.0333
+    },
+    {
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0333
     },
@@ -53,11 +63,6 @@
     },
     {
       "provider": "Rica Web Services",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
-      "provider": "Contabo GmbH",
       "count": 1,
       "pct": 0.0167
     },
@@ -87,11 +92,6 @@
       "pct": 0.0167
     },
     {
-      "provider": "velia.net",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
       "provider": "The Constant Company",
       "count": 1,
       "pct": 0.0167
@@ -102,44 +102,34 @@
       "pct": 0.0167
     },
     {
-      "provider": "Adept AB",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
-      "provider": "Snaju Development",
       "count": 1,
       "pct": 0.0167
     }
   ],
   "by_country": [
     {
-      "country": "Germany",
-      "count": 19,
-      "pct": 0.3167
+      "country": "Finland",
+      "count": 17,
+      "pct": 0.2833
     },
     {
-      "country": "Finland",
-      "count": 15,
-      "pct": 0.25
+      "country": "Germany",
+      "count": 16,
+      "pct": 0.2667
     },
     {
       "country": "United States",
-      "count": 8,
-      "pct": 0.1333
+      "count": 7,
+      "pct": 0.1167
     },
     {
-      "country": "Poland",
+      "country": "France",
       "count": 4,
       "pct": 0.0667
     },
     {
-      "country": "France",
+      "country": "Poland",
       "count": 4,
       "pct": 0.0667
     },
@@ -152,6 +142,16 @@
       "country": "Canada",
       "count": 2,
       "pct": 0.0333
+    },
+    {
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.0333
+    },
+    {
+      "country": "Austria",
+      "count": 1,
+      "pct": 0.0167
     },
     {
       "country": "Belarus",
@@ -170,11 +170,6 @@
     },
     {
       "country": "Hong Kong",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
-      "country": "South Korea",
       "count": 1,
       "pct": 0.0167
     },
