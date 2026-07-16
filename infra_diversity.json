@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T22:40:01.391898+00:00",
+  "generated_at": "2026-07-16T23:10:01.218556+00:00",
   "total_analyzed": 57,
   "unique_providers": 18,
   "unique_countries": 13,
@@ -17,14 +17,9 @@
       "pct": 0.1228
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 3,
       "pct": 0.0526
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0351
     },
     {
       "provider": "Contabo GmbH",
@@ -37,12 +32,12 @@
       "pct": 0.0351
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
+      "provider": "velia.net",
       "count": 2,
       "pct": 0.0351
     },
     {
-      "provider": "velia.net",
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0351
     },
@@ -53,6 +48,11 @@
     },
     {
       "provider": "Amazon Technologies Inc.",
+      "count": 2,
+      "pct": 0.0351
+    },
+    {
+      "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0351
     },
@@ -99,22 +99,22 @@
   ],
   "by_country": [
     {
+      "country": "Germany",
+      "count": 16,
+      "pct": 0.2807
+    },
+    {
       "country": "Finland",
       "count": 16,
       "pct": 0.2807
     },
     {
-      "country": "Germany",
-      "count": 15,
-      "pct": 0.2632
+      "country": "Poland",
+      "count": 6,
+      "pct": 0.1053
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1228
-    },
-    {
-      "country": "Poland",
       "count": 5,
       "pct": 0.0877
     },
@@ -129,7 +129,7 @@
       "pct": 0.0526
     },
     {
-      "country": "Austria",
+      "country": "South Korea",
       "count": 2,
       "pct": 0.0351
     },
@@ -154,7 +154,7 @@
       "pct": 0.0175
     },
     {
-      "country": "South Korea",
+      "country": "Austria",
       "count": 1,
       "pct": 0.0175
     },
