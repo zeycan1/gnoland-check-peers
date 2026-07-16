@@ -1,20 +1,25 @@
 {
-  "generated_at": "2026-07-16T08:10:01.632087+00:00",
+  "generated_at": "2026-07-16T08:40:01.210701+00:00",
   "total_analyzed": 58,
-  "unique_providers": 18,
-  "unique_countries": 12,
-  "hhi_score": 0.2919,
-  "top_provider_pct": 0.5172,
+  "unique_providers": 19,
+  "unique_countries": 13,
+  "hhi_score": 0.2438,
+  "top_provider_pct": 0.4655,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 30,
-      "pct": 0.5172
+      "count": 27,
+      "pct": 0.4655
     },
     {
       "provider": "netcup GmbH",
       "count": 7,
       "pct": 0.1207
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0517
     },
     {
       "provider": "Scaleway SAS",
@@ -82,6 +87,11 @@
       "pct": 0.0172
     },
     {
+      "provider": "Adept AB",
+      "count": 1,
+      "pct": 0.0172
+    },
+    {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
       "pct": 0.0172
@@ -90,33 +100,28 @@
       "provider": "Amazon Technologies Inc.",
       "count": 1,
       "pct": 0.0172
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 1,
-      "pct": 0.0172
     }
   ],
   "by_country": [
     {
       "country": "Germany",
-      "count": 19,
-      "pct": 0.3276
-    },
-    {
-      "country": "Finland",
       "count": 18,
       "pct": 0.3103
     },
     {
+      "country": "Finland",
+      "count": 16,
+      "pct": 0.2759
+    },
+    {
       "country": "United States",
-      "count": 5,
-      "pct": 0.0862
+      "count": 6,
+      "pct": 0.1034
     },
     {
       "country": "France",
-      "count": 4,
-      "pct": 0.069
+      "count": 5,
+      "pct": 0.0862
     },
     {
       "country": "Poland",
@@ -150,6 +155,11 @@
     },
     {
       "country": "Hong Kong",
+      "count": 1,
+      "pct": 0.0172
+    },
+    {
+      "country": "South Korea",
       "count": 1,
       "pct": 0.0172
     },
