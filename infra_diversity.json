@@ -1,152 +1,157 @@
 {
-  "generated_at": "2026-07-17T14:10:01.662705+00:00",
-  "total_analyzed": 57,
+  "generated_at": "2026-07-17T14:40:01.560468+00:00",
+  "total_analyzed": 56,
   "unique_providers": 17,
-  "unique_countries": 11,
-  "hhi_score": 0.2256,
-  "top_provider_pct": 0.4386,
+  "unique_countries": 12,
+  "hhi_score": 0.2443,
+  "top_provider_pct": 0.4643,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4386
+      "count": 26,
+      "pct": 0.4643
     },
     {
       "provider": "netcup GmbH",
-      "count": 8,
-      "pct": 0.1404
+      "count": 7,
+      "pct": 0.125
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.0526
+      "pct": 0.0536
     },
     {
       "provider": "OVH SAS",
       "count": 2,
-      "pct": 0.0351
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 2,
-      "pct": 0.0351
+      "pct": 0.0357
     },
     {
       "provider": "velia.net",
       "count": 2,
-      "pct": 0.0351
+      "pct": 0.0357
+    },
+    {
+      "provider": "Cogent Communications",
+      "count": 2,
+      "pct": 0.0357
     },
     {
       "provider": "Rica Web Services",
       "count": 2,
-      "pct": 0.0351
+      "pct": 0.0357
     },
     {
       "provider": "Amazon Technologies Inc.",
       "count": 2,
-      "pct": 0.0351
+      "pct": 0.0357
     },
     {
       "provider": "Amazon.com, Inc.",
       "count": 2,
-      "pct": 0.0351
+      "pct": 0.0357
     },
     {
-      "provider": "Scaleway SAS",
-      "count": 2,
-      "pct": 0.0351
-    },
-    {
-      "provider": "Contabo GmbH",
+      "provider": "Vietnam Posts and Telecommunications Group",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "provider": "Republican Unitary Telecommunication Enterprise Beltelecom",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "provider": "Massivegrid LTD",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "provider": "Ultra-Pak LLC",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
+    },
+    {
+      "provider": "MEVSPACE sp. z o.o.",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "provider": "Maxihost LTDA",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "provider": "The Constant Company",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "provider": "Online",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     }
   ],
   "by_country": [
     {
-      "country": "Germany",
-      "count": 18,
-      "pct": 0.3158
+      "country": "Finland",
+      "count": 17,
+      "pct": 0.3036
     },
     {
-      "country": "Finland",
+      "country": "Germany",
       "count": 16,
-      "pct": 0.2807
+      "pct": 0.2857
     },
     {
       "country": "United States",
-      "count": 6,
-      "pct": 0.1053
+      "count": 5,
+      "pct": 0.0893
     },
     {
       "country": "Poland",
-      "count": 5,
-      "pct": 0.0877
+      "count": 4,
+      "pct": 0.0714
+    },
+    {
+      "country": "France",
+      "count": 4,
+      "pct": 0.0714
     },
     {
       "country": "Canada",
       "count": 3,
-      "pct": 0.0526
-    },
-    {
-      "country": "France",
-      "count": 3,
-      "pct": 0.0526
+      "pct": 0.0536
     },
     {
       "country": "South Korea",
       "count": 2,
-      "pct": 0.0351
+      "pct": 0.0357
+    },
+    {
+      "country": "Vietnam",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "country": "Belarus",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "country": "Ukraine",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "country": "Spain",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     },
     {
       "country": "Ireland",
       "count": 1,
-      "pct": 0.0175
+      "pct": 0.0179
     }
   ]
 }
