@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-07-17T04:40:01.528474+00:00",
+  "generated_at": "2026-07-17T05:10:01.330199+00:00",
   "total_analyzed": 58,
   "unique_providers": 20,
   "unique_countries": 12,
-  "hhi_score": 0.1998,
-  "top_provider_pct": 0.4138,
+  "hhi_score": 0.2128,
+  "top_provider_pct": 0.431,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 24,
-      "pct": 0.4138
+      "count": 25,
+      "pct": 0.431
     },
     {
       "provider": "netcup GmbH",
       "count": 7,
       "pct": 0.1207
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 3,
-      "pct": 0.0517
     },
     {
       "provider": "Contabo GmbH",
@@ -43,6 +38,11 @@
     },
     {
       "provider": "Rica Web Services",
+      "count": 2,
+      "pct": 0.0345
+    },
+    {
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0345
     },
@@ -115,18 +115,18 @@
     },
     {
       "country": "Finland",
-      "count": 15,
-      "pct": 0.2586
-    },
-    {
-      "country": "Poland",
-      "count": 6,
-      "pct": 0.1034
+      "count": 16,
+      "pct": 0.2759
     },
     {
       "country": "United States",
       "count": 6,
       "pct": 0.1034
+    },
+    {
+      "country": "Poland",
+      "count": 5,
+      "pct": 0.0862
     },
     {
       "country": "France",
