@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T07:10:01.098906+00:00",
+  "generated_at": "2026-07-17T07:40:01.084595+00:00",
   "total_analyzed": 60,
   "unique_providers": 19,
-  "unique_countries": 13,
-  "hhi_score": 0.2356,
+  "unique_countries": 12,
+  "hhi_score": 0.2317,
   "top_provider_pct": 0.45,
   "by_provider": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "provider": "netcup GmbH",
-      "count": 9,
-      "pct": 0.15
+      "count": 8,
+      "pct": 0.1333
     },
     {
       "provider": "Contabo GmbH",
@@ -48,6 +48,11 @@
     },
     {
       "provider": "Amazon Technologies Inc.",
+      "count": 2,
+      "pct": 0.0333
+    },
+    {
+      "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0333
     },
@@ -95,11 +100,6 @@
       "provider": "Scaleway SAS",
       "count": 1,
       "pct": 0.0167
-    },
-    {
-      "provider": "Amazon.com, Inc.",
-      "count": 1,
-      "pct": 0.0167
     }
   ],
   "by_country": [
@@ -139,9 +139,9 @@
       "pct": 0.0333
     },
     {
-      "country": "Austria",
-      "count": 1,
-      "pct": 0.0167
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.0333
     },
     {
       "country": "Belarus",
@@ -155,11 +155,6 @@
     },
     {
       "country": "Spain",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
-      "country": "South Korea",
       "count": 1,
       "pct": 0.0167
     },
