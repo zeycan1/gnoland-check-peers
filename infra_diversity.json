@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T05:10:01.330199+00:00",
+  "generated_at": "2026-07-17T05:40:01.083231+00:00",
   "total_analyzed": 58,
   "unique_providers": 20,
   "unique_countries": 12,
-  "hhi_score": 0.2128,
+  "hhi_score": 0.2164,
   "top_provider_pct": 0.431,
   "by_provider": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "provider": "netcup GmbH",
-      "count": 7,
-      "pct": 0.1207
+      "count": 8,
+      "pct": 0.1379
     },
     {
       "provider": "Contabo GmbH",
@@ -38,11 +38,6 @@
     },
     {
       "provider": "Rica Web Services",
-      "count": 2,
-      "pct": 0.0345
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0345
     },
@@ -82,6 +77,11 @@
       "pct": 0.0172
     },
     {
+      "provider": "MEVSPACE sp. z o.o.",
+      "count": 1,
+      "pct": 0.0172
+    },
+    {
       "provider": "Maxihost LTDA",
       "count": 1,
       "pct": 0.0172
@@ -110,8 +110,8 @@
   "by_country": [
     {
       "country": "Germany",
-      "count": 17,
-      "pct": 0.2931
+      "count": 18,
+      "pct": 0.3103
     },
     {
       "country": "Finland",
@@ -124,12 +124,12 @@
       "pct": 0.1034
     },
     {
-      "country": "Poland",
-      "count": 5,
-      "pct": 0.0862
+      "country": "France",
+      "count": 4,
+      "pct": 0.069
     },
     {
-      "country": "France",
+      "country": "Poland",
       "count": 4,
       "pct": 0.069
     },
