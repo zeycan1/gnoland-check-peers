@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-17T21:10:01.344440+00:00",
+  "generated_at": "2026-07-17T21:40:01.838097+00:00",
   "total_analyzed": 61,
-  "unique_providers": 20,
-  "unique_countries": 14,
-  "hhi_score": 0.2153,
+  "unique_providers": 18,
+  "unique_countries": 12,
+  "hhi_score": 0.2137,
   "top_provider_pct": 0.4262,
   "by_provider": [
     {
@@ -13,8 +13,18 @@
     },
     {
       "provider": "netcup GmbH",
-      "count": 9,
-      "pct": 0.1475
+      "count": 8,
+      "pct": 0.1311
+    },
+    {
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0492
+    },
+    {
+      "provider": "Cogent Communications",
+      "count": 3,
+      "pct": 0.0492
     },
     {
       "provider": "Scaleway SAS",
@@ -27,12 +37,12 @@
       "pct": 0.0328
     },
     {
-      "provider": "velia.net",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0328
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "velia.net",
       "count": 2,
       "pct": 0.0328
     },
@@ -47,17 +57,7 @@
       "pct": 0.0328
     },
     {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0328
-    },
-    {
       "provider": "Contabo GmbH",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "provider": "VNPT",
       "count": 1,
       "pct": 0.0164
     },
@@ -77,22 +77,12 @@
       "pct": 0.0164
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
       "provider": "Maxihost LTDA",
       "count": 1,
       "pct": 0.0164
     },
     {
       "provider": "The Constant Company",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "provider": "Adept AB",
       "count": 1,
       "pct": 0.0164
     },
@@ -109,29 +99,29 @@
   ],
   "by_country": [
     {
-      "country": "Germany",
+      "country": "Finland",
       "count": 18,
       "pct": 0.2951
     },
     {
-      "country": "Finland",
+      "country": "Germany",
       "count": 16,
       "pct": 0.2623
     },
     {
-      "country": "France",
-      "count": 6,
-      "pct": 0.0984
+      "country": "United States",
+      "count": 7,
+      "pct": 0.1148
     },
     {
-      "country": "United States",
+      "country": "France",
       "count": 5,
       "pct": 0.082
     },
     {
       "country": "Poland",
-      "count": 4,
-      "pct": 0.0656
+      "count": 5,
+      "pct": 0.082
     },
     {
       "country": "Canada",
@@ -142,16 +132,6 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0328
-    },
-    {
-      "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "country": "Austria",
-      "count": 1,
-      "pct": 0.0164
     },
     {
       "country": "Belarus",
