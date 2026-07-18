@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-18T19:10:01.980173+00:00",
+  "generated_at": "2026-07-18T19:40:01.280127+00:00",
   "total_analyzed": 60,
   "unique_providers": 18,
   "unique_countries": 13,
-  "hhi_score": 0.21,
-  "top_provider_pct": 0.4167,
+  "hhi_score": 0.2228,
+  "top_provider_pct": 0.4333,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.4167
+      "count": 26,
+      "pct": 0.4333
     },
     {
       "provider": "netcup GmbH",
@@ -22,12 +22,12 @@
       "pct": 0.05
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 3,
-      "pct": 0.05
+      "provider": "OVH SAS",
+      "count": 2,
+      "pct": 0.0333
     },
     {
-      "provider": "OVH SAS",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0333
     },
@@ -105,8 +105,8 @@
     },
     {
       "country": "Finland",
-      "count": 16,
-      "pct": 0.2667
+      "count": 17,
+      "pct": 0.2833
     },
     {
       "country": "United States",
@@ -115,8 +115,8 @@
     },
     {
       "country": "Poland",
-      "count": 6,
-      "pct": 0.1
+      "count": 5,
+      "pct": 0.0833
     },
     {
       "country": "France",
