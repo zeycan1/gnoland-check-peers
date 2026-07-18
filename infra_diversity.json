@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-18T07:40:01.751661+00:00",
+  "generated_at": "2026-07-18T08:10:01.320628+00:00",
   "total_analyzed": 60,
-  "unique_providers": 19,
+  "unique_providers": 18,
   "unique_countries": 13,
-  "hhi_score": 0.2189,
-  "top_provider_pct": 0.4333,
+  "hhi_score": 0.2333,
+  "top_provider_pct": 0.45,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 26,
-      "pct": 0.4333
+      "count": 27,
+      "pct": 0.45
     },
     {
       "provider": "netcup GmbH",
@@ -22,7 +22,7 @@
       "pct": 0.05
     },
     {
-      "provider": "Scaleway SAS",
+      "provider": "Cogent Communications",
       "count": 3,
       "pct": 0.05
     },
@@ -37,17 +37,17 @@
       "pct": 0.0333
     },
     {
-      "provider": "Cogent Communications",
-      "count": 2,
-      "pct": 0.0333
-    },
-    {
       "provider": "Rica Web Services",
       "count": 2,
       "pct": 0.0333
     },
     {
       "provider": "Amazon Technologies Inc.",
+      "count": 2,
+      "pct": 0.0333
+    },
+    {
+      "provider": "Scaleway SAS",
       "count": 2,
       "pct": 0.0333
     },
@@ -87,11 +87,6 @@
       "pct": 0.0167
     },
     {
-      "provider": "Adept AB",
-      "count": 1,
-      "pct": 0.0167
-    },
-    {
       "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
       "pct": 0.0167
@@ -110,13 +105,13 @@
     },
     {
       "country": "Germany",
-      "count": 16,
-      "pct": 0.2667
+      "count": 17,
+      "pct": 0.2833
     },
     {
       "country": "United States",
-      "count": 5,
-      "pct": 0.0833
+      "count": 6,
+      "pct": 0.1
     },
     {
       "country": "Poland",
@@ -124,12 +119,12 @@
       "pct": 0.0833
     },
     {
-      "country": "France",
-      "count": 5,
-      "pct": 0.0833
+      "country": "Canada",
+      "count": 3,
+      "pct": 0.05
     },
     {
-      "country": "Canada",
+      "country": "France",
       "count": 3,
       "pct": 0.05
     },
