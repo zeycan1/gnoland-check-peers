@@ -1,12 +1,27 @@
 {
-  "generated_at": "2026-07-18T21:00:01.452967+00:00",
+  "generated_at": "2026-07-18T21:30:01.950860+00:00",
   "rpc_sources": [
     "https://rpc.test13.testnets.gno.land",
     "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
   ],
-  "total_peers": 75,
-  "reliable_peers": 65,
+  "total_peers": 73,
+  "reliable_peers": 63,
   "peers": {
+    "g1q0m4n6k4hyhtx7c3grs28n4cx5kv6ty73jht6j": {
+      "ip": "109.123.243.186",
+      "port": 26656,
+      "moniker": "TheGoodEscobar",
+      "is_outbound": true,
+      "advertised_rpc": "tcp://127.0.0.1:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "https://rpc.test13.testnets.gno.land"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
     "g1f95jxjxnmegszr8ut7c38uhvjycjj2hjrpw5ds": {
       "ip": "185.122.165.176",
       "port": 32556,
@@ -22,10 +37,26 @@
       "source_diversity": 1,
       "reliable": true
     },
-    "g1v5unyq7fsndekzegp2xh0tw45nsxpkx5qsgy8u": {
-      "ip": "135.181.232.179",
+    "g19tseurvu0dnhrt356rvlyx6nv26wku2lmmcmak": {
+      "ip": "116.202.218.189",
       "port": 26656,
-      "moniker": "POSTHUMAN",
+      "moniker": "Fluxen|Indonode-BackupNode",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657",
+        "https://rpc.test13.testnets.gno.land"
+      ],
+      "source_diversity": 2,
+      "reliable": true
+    },
+    "g1qwawm46wy4e76fusd056yataqxxr0t4hhkndmx": {
+      "ip": "14.225.215.118",
+      "port": 26656,
+      "moniker": "OnNode",
       "is_outbound": true,
       "advertised_rpc": "tcp://127.0.0.1:26657",
       "reachable_now": true,
@@ -43,6 +74,22 @@
       "moniker": "gno-core-sentry-01",
       "is_outbound": true,
       "advertised_rpc": "tcp://127.0.0.1:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657",
+        "https://rpc.test13.testnets.gno.land"
+      ],
+      "source_diversity": 2,
+      "reliable": true
+    },
+    "g1d8qlrhwm97mz5dcjdrj5vgps9e33336nhg5tvk": {
+      "ip": "157.180.97.166",
+      "port": 17656,
+      "moniker": "OshVanK",
+      "is_outbound": true,
+      "advertised_rpc": "tcp://127.0.0.1:17657",
       "reachable_now": true,
       "uptime_pct": 1.0,
       "measurements": 10,
@@ -161,52 +208,6 @@
       "source_diversity": 1,
       "reliable": true
     },
-    "g1jnxhcdwecgm0r0ryrrl3tk4xpdhlv75et7lflm": {
-      "ip": "65.108.73.189",
-      "port": 40056,
-      "moniker": "EmberStake",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://0.0.0.0:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "https://rpc.test13.testnets.gno.land"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1yk40qgv6z3h66w7rvqv2xahg7g0rnp4famsppm": {
-      "ip": "162.55.83.254",
-      "port": 26656,
-      "moniker": "BlockNth",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://0.0.0.0:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657",
-        "https://rpc.test13.testnets.gno.land"
-      ],
-      "source_diversity": 2,
-      "reliable": true
-    },
-    "g1q0m4n6k4hyhtx7c3grs28n4cx5kv6ty73jht6j": {
-      "ip": "109.123.243.186",
-      "port": 26656,
-      "moniker": "TheGoodEscobar",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "https://rpc.test13.testnets.gno.land"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
     "g16ueudzsm5t2v5t2hdr2tr8n2fzj2x6mekx6pvy": {
       "ip": "192.155.100.132",
       "port": 26656,
@@ -217,40 +218,11 @@
       "uptime_pct": 1.0,
       "measurements": 10,
       "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657",
+        "https://rpc.test13.testnets.gno.land"
       ],
-      "source_diversity": 1,
+      "source_diversity": 2,
       "reliable": true
-    },
-    "g19tseurvu0dnhrt356rvlyx6nv26wku2lmmcmak": {
-      "ip": "116.202.218.189",
-      "port": 26656,
-      "moniker": "Fluxen|Indonode-BackupNode",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g16qpspk2kxkprn079kmx28nqzflp8u633zuqzpl": {
-      "ip": "209.209.8.93",
-      "port": 36656,
-      "moniker": "Umair_ChainGuard",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:36657",
-      "reachable_now": false,
-      "uptime_pct": 0.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": false
     },
     "g1htn0p49j5t3l7jsxw7fe0yqxl5lehgpe73rs0f": {
       "ip": "0.0.0.0",
@@ -597,21 +569,6 @@
       "source_diversity": 1,
       "reliable": true
     },
-    "g1d8qlrhwm97mz5dcjdrj5vgps9e33336nhg5tvk": {
-      "ip": "157.180.97.166",
-      "port": 17656,
-      "moniker": "OshVanK",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://127.0.0.1:17657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
     "g1ghkxmz46w46562yl8capdfqvlypp6zcp55qx7t": {
       "ip": "185.144.99.19",
       "port": 26656,
@@ -882,21 +839,6 @@
       "source_diversity": 1,
       "reliable": true
     },
-    "g1xjx0hcg67jwqfsmuzjz4uqfhh5ma4rf6n7yg2k": {
-      "ip": "38.246.115.151",
-      "port": 26656,
-      "moniker": "Huginn",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
     "g17t7vlg7hjvsldqj06zenkxpktzntkp62thg9a7": {
       "ip": "65.109.106.214",
       "port": 7656,
@@ -1092,6 +1034,21 @@
       "source_diversity": 1,
       "reliable": true
     },
+    "g1yk40qgv6z3h66w7rvqv2xahg7g0rnp4famsppm": {
+      "ip": "162.55.83.254",
+      "port": 26656,
+      "moniker": "BlockNth",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
     "g1pzyfmmtxlla7ay90rfx62cc3rq6hq3jk48cjqz": {
       "ip": "146.19.24.32",
       "port": 26656,
@@ -1128,6 +1085,21 @@
       "moniker": "grandvalley-lightnode",
       "is_outbound": false,
       "advertised_rpc": "tcp://127.0.0.1:18657",
+      "reachable_now": false,
+      "uptime_pct": 0.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": false
+    },
+    "g16qpspk2kxkprn079kmx28nqzflp8u633zuqzpl": {
+      "ip": "209.209.8.93",
+      "port": 36656,
+      "moniker": "Umair_ChainGuard",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:36657",
       "reachable_now": false,
       "uptime_pct": 0.0,
       "measurements": 10,
