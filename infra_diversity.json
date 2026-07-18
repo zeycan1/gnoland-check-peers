@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-18T01:10:01.378273+00:00",
+  "generated_at": "2026-07-18T01:40:01.778864+00:00",
   "total_analyzed": 61,
   "unique_providers": 19,
   "unique_countries": 13,
-  "hhi_score": 0.2395,
-  "top_provider_pct": 0.459,
+  "hhi_score": 0.2255,
+  "top_provider_pct": 0.4426,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 28,
-      "pct": 0.459
+      "count": 27,
+      "pct": 0.4426
     },
     {
       "provider": "netcup GmbH",
@@ -17,7 +17,7 @@
       "pct": 0.1311
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Scaleway SAS",
       "count": 3,
       "pct": 0.0492
     },
@@ -27,7 +27,17 @@
       "pct": 0.0328
     },
     {
+      "provider": "MEVSPACE sp. z o.o.",
+      "count": 2,
+      "pct": 0.0328
+    },
+    {
       "provider": "velia.net",
+      "count": 2,
+      "pct": 0.0328
+    },
+    {
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0328
     },
@@ -47,12 +57,12 @@
       "pct": 0.0328
     },
     {
-      "provider": "Scaleway SAS",
-      "count": 2,
-      "pct": 0.0328
+      "provider": "Vietnam Posts and Telecommunications Group",
+      "count": 1,
+      "pct": 0.0164
     },
     {
-      "provider": "Vietnam Posts and Telecommunications Group",
+      "provider": "VNPT",
       "count": 1,
       "pct": 0.0164
     },
@@ -72,22 +82,12 @@
       "pct": 0.0164
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
       "provider": "Maxihost LTDA",
       "count": 1,
       "pct": 0.0164
     },
     {
       "provider": "The Constant Company",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "provider": "Adept AB",
       "count": 1,
       "pct": 0.0164
     },
@@ -110,18 +110,18 @@
     },
     {
       "country": "Germany",
-      "count": 17,
-      "pct": 0.2787
-    },
-    {
-      "country": "United States",
-      "count": 6,
-      "pct": 0.0984
+      "count": 16,
+      "pct": 0.2623
     },
     {
       "country": "Poland",
-      "count": 4,
-      "pct": 0.0656
+      "count": 5,
+      "pct": 0.082
+    },
+    {
+      "country": "United States",
+      "count": 5,
+      "pct": 0.082
     },
     {
       "country": "France",
@@ -134,14 +134,14 @@
       "pct": 0.0492
     },
     {
-      "country": "South Korea",
+      "country": "Vietnam",
       "count": 2,
       "pct": 0.0328
     },
     {
-      "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0164
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.0328
     },
     {
       "country": "Belarus",
