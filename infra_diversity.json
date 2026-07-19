@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T06:10:01.229849+00:00",
+  "generated_at": "2026-07-19T06:40:01.638225+00:00",
   "total_analyzed": 60,
   "unique_providers": 17,
   "unique_countries": 12,
@@ -94,14 +94,14 @@
   ],
   "by_country": [
     {
-      "country": "Finland",
-      "count": 19,
-      "pct": 0.3167
+      "country": "Germany",
+      "count": 18,
+      "pct": 0.3
     },
     {
-      "country": "Germany",
-      "count": 17,
-      "pct": 0.2833
+      "country": "Finland",
+      "count": 18,
+      "pct": 0.3
     },
     {
       "country": "United States",
