@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T13:40:01.402043+00:00",
+  "generated_at": "2026-07-19T14:10:01.143070+00:00",
   "total_analyzed": 58,
   "unique_providers": 18,
   "unique_countries": 12,
@@ -17,7 +17,7 @@
       "pct": 0.1552
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Scaleway SAS",
       "count": 3,
       "pct": 0.0517
     },
@@ -27,17 +27,17 @@
       "pct": 0.0345
     },
     {
+      "provider": "Cogent Communications",
+      "count": 2,
+      "pct": 0.0345
+    },
+    {
       "provider": "Rica Web Services",
       "count": 2,
       "pct": 0.0345
     },
     {
-      "provider": "Amazon Technologies Inc.",
-      "count": 2,
-      "pct": 0.0345
-    },
-    {
-      "provider": "Scaleway SAS",
+      "provider": "Amazon.com, Inc.",
       "count": 2,
       "pct": 0.0345
     },
@@ -87,12 +87,12 @@
       "pct": 0.0172
     },
     {
-      "provider": "Online",
+      "provider": "Amazon Technologies Inc.",
       "count": 1,
       "pct": 0.0172
     },
     {
-      "provider": "Amazon.com, Inc.",
+      "provider": "Online",
       "count": 1,
       "pct": 0.0172
     }
@@ -110,16 +110,16 @@
     },
     {
       "country": "France",
-      "count": 5,
-      "pct": 0.0862
-    },
-    {
-      "country": "United States",
-      "count": 5,
-      "pct": 0.0862
+      "count": 6,
+      "pct": 0.1034
     },
     {
       "country": "Poland",
+      "count": 4,
+      "pct": 0.069
+    },
+    {
+      "country": "United States",
       "count": 4,
       "pct": 0.069
     },
