@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-20T12:40:01.966440+00:00",
+  "generated_at": "2026-07-20T13:10:01.475456+00:00",
   "total_analyzed": 61,
-  "unique_providers": 19,
-  "unique_countries": 12,
-  "hhi_score": 0.2303,
+  "unique_providers": 20,
+  "unique_countries": 13,
+  "hhi_score": 0.2255,
   "top_provider_pct": 0.4426,
   "by_provider": [
     {
@@ -13,26 +13,26 @@
     },
     {
       "provider": "netcup GmbH",
-      "count": 9,
-      "pct": 0.1475
-    },
-    {
-      "provider": "Cogent Communications",
-      "count": 4,
-      "pct": 0.0656
+      "count": 8,
+      "pct": 0.1311
     },
     {
       "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.0492
+    },
+    {
+      "provider": "Scaleway SAS",
+      "count": 3,
+      "pct": 0.0492
+    },
+    {
+      "provider": "velia.net",
       "count": 2,
       "pct": 0.0328
     },
     {
-      "provider": "Contabo GmbH",
-      "count": 2,
-      "pct": 0.0328
-    },
-    {
-      "provider": "OVH SAS",
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0328
     },
@@ -42,9 +42,14 @@
       "pct": 0.0328
     },
     {
-      "provider": "Scaleway SAS",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0328
+    },
+    {
+      "provider": "Contabo GmbH",
+      "count": 1,
+      "pct": 0.0164
     },
     {
       "provider": "Vietnam Posts and Telecommunications Group",
@@ -67,17 +72,7 @@
       "pct": 0.0164
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
       "provider": "Maxihost LTDA",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "provider": "velia.net",
       "count": 1,
       "pct": 0.0164
     },
@@ -87,7 +82,17 @@
       "pct": 0.0164
     },
     {
+      "provider": "OVH SAS",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
       "provider": "Adept AB",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
       "pct": 0.0164
     },
@@ -110,36 +115,31 @@
     },
     {
       "country": "Germany",
-      "count": 17,
-      "pct": 0.2787
+      "count": 16,
+      "pct": 0.2623
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.1148
+      "count": 6,
+      "pct": 0.0984
     },
     {
       "country": "France",
+      "count": 6,
+      "pct": 0.0984
+    },
+    {
+      "country": "Poland",
       "count": 5,
       "pct": 0.082
     },
     {
-      "country": "Poland",
-      "count": 4,
-      "pct": 0.0656
-    },
-    {
       "country": "Canada",
-      "count": 3,
-      "pct": 0.0492
+      "count": 2,
+      "pct": 0.0328
     },
     {
       "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
-      "country": "Austria",
       "count": 1,
       "pct": 0.0164
     },
@@ -155,6 +155,16 @@
     },
     {
       "country": "Spain",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "country": "Hong Kong",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "country": "South Korea",
       "count": 1,
       "pct": 0.0164
     },
