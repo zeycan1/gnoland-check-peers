@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-21T21:40:01.272042+00:00",
+  "generated_at": "2026-07-21T22:10:01.246493+00:00",
   "total_analyzed": 61,
-  "unique_providers": 20,
-  "unique_countries": 12,
-  "hhi_score": 0.2507,
-  "top_provider_pct": 0.4754,
+  "unique_providers": 21,
+  "unique_countries": 13,
+  "hhi_score": 0.2357,
+  "top_provider_pct": 0.459,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 29,
-      "pct": 0.4754
+      "count": 28,
+      "pct": 0.459
     },
     {
       "provider": "netcup GmbH",
@@ -43,6 +43,11 @@
     },
     {
       "provider": "Contabo GmbH",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "provider": "Vietnam Posts and Telecommunications Group",
       "count": 1,
       "pct": 0.0164
     },
@@ -110,13 +115,13 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 19,
-      "pct": 0.3115
+      "count": 20,
+      "pct": 0.3279
     },
     {
       "country": "Germany",
-      "count": 17,
-      "pct": 0.2787
+      "count": 15,
+      "pct": 0.2459
     },
     {
       "country": "United States",
@@ -132,6 +137,11 @@
       "country": "France",
       "count": 5,
       "pct": 0.082
+    },
+    {
+      "country": "Vietnam",
+      "count": 1,
+      "pct": 0.0164
     },
     {
       "country": "Canada",
