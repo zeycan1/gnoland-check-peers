@@ -1,33 +1,28 @@
 {
-  "generated_at": "2026-07-21T18:40:01.168987+00:00",
+  "generated_at": "2026-07-21T19:10:01.955299+00:00",
   "total_analyzed": 59,
-  "unique_providers": 20,
-  "unique_countries": 13,
-  "hhi_score": 0.2284,
-  "top_provider_pct": 0.4407,
+  "unique_providers": 19,
+  "unique_countries": 11,
+  "hhi_score": 0.2508,
+  "top_provider_pct": 0.4746,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 26,
-      "pct": 0.4407
+      "count": 28,
+      "pct": 0.4746
     },
     {
       "provider": "netcup GmbH",
-      "count": 9,
-      "pct": 0.1525
+      "count": 7,
+      "pct": 0.1186
     },
     {
-      "provider": "Scaleway SAS",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 3,
       "pct": 0.0508
     },
     {
-      "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0339
-    },
-    {
-      "provider": "OVH SAS",
+      "provider": "Contabo GmbH",
       "count": 2,
       "pct": 0.0339
     },
@@ -42,17 +37,17 @@
       "pct": 0.0339
     },
     {
-      "provider": "Vietnam Posts and Telecommunications Group",
-      "count": 1,
-      "pct": 0.0169
+      "provider": "Amazon.com, Inc.",
+      "count": 2,
+      "pct": 0.0339
+    },
+    {
+      "provider": "Scaleway SAS",
+      "count": 2,
+      "pct": 0.0339
     },
     {
       "provider": "Rica Web Services",
-      "count": 1,
-      "pct": 0.0169
-    },
-    {
-      "provider": "Contabo GmbH",
       "count": 1,
       "pct": 0.0169
     },
@@ -67,22 +62,22 @@
       "pct": 0.0169
     },
     {
-      "provider": "Ultra-Pak LLC",
-      "count": 1,
-      "pct": 0.0169
-    },
-    {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 1,
-      "pct": 0.0169
-    },
-    {
       "provider": "Maxihost LTDA",
       "count": 1,
       "pct": 0.0169
     },
     {
       "provider": "The Constant Company",
+      "count": 1,
+      "pct": 0.0169
+    },
+    {
+      "provider": "OVH SAS",
+      "count": 1,
+      "pct": 0.0169
+    },
+    {
+      "provider": "Adept AB",
       "count": 1,
       "pct": 0.0169
     },
@@ -110,8 +105,8 @@
   "by_country": [
     {
       "country": "Finland",
-      "count": 19,
-      "pct": 0.322
+      "count": 20,
+      "pct": 0.339
     },
     {
       "country": "Germany",
@@ -119,42 +114,27 @@
       "pct": 0.2712
     },
     {
-      "country": "United States",
-      "count": 7,
-      "pct": 0.1186
+      "country": "Poland",
+      "count": 6,
+      "pct": 0.1017
     },
     {
-      "country": "Poland",
-      "count": 4,
-      "pct": 0.0678
+      "country": "United States",
+      "count": 6,
+      "pct": 0.1017
     },
     {
       "country": "France",
-      "count": 4,
-      "pct": 0.0678
+      "count": 5,
+      "pct": 0.0847
     },
     {
       "country": "Canada",
-      "count": 2,
-      "pct": 0.0339
-    },
-    {
-      "country": "Vietnam",
-      "count": 1,
-      "pct": 0.0169
-    },
-    {
-      "country": "Austria",
       "count": 1,
       "pct": 0.0169
     },
     {
       "country": "Belarus",
-      "count": 1,
-      "pct": 0.0169
-    },
-    {
-      "country": "Ukraine",
       "count": 1,
       "pct": 0.0169
     },
@@ -165,6 +145,11 @@
     },
     {
       "country": "Hong Kong",
+      "count": 1,
+      "pct": 0.0169
+    },
+    {
+      "country": "South Korea",
       "count": 1,
       "pct": 0.0169
     },
