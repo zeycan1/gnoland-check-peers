@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-22T11:40:01.537503+00:00",
+  "generated_at": "2026-07-22T12:10:01.931323+00:00",
   "total_analyzed": 61,
-  "unique_providers": 19,
-  "unique_countries": 11,
-  "hhi_score": 0.24,
-  "top_provider_pct": 0.459,
+  "unique_providers": 21,
+  "unique_countries": 13,
+  "hhi_score": 0.2212,
+  "top_provider_pct": 0.4426,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 28,
-      "pct": 0.459
+      "count": 27,
+      "pct": 0.4426
     },
     {
       "provider": "netcup GmbH",
-      "count": 8,
-      "pct": 0.1311
+      "count": 7,
+      "pct": 0.1148
     },
     {
       "provider": "Amazon.com, Inc.",
@@ -22,12 +22,12 @@
       "pct": 0.0492
     },
     {
-      "provider": "Scaleway SAS",
-      "count": 3,
-      "pct": 0.0492
+      "provider": "OVH SAS",
+      "count": 2,
+      "pct": 0.0328
     },
     {
-      "provider": "OVH SAS",
+      "provider": "MEVSPACE sp. z o.o.",
       "count": 2,
       "pct": 0.0328
     },
@@ -45,6 +45,16 @@
       "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.0328
+    },
+    {
+      "provider": "Scaleway SAS",
+      "count": 2,
+      "pct": 0.0328
+    },
+    {
+      "provider": "Vietnam Posts and Telecommunications Group",
+      "count": 1,
+      "pct": 0.0164
     },
     {
       "provider": "Rica Web Services",
@@ -72,11 +82,6 @@
       "pct": 0.0164
     },
     {
-      "provider": "MEVSPACE sp. z o.o.",
-      "count": 1,
-      "pct": 0.0164
-    },
-    {
       "provider": "Maxihost LTDA",
       "count": 1,
       "pct": 0.0164
@@ -88,6 +93,11 @@
     },
     {
       "provider": "The Constant Company",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "provider": "Hong Kong Telecommunications (HKT) Limited Mass Internet",
       "count": 1,
       "pct": 0.0164
     },
@@ -104,14 +114,14 @@
   ],
   "by_country": [
     {
-      "country": "Germany",
-      "count": 19,
-      "pct": 0.3115
-    },
-    {
       "country": "Finland",
       "count": 18,
       "pct": 0.2951
+    },
+    {
+      "country": "Germany",
+      "count": 17,
+      "pct": 0.2787
     },
     {
       "country": "United States",
@@ -120,13 +130,13 @@
     },
     {
       "country": "Poland",
-      "count": 5,
-      "pct": 0.082
+      "count": 6,
+      "pct": 0.0984
     },
     {
       "country": "France",
-      "count": 4,
-      "pct": 0.0656
+      "count": 3,
+      "pct": 0.0492
     },
     {
       "country": "Canada",
@@ -137,6 +147,11 @@
       "country": "South Korea",
       "count": 2,
       "pct": 0.0328
+    },
+    {
+      "country": "Vietnam",
+      "count": 1,
+      "pct": 0.0164
     },
     {
       "country": "Belarus",
@@ -150,6 +165,11 @@
     },
     {
       "country": "Spain",
+      "count": 1,
+      "pct": 0.0164
+    },
+    {
+      "country": "Hong Kong",
       "count": 1,
       "pct": 0.0164
     },
