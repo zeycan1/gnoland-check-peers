@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-23T16:10:01.748570+00:00",
+  "generated_at": "2026-07-23T16:40:01.213958+00:00",
   "total_analyzed": 50,
-  "unique_providers": 15,
+  "unique_providers": 16,
   "unique_countries": 9,
-  "hhi_score": 0.2608,
-  "top_provider_pct": 0.48,
+  "hhi_score": 0.2424,
+  "top_provider_pct": 0.46,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 24,
-      "pct": 0.48
+      "count": 23,
+      "pct": 0.46
     },
     {
       "provider": "netcup GmbH",
@@ -38,6 +38,11 @@
     },
     {
       "provider": "Rica Web Services",
+      "count": 1,
+      "pct": 0.02
+    },
+    {
+      "provider": "Massivegrid LTD",
       "count": 1,
       "pct": 0.02
     },
@@ -90,13 +95,13 @@
     },
     {
       "country": "Germany",
-      "count": 14,
-      "pct": 0.28
+      "count": 13,
+      "pct": 0.26
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.14
+      "count": 8,
+      "pct": 0.16
     },
     {
       "country": "Poland",
