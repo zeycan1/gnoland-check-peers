@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T21:10:01.289275+00:00",
+  "generated_at": "2026-07-23T21:40:01.254787+00:00",
   "total_analyzed": 50,
   "unique_providers": 16,
   "unique_countries": 10,
-  "hhi_score": 0.2432,
+  "hhi_score": 0.2416,
   "top_provider_pct": 0.46,
   "by_provider": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "provider": "Cogent Communications",
-      "count": 4,
-      "pct": 0.08
+      "count": 3,
+      "pct": 0.06
     },
     {
       "provider": "Scaleway SAS",
@@ -28,6 +28,11 @@
     },
     {
       "provider": "velia.net",
+      "count": 2,
+      "pct": 0.04
+    },
+    {
+      "provider": "Amazon Technologies Inc.",
       "count": 2,
       "pct": 0.04
     },
@@ -77,11 +82,6 @@
       "pct": 0.02
     },
     {
-      "provider": "Amazon Technologies Inc.",
-      "count": 1,
-      "pct": 0.02
-    },
-    {
       "provider": "Online",
       "count": 1,
       "pct": 0.02
@@ -89,19 +89,19 @@
   ],
   "by_country": [
     {
-      "country": "Finland",
+      "country": "Germany",
       "count": 15,
       "pct": 0.3
     },
     {
-      "country": "Germany",
+      "country": "Finland",
       "count": 14,
       "pct": 0.28
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.14
+      "count": 6,
+      "pct": 0.12
     },
     {
       "country": "Poland",
@@ -112,6 +112,11 @@
       "country": "France",
       "count": 4,
       "pct": 0.08
+    },
+    {
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.04
     },
     {
       "country": "Belarus",
@@ -125,11 +130,6 @@
     },
     {
       "country": "Spain",
-      "count": 1,
-      "pct": 0.02
-    },
-    {
-      "country": "South Korea",
       "count": 1,
       "pct": 0.02
     },
