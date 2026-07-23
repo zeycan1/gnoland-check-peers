@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T18:10:01.968550+00:00",
+  "generated_at": "2026-07-23T18:40:01.445889+00:00",
   "total_analyzed": 50,
-  "unique_providers": 16,
+  "unique_providers": 17,
   "unique_countries": 10,
-  "hhi_score": 0.2272,
+  "hhi_score": 0.2248,
   "top_provider_pct": 0.44,
   "by_provider": [
     {
@@ -17,12 +17,12 @@
       "pct": 0.12
     },
     {
-      "provider": "Cogent Communications",
-      "count": 4,
-      "pct": 0.08
+      "provider": "Amazon.com, Inc.",
+      "count": 3,
+      "pct": 0.06
     },
     {
-      "provider": "Amazon.com, Inc.",
+      "provider": "Cogent Communications",
       "count": 3,
       "pct": 0.06
     },
@@ -35,6 +35,11 @@
       "provider": "velia.net",
       "count": 2,
       "pct": 0.04
+    },
+    {
+      "provider": "Mobile TeleSystems JLLC",
+      "count": 1,
+      "pct": 0.02
     },
     {
       "provider": "Rica Web Services",
@@ -62,12 +67,12 @@
       "pct": 0.02
     },
     {
-      "provider": "The Constant Company",
+      "provider": "OVH SAS",
       "count": 1,
       "pct": 0.02
     },
     {
-      "provider": "OVH SAS",
+      "provider": "Adept AB",
       "count": 1,
       "pct": 0.02
     },
@@ -100,8 +105,8 @@
     },
     {
       "country": "United States",
-      "count": 8,
-      "pct": 0.16
+      "count": 7,
+      "pct": 0.14
     },
     {
       "country": "Poland",
@@ -110,8 +115,13 @@
     },
     {
       "country": "France",
-      "count": 4,
-      "pct": 0.08
+      "count": 5,
+      "pct": 0.1
+    },
+    {
+      "country": "Belarus",
+      "count": 1,
+      "pct": 0.02
     },
     {
       "country": "Canada",
@@ -120,11 +130,6 @@
     },
     {
       "country": "Ukraine",
-      "count": 1,
-      "pct": 0.02
-    },
-    {
-      "country": "Spain",
       "count": 1,
       "pct": 0.02
     },
