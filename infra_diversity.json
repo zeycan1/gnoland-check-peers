@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-23T17:10:01.516212+00:00",
+  "generated_at": "2026-07-23T17:40:01.681165+00:00",
   "total_analyzed": 54,
   "unique_providers": 18,
-  "unique_countries": 10,
-  "hhi_score": 0.2414,
-  "top_provider_pct": 0.463,
+  "unique_countries": 11,
+  "hhi_score": 0.214,
+  "top_provider_pct": 0.4259,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 25,
-      "pct": 0.463
+      "count": 23,
+      "pct": 0.4259
     },
     {
       "provider": "netcup GmbH",
-      "count": 6,
-      "pct": 0.1111
+      "count": 7,
+      "pct": 0.1296
     },
     {
       "provider": "Amazon.com, Inc.",
@@ -37,7 +37,17 @@
       "pct": 0.037
     },
     {
+      "provider": "Amazon Technologies Inc.",
+      "count": 2,
+      "pct": 0.037
+    },
+    {
       "provider": "Rica Web Services",
+      "count": 1,
+      "pct": 0.0185
+    },
+    {
+      "provider": "Contabo GmbH",
       "count": 1,
       "pct": 0.0185
     },
@@ -77,17 +87,7 @@
       "pct": 0.0185
     },
     {
-      "provider": "Adept AB",
-      "count": 1,
-      "pct": 0.0185
-    },
-    {
       "provider": "HostPapa",
-      "count": 1,
-      "pct": 0.0185
-    },
-    {
-      "provider": "Amazon Technologies Inc.",
       "count": 1,
       "pct": 0.0185
     },
@@ -99,14 +99,14 @@
   ],
   "by_country": [
     {
-      "country": "Finland",
-      "count": 17,
-      "pct": 0.3148
+      "country": "Germany",
+      "count": 15,
+      "pct": 0.2778
     },
     {
-      "country": "Germany",
-      "count": 14,
-      "pct": 0.2593
+      "country": "Finland",
+      "count": 15,
+      "pct": 0.2778
     },
     {
       "country": "United States",
@@ -120,8 +120,18 @@
     },
     {
       "country": "France",
-      "count": 5,
-      "pct": 0.0926
+      "count": 4,
+      "pct": 0.0741
+    },
+    {
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.037
+    },
+    {
+      "country": "Austria",
+      "count": 1,
+      "pct": 0.0185
     },
     {
       "country": "Canada",
@@ -135,11 +145,6 @@
     },
     {
       "country": "Spain",
-      "count": 1,
-      "pct": 0.0185
-    },
-    {
-      "country": "South Korea",
       "count": 1,
       "pct": 0.0185
     },
