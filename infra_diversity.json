@@ -1,147 +1,162 @@
 {
-  "generated_at": "2026-07-23T18:40:01.445889+00:00",
-  "total_analyzed": 50,
-  "unique_providers": 17,
-  "unique_countries": 10,
-  "hhi_score": 0.2248,
-  "top_provider_pct": 0.44,
+  "generated_at": "2026-07-23T19:10:01.738421+00:00",
+  "total_analyzed": 56,
+  "unique_providers": 19,
+  "unique_countries": 11,
+  "hhi_score": 0.2124,
+  "top_provider_pct": 0.4286,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 22,
-      "pct": 0.44
+      "count": 24,
+      "pct": 0.4286
     },
     {
       "provider": "netcup GmbH",
       "count": 6,
-      "pct": 0.12
+      "pct": 0.1071
+    },
+    {
+      "provider": "Cogent Communications",
+      "count": 4,
+      "pct": 0.0714
     },
     {
       "provider": "Amazon.com, Inc.",
       "count": 3,
-      "pct": 0.06
-    },
-    {
-      "provider": "Cogent Communications",
-      "count": 3,
-      "pct": 0.06
+      "pct": 0.0536
     },
     {
       "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.06
+      "pct": 0.0536
     },
     {
       "provider": "velia.net",
       "count": 2,
-      "pct": 0.04
+      "pct": 0.0357
+    },
+    {
+      "provider": "Amazon Technologies Inc.",
+      "count": 2,
+      "pct": 0.0357
+    },
+    {
+      "provider": "Contabo GmbH",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "provider": "Mobile TeleSystems JLLC",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "Rica Web Services",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "Ultra-Pak LLC",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "MEVSPACE sp. z o.o.",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "Maxihost LTDA",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "MEVSPACE sp. z o.o",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
+    },
+    {
+      "provider": "The Constant Company",
+      "count": 1,
+      "pct": 0.0179
     },
     {
       "provider": "OVH SAS",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "Adept AB",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "HostPapa",
       "count": 1,
-      "pct": 0.02
-    },
-    {
-      "provider": "Amazon Technologies Inc.",
-      "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "provider": "Online",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     }
   ],
   "by_country": [
     {
       "country": "Finland",
-      "count": 15,
-      "pct": 0.3
+      "count": 16,
+      "pct": 0.2857
     },
     {
       "country": "Germany",
-      "count": 13,
-      "pct": 0.26
+      "count": 14,
+      "pct": 0.25
     },
     {
       "country": "United States",
-      "count": 7,
-      "pct": 0.14
+      "count": 8,
+      "pct": 0.1429
+    },
+    {
+      "country": "France",
+      "count": 6,
+      "pct": 0.1071
     },
     {
       "country": "Poland",
       "count": 5,
-      "pct": 0.1
+      "pct": 0.0893
     },
     {
-      "country": "France",
-      "count": 5,
-      "pct": 0.1
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.0357
     },
     {
       "country": "Belarus",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "country": "Canada",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "country": "Ukraine",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
-      "country": "South Korea",
+      "country": "Spain",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     },
     {
       "country": "Ireland",
       "count": 1,
-      "pct": 0.02
+      "pct": 0.0179
     }
   ]
 }
