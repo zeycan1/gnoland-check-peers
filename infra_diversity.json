@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-24T19:10:01.582949+00:00",
+  "generated_at": "2026-07-24T19:40:01.488383+00:00",
   "total_analyzed": 41,
-  "unique_providers": 15,
+  "unique_providers": 16,
   "unique_countries": 8,
-  "hhi_score": 0.2219,
+  "hhi_score": 0.2207,
   "top_provider_pct": 0.439,
   "by_provider": [
     {
@@ -23,11 +23,6 @@
     },
     {
       "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0488
-    },
-    {
-      "provider": "velia.net",
       "count": 2,
       "pct": 0.0488
     },
@@ -62,6 +57,11 @@
       "pct": 0.0244
     },
     {
+      "provider": "velia.net",
+      "count": 1,
+      "pct": 0.0244
+    },
+    {
       "provider": "MEVSPACE sp. z o.o",
       "count": 1,
       "pct": 0.0244
@@ -73,6 +73,11 @@
     },
     {
       "provider": "WIIT AG",
+      "count": 1,
+      "pct": 0.0244
+    },
+    {
+      "provider": "Amazon Technologies Inc.",
       "count": 1,
       "pct": 0.0244
     },
@@ -94,14 +99,14 @@
       "pct": 0.2683
     },
     {
-      "country": "United States",
+      "country": "France",
       "count": 5,
       "pct": 0.122
     },
     {
-      "country": "France",
-      "count": 5,
-      "pct": 0.122
+      "country": "United States",
+      "count": 4,
+      "pct": 0.0976
     },
     {
       "country": "Poland",
@@ -114,12 +119,12 @@
       "pct": 0.0488
     },
     {
-      "country": "Belarus",
-      "count": 1,
-      "pct": 0.0244
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.0488
     },
     {
-      "country": "South Korea",
+      "country": "Belarus",
       "count": 1,
       "pct": 0.0244
     }
