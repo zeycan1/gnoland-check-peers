@@ -923,7 +923,7 @@
     1,
     1,
     1,
-    1,
+    0,
     0,
     0
   ],
@@ -1044,6 +1044,7 @@
     1
   ],
   "g19a0zxq82v0wpynngczn3a948cp9gdncrrsg70q": [
+    1,
     1,
     1,
     1,
@@ -1506,12 +1507,15 @@
     0,
     0,
     0,
+    0,
     0
   ],
   "g1h0cdn63083dcyn8krpn2f2tq0lgul0hka09pwf": [
+    0,
     0
   ],
   "g1g56ee4cmr0mhxeh4qkdzk702wrp7c60fzehehn": [
+    1,
     1
   ]
 }
