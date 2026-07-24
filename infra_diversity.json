@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T09:10:01.191310+00:00",
+  "generated_at": "2026-07-24T09:40:01.802635+00:00",
   "total_analyzed": 43,
   "unique_providers": 15,
   "unique_countries": 11,
@@ -17,12 +17,17 @@
       "pct": 0.093
     },
     {
-      "provider": "Cogent Communications",
+      "provider": "Scaleway SAS",
       "count": 3,
       "pct": 0.0698
     },
     {
       "provider": "velia.net",
+      "count": 2,
+      "pct": 0.0465
+    },
+    {
+      "provider": "Cogent Communications",
       "count": 2,
       "pct": 0.0465
     },
@@ -33,11 +38,6 @@
     },
     {
       "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0465
-    },
-    {
-      "provider": "Scaleway SAS",
       "count": 2,
       "pct": 0.0465
     },
@@ -94,19 +94,19 @@
       "pct": 0.2791
     },
     {
+      "country": "France",
+      "count": 5,
+      "pct": 0.1163
+    },
+    {
       "country": "United States",
       "count": 5,
       "pct": 0.1163
     },
     {
-      "country": "France",
-      "count": 4,
-      "pct": 0.093
-    },
-    {
       "country": "Poland",
-      "count": 3,
-      "pct": 0.0698
+      "count": 2,
+      "pct": 0.0465
     },
     {
       "country": "South Korea",
