@@ -1,132 +1,127 @@
 {
-  "generated_at": "2026-07-24T17:40:01.269045+00:00",
-  "total_analyzed": 42,
-  "unique_providers": 16,
+  "generated_at": "2026-07-24T18:10:01.095693+00:00",
+  "total_analyzed": 40,
+  "unique_providers": 15,
   "unique_countries": 8,
-  "hhi_score": 0.2313,
-  "top_provider_pct": 0.4524,
+  "hhi_score": 0.2525,
+  "top_provider_pct": 0.475,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
       "count": 19,
-      "pct": 0.4524
+      "pct": 0.475
     },
     {
       "provider": "netcup GmbH",
       "count": 4,
-      "pct": 0.0952
+      "pct": 0.1
     },
     {
       "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.0714
+      "pct": 0.075
     },
     {
       "provider": "Amazon.com, Inc.",
       "count": 2,
-      "pct": 0.0476
+      "pct": 0.05
     },
     {
       "provider": "velia.net",
       "count": 2,
-      "pct": 0.0476
-    },
-    {
-      "provider": "Cogent Communications",
-      "count": 2,
-      "pct": 0.0476
+      "pct": 0.05
     },
     {
       "provider": "Contabo GmbH",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "Mobile TeleSystems JLLC",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
+    },
+    {
+      "provider": "Cogent Communications",
+      "count": 1,
+      "pct": 0.025
     },
     {
       "provider": "MEVSPACE sp. z o.o.",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "Maxihost LTDA",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "MEVSPACE sp. z o.o",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "OVH SAS",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "Mobifone Corporation",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "WIIT AG",
       "count": 1,
-      "pct": 0.0238
-    },
-    {
-      "provider": "Amazon Technologies Inc.",
-      "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "provider": "Online",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     }
   ],
   "by_country": [
     {
       "country": "Germany",
       "count": 12,
-      "pct": 0.2857
+      "pct": 0.3
     },
     {
       "country": "Finland",
       "count": 12,
-      "pct": 0.2857
-    },
-    {
-      "country": "United States",
-      "count": 5,
-      "pct": 0.119
+      "pct": 0.3
     },
     {
       "country": "France",
       "count": 5,
-      "pct": 0.119
+      "pct": 0.125
+    },
+    {
+      "country": "United States",
+      "count": 4,
+      "pct": 0.1
     },
     {
       "country": "Poland",
       "count": 4,
-      "pct": 0.0952
-    },
-    {
-      "country": "South Korea",
-      "count": 2,
-      "pct": 0.0476
+      "pct": 0.1
     },
     {
       "country": "Belarus",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
     },
     {
       "country": "Vietnam",
       "count": 1,
-      "pct": 0.0238
+      "pct": 0.025
+    },
+    {
+      "country": "South Korea",
+      "count": 1,
+      "pct": 0.025
     }
   ]
 }
