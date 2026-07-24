@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-24T11:10:02.042444+00:00",
+  "generated_at": "2026-07-24T11:40:01.619048+00:00",
   "total_analyzed": 44,
   "unique_providers": 18,
   "unique_countries": 12,
-  "hhi_score": 0.2107,
+  "hhi_score": 0.2118,
   "top_provider_pct": 0.4318,
   "by_provider": [
     {
@@ -17,6 +17,11 @@
       "pct": 0.0909
     },
     {
+      "provider": "Scaleway SAS",
+      "count": 3,
+      "pct": 0.0682
+    },
+    {
       "provider": "velia.net",
       "count": 2,
       "pct": 0.0455
@@ -27,17 +32,7 @@
       "pct": 0.0455
     },
     {
-      "provider": "Amazon Technologies Inc.",
-      "count": 2,
-      "pct": 0.0455
-    },
-    {
       "provider": "Amazon.com, Inc.",
-      "count": 2,
-      "pct": 0.0455
-    },
-    {
-      "provider": "Scaleway SAS",
       "count": 2,
       "pct": 0.0455
     },
@@ -92,6 +87,11 @@
       "pct": 0.0227
     },
     {
+      "provider": "Amazon Technologies Inc.",
+      "count": 1,
+      "pct": 0.0227
+    },
+    {
       "provider": "Online",
       "count": 1,
       "pct": 0.0227
@@ -115,18 +115,13 @@
     },
     {
       "country": "France",
-      "count": 4,
-      "pct": 0.0909
+      "count": 5,
+      "pct": 0.1136
     },
     {
       "country": "Poland",
       "count": 3,
       "pct": 0.0682
-    },
-    {
-      "country": "South Korea",
-      "count": 2,
-      "pct": 0.0455
     },
     {
       "country": "Belarus",
@@ -150,6 +145,11 @@
     },
     {
       "country": "Canada",
+      "count": 1,
+      "pct": 0.0227
+    },
+    {
+      "country": "South Korea",
       "count": 1,
       "pct": 0.0227
     },
