@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-25T00:10:01.510691+00:00",
+  "generated_at": "2026-07-25T00:40:01.374573+00:00",
   "total_analyzed": 39,
-  "unique_providers": 14,
+  "unique_providers": 15,
   "unique_countries": 8,
-  "hhi_score": 0.265,
-  "top_provider_pct": 0.4872,
+  "hhi_score": 0.2413,
+  "top_provider_pct": 0.4615,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 19,
-      "pct": 0.4872
+      "count": 18,
+      "pct": 0.4615
     },
     {
       "provider": "netcup GmbH",
@@ -72,6 +72,11 @@
       "pct": 0.0256
     },
     {
+      "provider": "Amazon Technologies Inc.",
+      "count": 1,
+      "pct": 0.0256
+    },
+    {
       "provider": "Online",
       "count": 1,
       "pct": 0.0256
@@ -85,8 +90,8 @@
     },
     {
       "country": "Finland",
-      "count": 11,
-      "pct": 0.2821
+      "count": 10,
+      "pct": 0.2564
     },
     {
       "country": "United States",
@@ -109,12 +114,12 @@
       "pct": 0.0513
     },
     {
-      "country": "Belarus",
-      "count": 1,
-      "pct": 0.0256
+      "country": "South Korea",
+      "count": 2,
+      "pct": 0.0513
     },
     {
-      "country": "South Korea",
+      "country": "Belarus",
       "count": 1,
       "pct": 0.0256
     }
