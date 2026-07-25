@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-25T11:40:01.877654+00:00",
+  "generated_at": "2026-07-25T12:10:01.533570+00:00",
   "total_analyzed": 32,
-  "unique_providers": 15,
-  "unique_countries": 8,
-  "hhi_score": 0.1602,
-  "top_provider_pct": 0.3438,
+  "unique_providers": 16,
+  "unique_countries": 9,
+  "hhi_score": 0.1406,
+  "top_provider_pct": 0.3125,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 11,
-      "pct": 0.3438
+      "count": 10,
+      "pct": 0.3125
     },
     {
       "provider": "netcup GmbH",
@@ -43,6 +43,11 @@
     },
     {
       "provider": "velia.net",
+      "count": 1,
+      "pct": 0.0312
+    },
+    {
+      "provider": "Oracle Corporation",
       "count": 1,
       "pct": 0.0312
     },
@@ -85,8 +90,8 @@
   "by_country": [
     {
       "country": "Germany",
-      "count": 10,
-      "pct": 0.3125
+      "count": 9,
+      "pct": 0.2812
     },
     {
       "country": "United States",
@@ -120,6 +125,11 @@
     },
     {
       "country": "Belarus",
+      "count": 1,
+      "pct": 0.0312
+    },
+    {
+      "country": "United Arab Emirates",
       "count": 1,
       "pct": 0.0312
     }
