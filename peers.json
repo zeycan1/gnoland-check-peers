@@ -1,12 +1,57 @@
 {
-  "generated_at": "2026-07-25T04:00:01.733114+00:00",
+  "generated_at": "2026-07-25T04:30:01.353781+00:00",
   "rpc_sources": [
     "https://rpc.test13.testnets.gno.land",
     "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
   ],
-  "total_peers": 52,
-  "reliable_peers": 37,
+  "total_peers": 51,
+  "reliable_peers": 36,
   "peers": {
+    "g1k48779ydlleyek998rj9tgznvfdh0we674etkw": {
+      "ip": "46.38.251.47",
+      "port": 47656,
+      "moniker": "airSintez",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:47657",
+      "reachable_now": false,
+      "uptime_pct": 0.0,
+      "measurements": 6,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": false
+    },
+    "g1t9apdww5qejupd7em94dyjyqhk9pa9j8y5nx4k": {
+      "ip": "62.210.212.142",
+      "port": 23656,
+      "moniker": "AstroStake",
+      "is_outbound": true,
+      "advertised_rpc": "tcp://0.0.0.0:23657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1dlptegmk8l7hx0rztrqsn2pypuuqp8paehjsac": {
+      "ip": "100.91.208.54",
+      "port": 20756,
+      "moniker": "encapsulate",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:20757",
+      "reachable_now": false,
+      "uptime_pct": 0.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": false
+    },
     "g1yk40qgv6z3h66w7rvqv2xahg7g0rnp4famsppm": {
       "ip": "162.55.83.254",
       "port": 26656,
@@ -487,6 +532,21 @@
       "source_diversity": 1,
       "reliable": true
     },
+    "g19a0zxq82v0wpynngczn3a948cp9gdncrrsg70q": {
+      "ip": "0.0.0.0",
+      "port": 26656,
+      "moniker": "users1-test13-archive",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 6,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
     "g1xsy0p38z7hf2eaeva2yze8gkm7akz4f67cn4r9": {
       "ip": "54.116.147.120",
       "port": 26656,
@@ -607,21 +667,6 @@
       "source_diversity": 1,
       "reliable": false
     },
-    "g1d7z2kj2t6k40gz9r2ggcvk9q34u3ye3xtvsey7": {
-      "ip": "135.181.216.107",
-      "port": 26656,
-      "moniker": "testovich",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
     "g1jmkj36genvnvrfyhd95hcxmf63aekm54rmzyjx": {
       "ip": "0.0.0.0",
       "port": 36656,
@@ -720,72 +765,12 @@
       "advertised_rpc": "tcp://0.0.0.0:26657",
       "reachable_now": true,
       "uptime_pct": 1.0,
-      "measurements": 7,
+      "measurements": 8,
       "seen_by": [
         "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
       ],
       "source_diversity": 1,
       "reliable": true
-    },
-    "g1k48779ydlleyek998rj9tgznvfdh0we674etkw": {
-      "ip": "46.38.251.47",
-      "port": 47656,
-      "moniker": "airSintez",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:47657",
-      "reachable_now": false,
-      "uptime_pct": 0.0,
-      "measurements": 5,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": false
-    },
-    "g1t9apdww5qejupd7em94dyjyqhk9pa9j8y5nx4k": {
-      "ip": "62.210.212.142",
-      "port": 23656,
-      "moniker": "AstroStake",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://0.0.0.0:23657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g19e3euuhnvvm2rwymgn2l5t6pa6s0np7m4tnyzl": {
-      "ip": "0.0.0.0",
-      "port": 54656,
-      "moniker": "CroutonDigital",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://0.0.0.0:54657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1dlptegmk8l7hx0rztrqsn2pypuuqp8paehjsac": {
-      "ip": "100.91.208.54",
-      "port": 20756,
-      "moniker": "encapsulate",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:20757",
-      "reachable_now": false,
-      "uptime_pct": 0.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": false
     }
   }
 }
