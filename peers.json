@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-26T14:30:01.192773+00:00",
+  "generated_at": "2026-07-26T15:00:01.118290+00:00",
   "rpc_sources": [
     "https://rpc.test13.testnets.gno.land",
     "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
   ],
   "total_peers": 41,
-  "reliable_peers": 32,
+  "reliable_peers": 33,
   "peers": {
     "g1d7z2kj2t6k40gz9r2ggcvk9q34u3ye3xtvsey7": {
       "ip": "135.181.216.107",
@@ -28,21 +28,6 @@
       "moniker": "0xyzBlock",
       "is_outbound": false,
       "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": false,
-      "uptime_pct": 0.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": false
-    },
-    "g1k48779ydlleyek998rj9tgznvfdh0we674etkw": {
-      "ip": "46.38.251.47",
-      "port": 47656,
-      "moniker": "airSintez",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:47657",
       "reachable_now": false,
       "uptime_pct": 0.0,
       "measurements": 10,
@@ -103,6 +88,21 @@
       "moniker": "n1sntry2",
       "is_outbound": false,
       "advertised_rpc": "tcp://0.0.0.0:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g19e3euuhnvvm2rwymgn2l5t6pa6s0np7m4tnyzl": {
+      "ip": "0.0.0.0",
+      "port": 54656,
+      "moniker": "CroutonDigital",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:54657",
       "reachable_now": true,
       "uptime_pct": 1.0,
       "measurements": 10,
@@ -206,7 +206,7 @@
       "ip": "138.201.240.155",
       "port": 17656,
       "moniker": "[NODERS]",
-      "is_outbound": false,
+      "is_outbound": true,
       "advertised_rpc": "tcp://127.0.0.1:17657",
       "reachable_now": true,
       "uptime_pct": 1.0,
