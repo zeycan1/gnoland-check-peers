@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-26T02:10:01.878936+00:00",
+  "generated_at": "2026-07-26T02:40:01.531323+00:00",
   "total_analyzed": 31,
   "unique_providers": 15,
   "unique_countries": 8,
-  "hhi_score": 0.1634,
-  "top_provider_pct": 0.3548,
+  "hhi_score": 0.1488,
+  "top_provider_pct": 0.3226,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 11,
-      "pct": 0.3548
+      "count": 10,
+      "pct": 0.3226
     },
     {
       "provider": "netcup GmbH",
-      "count": 3,
-      "pct": 0.0968
+      "count": 4,
+      "pct": 0.129
     },
     {
       "provider": "Scaleway SAS",
