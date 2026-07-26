@@ -1,12 +1,57 @@
 {
-  "generated_at": "2026-07-26T19:30:01.719535+00:00",
+  "generated_at": "2026-07-26T20:00:01.767965+00:00",
   "rpc_sources": [
     "https://rpc.test13.testnets.gno.land",
     "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
   ],
-  "total_peers": 41,
-  "reliable_peers": 33,
+  "total_peers": 42,
+  "reliable_peers": 34,
   "peers": {
+    "g19e3euuhnvvm2rwymgn2l5t6pa6s0np7m4tnyzl": {
+      "ip": "0.0.0.0",
+      "port": 54656,
+      "moniker": "CroutonDigital",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:54657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1t9apdww5qejupd7em94dyjyqhk9pa9j8y5nx4k": {
+      "ip": "62.210.212.142",
+      "port": 23656,
+      "moniker": "AstroStake",
+      "is_outbound": true,
+      "advertised_rpc": "tcp://0.0.0.0:23657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1dlptegmk8l7hx0rztrqsn2pypuuqp8paehjsac": {
+      "ip": "100.91.208.54",
+      "port": 20756,
+      "moniker": "encapsulate",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:20757",
+      "reachable_now": false,
+      "uptime_pct": 0.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": false
+    },
     "g1eqal0zjh026e2m88pll7349anweg50j6y4fr2h": {
       "ip": "100.52.62.74",
       "port": 26656,
@@ -390,7 +435,7 @@
       "advertised_rpc": "tcp://0.0.0.0:26657",
       "reachable_now": true,
       "uptime_pct": 1.0,
-      "measurements": 8,
+      "measurements": 9,
       "seen_by": [
         "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
       ],
@@ -401,6 +446,21 @@
       "ip": "186.233.184.95",
       "port": 26656,
       "moniker": "ubik-test13-primary",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g19a0zxq82v0wpynngczn3a948cp9gdncrrsg70q": {
+      "ip": "0.0.0.0",
+      "port": 26656,
+      "moniker": "users1-test13-archive",
       "is_outbound": false,
       "advertised_rpc": "tcp://0.0.0.0:26657",
       "reachable_now": true,
@@ -576,51 +636,6 @@
       ],
       "source_diversity": 1,
       "reliable": true
-    },
-    "g19e3euuhnvvm2rwymgn2l5t6pa6s0np7m4tnyzl": {
-      "ip": "0.0.0.0",
-      "port": 54656,
-      "moniker": "CroutonDigital",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://0.0.0.0:54657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1t9apdww5qejupd7em94dyjyqhk9pa9j8y5nx4k": {
-      "ip": "62.210.212.142",
-      "port": 23656,
-      "moniker": "AstroStake",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://0.0.0.0:23657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1dlptegmk8l7hx0rztrqsn2pypuuqp8paehjsac": {
-      "ip": "100.91.208.54",
-      "port": 20756,
-      "moniker": "encapsulate",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:20757",
-      "reachable_now": false,
-      "uptime_pct": 0.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": false
     }
   }
 }
