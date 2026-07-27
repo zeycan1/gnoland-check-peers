@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-27T00:10:01.068791+00:00",
+  "generated_at": "2026-07-27T00:40:01.319176+00:00",
   "total_analyzed": 29,
-  "unique_providers": 16,
-  "unique_countries": 8,
-  "hhi_score": 0.1106,
+  "unique_providers": 17,
+  "unique_countries": 9,
+  "hhi_score": 0.1034,
   "top_provider_pct": 0.2414,
   "by_provider": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "provider": "netcup GmbH",
-      "count": 4,
-      "pct": 0.1379
+      "count": 3,
+      "pct": 0.1034
     },
     {
       "provider": "Scaleway SAS",
@@ -48,6 +48,11 @@
     },
     {
       "provider": "velia.net",
+      "count": 1,
+      "pct": 0.0345
+    },
+    {
+      "provider": "Oracle Corporation",
       "count": 1,
       "pct": 0.0345
     },
@@ -90,8 +95,8 @@
   "by_country": [
     {
       "country": "Germany",
-      "count": 8,
-      "pct": 0.2759
+      "count": 7,
+      "pct": 0.2414
     },
     {
       "country": "United States",
@@ -125,6 +130,11 @@
     },
     {
       "country": "Belarus",
+      "count": 1,
+      "pct": 0.0345
+    },
+    {
+      "country": "United Arab Emirates",
       "count": 1,
       "pct": 0.0345
     }
