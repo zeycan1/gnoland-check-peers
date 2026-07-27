@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-27T11:10:01.048459+00:00",
+  "generated_at": "2026-07-27T11:40:01.548495+00:00",
   "total_analyzed": 23,
-  "unique_providers": 13,
-  "unique_countries": 6,
-  "hhi_score": 0.1418,
-  "top_provider_pct": 0.3043,
+  "unique_providers": 14,
+  "unique_countries": 7,
+  "hhi_score": 0.1191,
+  "top_provider_pct": 0.2609,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
-      "count": 7,
-      "pct": 0.3043
+      "count": 6,
+      "pct": 0.2609
     },
     {
       "provider": "Scaleway SAS",
@@ -38,6 +38,11 @@
     },
     {
       "provider": "velia.net",
+      "count": 1,
+      "pct": 0.0435
+    },
+    {
+      "provider": "Oracle Corporation",
       "count": 1,
       "pct": 0.0435
     },
@@ -75,8 +80,8 @@
   "by_country": [
     {
       "country": "Germany",
-      "count": 6,
-      "pct": 0.2609
+      "count": 5,
+      "pct": 0.2174
     },
     {
       "country": "United States",
@@ -102,6 +107,11 @@
       "country": "Poland",
       "count": 2,
       "pct": 0.087
+    },
+    {
+      "country": "United Arab Emirates",
+      "count": 1,
+      "pct": 0.0435
     }
   ]
 }
