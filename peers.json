@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T01:30:01.508027+00:00",
+  "generated_at": "2026-07-28T02:00:01.446069+00:00",
   "rpc_sources": [
     "https://rpc.test13.testnets.gno.land",
     "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
@@ -7,66 +7,6 @@
   "total_peers": 31,
   "reliable_peers": 23,
   "peers": {
-    "g1nutynyj08sauqemyedctx7cvr2pvw24lg0gnw6": {
-      "ip": "217.182.203.161",
-      "port": 39656,
-      "moniker": "Grand Valley",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:39657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1w44kfhv9a4ruqx70jxqmykychre3ffpnfje8h7": {
-      "ip": "159.195.47.190",
-      "port": 41656,
-      "moniker": "doresa",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://0.0.0.0:41657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1dqqmysnfv38adpm8vhaurc7w48gz00y6hm65nd": {
-      "ip": "0.0.0.0",
-      "port": 26656,
-      "moniker": "KalpaTech",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://0.0.0.0:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g19cd7t4qps3y5fumgnxwe6kgsevplv8t7fk6uze": {
-      "ip": "0.0.0.0",
-      "port": 26656,
-      "moniker": "ubuntu-8gb-hel1-1",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
     "g1z3mavstqrfewltrw886d35fufq6v7eg63xjcet": {
       "ip": "88.198.46.55",
       "port": 32556,
@@ -462,6 +402,66 @@
       "port": 26656,
       "moniker": "Cumulo",
       "is_outbound": true,
+      "advertised_rpc": "tcp://127.0.0.1:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1nutynyj08sauqemyedctx7cvr2pvw24lg0gnw6": {
+      "ip": "217.182.203.161",
+      "port": 39656,
+      "moniker": "Grand Valley",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:39657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1w44kfhv9a4ruqx70jxqmykychre3ffpnfje8h7": {
+      "ip": "159.195.47.190",
+      "port": 41656,
+      "moniker": "doresa",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:41657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1dqqmysnfv38adpm8vhaurc7w48gz00y6hm65nd": {
+      "ip": "0.0.0.0",
+      "port": 26656,
+      "moniker": "KalpaTech",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g19cd7t4qps3y5fumgnxwe6kgsevplv8t7fk6uze": {
+      "ip": "0.0.0.0",
+      "port": 26656,
+      "moniker": "ubuntu-8gb-hel1-1",
+      "is_outbound": false,
       "advertised_rpc": "tcp://127.0.0.1:26657",
       "reachable_now": true,
       "uptime_pct": 1.0,
