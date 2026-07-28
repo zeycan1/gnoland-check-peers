@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T02:40:01.450260+00:00",
+  "generated_at": "2026-07-28T03:10:01.305554+00:00",
   "total_analyzed": 22,
-  "unique_providers": 14,
-  "unique_countries": 7,
-  "hhi_score": 0.1074,
+  "unique_providers": 13,
+  "unique_countries": 6,
+  "hhi_score": 0.1157,
   "top_provider_pct": 0.2273,
   "by_provider": [
     {
@@ -12,14 +12,14 @@
       "pct": 0.2273
     },
     {
-      "provider": "Scaleway SAS",
+      "provider": "netcup GmbH",
       "count": 3,
       "pct": 0.1364
     },
     {
-      "provider": "netcup GmbH",
-      "count": 2,
-      "pct": 0.0909
+      "provider": "Scaleway SAS",
+      "count": 3,
+      "pct": 0.1364
     },
     {
       "provider": "Mobifone Corporation",
@@ -38,11 +38,6 @@
     },
     {
       "provider": "velia.net",
-      "count": 1,
-      "pct": 0.0455
-    },
-    {
-      "provider": "Oracle Corporation",
       "count": 1,
       "pct": 0.0455
     },
@@ -79,14 +74,14 @@
   ],
   "by_country": [
     {
-      "country": "United States",
+      "country": "Germany",
       "count": 5,
       "pct": 0.2273
     },
     {
-      "country": "Germany",
-      "count": 4,
-      "pct": 0.1818
+      "country": "United States",
+      "count": 5,
+      "pct": 0.2273
     },
     {
       "country": "France",
@@ -107,11 +102,6 @@
       "country": "Poland",
       "count": 2,
       "pct": 0.0909
-    },
-    {
-      "country": "United Arab Emirates",
-      "count": 1,
-      "pct": 0.0455
     }
   ]
 }
