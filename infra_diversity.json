@@ -1,107 +1,102 @@
 {
-  "generated_at": "2026-07-28T09:10:01.092973+00:00",
-  "total_analyzed": 22,
-  "unique_providers": 13,
+  "generated_at": "2026-07-28T09:40:01.314203+00:00",
+  "total_analyzed": 20,
+  "unique_providers": 12,
   "unique_countries": 6,
-  "hhi_score": 0.1157,
-  "top_provider_pct": 0.2273,
+  "hhi_score": 0.125,
+  "top_provider_pct": 0.25,
   "by_provider": [
     {
       "provider": "Hetzner Online GmbH",
       "count": 5,
-      "pct": 0.2273
-    },
-    {
-      "provider": "netcup GmbH",
-      "count": 3,
-      "pct": 0.1364
+      "pct": 0.25
     },
     {
       "provider": "Scaleway SAS",
       "count": 3,
-      "pct": 0.1364
+      "pct": 0.15
+    },
+    {
+      "provider": "netcup GmbH",
+      "count": 2,
+      "pct": 0.1
     },
     {
       "provider": "Mobifone Corporation",
       "count": 2,
-      "pct": 0.0909
+      "pct": 0.1
     },
     {
       "provider": "VNPT",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "Latitude.sh LTDA",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "velia.net",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "MEVSPACE sp. z o.o",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "Interserver, Inc",
       "count": 1,
-      "pct": 0.0455
-    },
-    {
-      "provider": "OVH SAS",
-      "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "HostPapa",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "Cogent Communications",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     },
     {
       "provider": "Online",
       "count": 1,
-      "pct": 0.0455
+      "pct": 0.05
     }
   ],
   "by_country": [
     {
-      "country": "Germany",
-      "count": 5,
-      "pct": 0.2273
-    },
-    {
       "country": "United States",
       "count": 5,
-      "pct": 0.2273
+      "pct": 0.25
+    },
+    {
+      "country": "Germany",
+      "count": 4,
+      "pct": 0.2
     },
     {
       "country": "France",
       "count": 4,
-      "pct": 0.1818
+      "pct": 0.2
     },
     {
       "country": "Finland",
       "count": 3,
-      "pct": 0.1364
+      "pct": 0.15
     },
     {
       "country": "Vietnam",
       "count": 3,
-      "pct": 0.1364
+      "pct": 0.15
     },
     {
       "country": "Poland",
-      "count": 2,
-      "pct": 0.0909
+      "count": 1,
+      "pct": 0.05
     }
   ]
 }
