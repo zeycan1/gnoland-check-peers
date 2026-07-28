@@ -1,27 +1,12 @@
 {
-  "generated_at": "2026-07-28T08:00:01.529477+00:00",
+  "generated_at": "2026-07-28T08:30:01.851509+00:00",
   "rpc_sources": [
     "https://rpc.test13.testnets.gno.land",
     "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
   ],
-  "total_peers": 30,
-  "reliable_peers": 22,
+  "total_peers": 29,
+  "reliable_peers": 21,
   "peers": {
-    "g1zlz50qstwkve6tcdyg78dntehvzg3vhwrmkra3": {
-      "ip": "38.134.40.153",
-      "port": 26656,
-      "moniker": "kromo127-rpc",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
     "g1z3mavstqrfewltrw886d35fufq6v7eg63xjcet": {
       "ip": "88.198.46.55",
       "port": 32556,
@@ -157,27 +142,12 @@
       "source_diversity": 1,
       "reliable": false
     },
-    "g19e3euuhnvvm2rwymgn2l5t6pa6s0np7m4tnyzl": {
-      "ip": "0.0.0.0",
-      "port": 54656,
-      "moniker": "CroutonDigital",
-      "is_outbound": false,
-      "advertised_rpc": "tcp://0.0.0.0:54657",
-      "reachable_now": true,
-      "uptime_pct": 1.0,
-      "measurements": 10,
-      "seen_by": [
-        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
-      ],
-      "source_diversity": 1,
-      "reliable": true
-    },
-    "g1dusdrker7gsh3t5zwy0emzm2qsj9z2uext8a94": {
-      "ip": "14.241.251.186",
-      "port": 17656,
-      "moniker": "johnwiard",
+    "g1d7z2kj2t6k40gz9r2ggcvk9q34u3ye3xtvsey7": {
+      "ip": "135.181.216.107",
+      "port": 26656,
+      "moniker": "testovich",
       "is_outbound": true,
-      "advertised_rpc": "tcp://127.0.0.1:17657",
+      "advertised_rpc": "tcp://127.0.0.1:26657",
       "reachable_now": true,
       "uptime_pct": 1.0,
       "measurements": 10,
@@ -202,12 +172,12 @@
       "source_diversity": 1,
       "reliable": true
     },
-    "g1d7z2kj2t6k40gz9r2ggcvk9q34u3ye3xtvsey7": {
-      "ip": "135.181.216.107",
-      "port": 26656,
-      "moniker": "testovich",
-      "is_outbound": true,
-      "advertised_rpc": "tcp://127.0.0.1:26657",
+    "g19e3euuhnvvm2rwymgn2l5t6pa6s0np7m4tnyzl": {
+      "ip": "0.0.0.0",
+      "port": 54656,
+      "moniker": "CroutonDigital",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://0.0.0.0:54657",
       "reachable_now": true,
       "uptime_pct": 1.0,
       "measurements": 10,
@@ -448,6 +418,21 @@
       "moniker": "users1-test13-archive",
       "is_outbound": false,
       "advertised_rpc": "tcp://0.0.0.0:26657",
+      "reachable_now": true,
+      "uptime_pct": 1.0,
+      "measurements": 10,
+      "seen_by": [
+        "http://[2a03:cfc0:8000:13::b910:27ac]:54657"
+      ],
+      "source_diversity": 1,
+      "reliable": true
+    },
+    "g1zlz50qstwkve6tcdyg78dntehvzg3vhwrmkra3": {
+      "ip": "38.134.40.153",
+      "port": 26656,
+      "moniker": "kromo127-rpc",
+      "is_outbound": false,
+      "advertised_rpc": "tcp://127.0.0.1:26657",
       "reachable_now": true,
       "uptime_pct": 1.0,
       "measurements": 10,
