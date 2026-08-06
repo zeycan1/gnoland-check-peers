@@ -1,1 +1,1 @@
-This explorer was built for Gno.land Testnet13. As the network is now inactive, the data panels show 0/NaN. The repository remains as an open-source reference for automated node tracking via GitHub Actions.
+This explorer was built for Gno.land Testnet13. As the network is now inactive, the data panels show 0/NaN. The repository remains as an open-source reference for automated node tracking via GitHub Actions
